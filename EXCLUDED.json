@@ -1,0 +1,368 @@
+{
+  "format_version": 1,
+  "reviewed_head": "577d743c97f4f1f0754b5dba0ee71253d4074d7f",
+  "excluded": [
+    {
+      "dataset": "airports",
+      "reason": "Upstream Vega metadata says the exact generation source is unknown. Excluded pending a confirmed original-source chain."
+    },
+    {
+      "dataset": "akron-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "akron-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "akronmetro-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "akronmetro-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "camtran-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "cata-sc-trip-updates-snap1",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "cata-sc-vehicle-positions-snap1",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "cata-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "cdc-anxiety-depression",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-births-deaths-monthly",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-brfss-chronic-health",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-brfss-chronic",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-brfss-questionnaire",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-chronic-disease-indicators",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-covid-case-surveillance",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-covid-death-surveillance",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-covid-deaths",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-covid-surveillance",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-covid-vaccination",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-death-rates-cause",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-disability-status",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-flu-vaccination",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-health-indicators",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-healthcare-access",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-heart-disease-county",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-heart-disease-mortality",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-hospital-utilization",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-influenza",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-large-covid-surveillance",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-measles-wastewater",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-mortality-all-cause",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-nhis-adult-health",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-nndss-diseases",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-nors-outbreaks",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-nutrition-exercise",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-nutrition-obesity",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-places-2024",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-places-county",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-places-measures",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-places-tract",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-suicide-mortality",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-vision-health",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-wastewater-surveillance",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-weekly-covid",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cdc-wic-nutrition",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "census-acs-population",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "cms-hospitals",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "foothill-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "foothill-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "google-query",
+      "reason": "No exact original source asset or applicable payload license is identified in the PR."
+    },
+    {
+      "dataset": "gopasco-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "gopasco-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "grpc-person-search-wire",
+      "reason": "The PR stores transport frames/fragments and lacks a sample-specific licensing chain; excluded."
+    },
+    {
+      "dataset": "ict-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "ict-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "indygo-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "indygo-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "kmetro-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "kmetro-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "lextran-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "lextran-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "link-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "link-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "mbta-alerts",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "mbta-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "mbta-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "montebello-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "montebello-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "mvta-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "mvta-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "nyc-taxi-trips",
+      "reason": "The PR does not substantiate its public-domain claim or original row selection. Excluded pending dataset-specific redistribution evidence and reproducible conversion."
+    },
+    {
+      "dataset": "palmtran-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "palmtran-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "protobuf-tcp-addressbook",
+      "reason": "The PR stores transport frames/fragments and lacks a sample-specific licensing chain; excluded."
+    },
+    {
+      "dataset": "protobuf-udp-addressbook",
+      "reason": "The PR stores transport frames/fragments and lacks a sample-specific licensing chain; excluded."
+    },
+    {
+      "dataset": "pvta-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "pvta-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "salem-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "salem-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "sportran-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "sportran-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "thewave-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "wa-electric-vehicles",
+      "reason": "The reviewed PR does not identify a verifiable original source snapshot and dataset-specific reuse terms; excluded rather than assuming a license from its host."
+    },
+    {
+      "dataset": "wcta-gb-trip-updates",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    },
+    {
+      "dataset": "wcta-gb-vehicle-positions",
+      "reason": "No captured source snapshot with agency-specific redistribution evidence; the live downloader cannot reproduce the advertised snapshot. No transit data or downloader is shipped."
+    }
+  ],
+  "replaced": [
+    {
+      "dataset": "sao",
+      "reason": "Silesia-derived bytes replaced by the explicitly identified NASA distribution."
+    },
+    {
+      "dataset": "cdc-covid-case-detailed",
+      "reason": "Empty records replaced from the CDC public-use source."
+    },
+    {
+      "dataset": "cdc-nndss-disease",
+      "reason": "Empty records replaced from source, with source suppression flags and ODbL terms."
+    },
+    {
+      "dataset": "cdc-places-health",
+      "reason": "Malformed wire bytes replaced using the official protobuf serializer and identified CDC source."
+    }
+  ]
+}

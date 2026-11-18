@@ -1,0 +1,234 @@
+{
+  "format_version": 2,
+  "id": "usgs-earthquakes",
+  "kind": "real-source-converted",
+  "description": "USGS FDSN event catalog for October 2026, sorted by time ascending. Source timestamps, identifiers, event types, and magnitude types are retained.",
+  "schema": "schemas/public-records/usgs-earthquakes.proto",
+  "message_type": "pbcorpus.usgs.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2026-10-01T00%3A00%3A00&endtime=2026-11-01T00%3A00%3A00&orderby=time-asc",
+      "final_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2026-10-01T00%3A00%3A00&endtime=2026-11-01T00%3A00%3A00&orderby=time-asc",
+      "retrieved_at": "2026-11-18T16:10:41Z",
+      "bytes": 2256921,
+      "sha256": "711aff23429243b17691a220558ed1ac28ca1a3eb30bef08e8392633cb7aa35d",
+      "stored_path": "provenance/source-snapshots/711aff23429243b17691a220558ed1ac28ca1a3eb30bef08e8392633cb7aa35d.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 706327,
+      "stored_sha256": "5d04dfecc00f3d67e83a7f999d8e766b8552db5d0d095a36710a30ef5796ce38"
+    }
+  ],
+  "rights": {
+    "id": "LicenseRef-US-Government-Public-Domain",
+    "notice": "licenses/usgs-data-notice.txt",
+    "evidence_urls": [
+      "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    ],
+    "attribution": "U.S. Geological Survey, Earthquake Hazards Program, FDSN event catalog."
+  },
+  "conversion": {
+    "selection": "All source rows in the recorded UTC query interval [2026-10-01T00:00:00, 2026-11-01T00:00:00], in response order; consult the URL for service endpoint semantics.",
+    "field_mapping": {
+      "time": "time",
+      "latitude": "latitude",
+      "longitude": "longitude",
+      "depth": "depth",
+      "mag": "mag",
+      "mag_type": "magType",
+      "id": "id",
+      "place": "place",
+      "event_type": "type"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 512,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 11349,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0000.pb",
+      "bytes": 62802,
+      "sha256": "3c6a041208a5c7f15caeb5044fc84eea73f309b59082c3079c4918b107385359",
+      "git_blob_sha1": "b6666a4d5783b7d7421de84a5a26f8a496d6d631",
+      "records": 512,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0001.pb",
+      "bytes": 63176,
+      "sha256": "a5ce5e59b5f33ed555e2120cbee00a491ddf17c22371673ded4105b6a37b8b17",
+      "git_blob_sha1": "2f25444caf999ae7cc80c026c44bd6288d58e5c1",
+      "records": 512,
+      "first_row": 512
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0002.pb",
+      "bytes": 62893,
+      "sha256": "f270ac114d501df0bea61642492a8a92bb5e2e0d0cfce1a33b67d93d0a9b8483",
+      "git_blob_sha1": "25c39b642e1ac0dee1894dbc85503a96e7fd4487",
+      "records": 512,
+      "first_row": 1024
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0003.pb",
+      "bytes": 62956,
+      "sha256": "5de0db5df6b8b274c55086478fe6f91e4719caf7baa505c173fd594e981152f8",
+      "git_blob_sha1": "b2d6e8e0a5eaaedb534f89855f7042562a4c0b42",
+      "records": 512,
+      "first_row": 1536
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0004.pb",
+      "bytes": 63161,
+      "sha256": "d7a19cb0ed8c77591e9a0d5cb8af7a32329f02077bdba5caa441f47702d69feb",
+      "git_blob_sha1": "ce6a8092ac2d8e64abe63e00d290a9132a0cf4c2",
+      "records": 512,
+      "first_row": 2048
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0005.pb",
+      "bytes": 62991,
+      "sha256": "e8e226d9fc8e5a104b124aa99ed78b483b8bb1bc14c657152243cc8fd524c426",
+      "git_blob_sha1": "fdfaeb7f269b5681b0994b12de370c5e1294dd8e",
+      "records": 512,
+      "first_row": 2560
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0006.pb",
+      "bytes": 62914,
+      "sha256": "8b6ede94b30c4d9c394378412d9035b0dcd9b909eda04eea6a8570392052c566",
+      "git_blob_sha1": "293807843c6dbf29de2948fc94bdae5a4278d4c9",
+      "records": 512,
+      "first_row": 3072
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0007.pb",
+      "bytes": 63199,
+      "sha256": "ca95f5f7708b4161c1ef11accb8119c089a8a6e4e56cf5dbe920cf944d376026",
+      "git_blob_sha1": "f18c42f896729a1971de115c67ae10dad897621f",
+      "records": 512,
+      "first_row": 3584
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0008.pb",
+      "bytes": 62969,
+      "sha256": "768b50c08e0a575d0fa0809eaf6cac261f324cb90e6b45eb9a4774e273e943a5",
+      "git_blob_sha1": "cbb42b6ea17a1a1959a0e3cd27b525fd95febd00",
+      "records": 512,
+      "first_row": 4096
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0009.pb",
+      "bytes": 63268,
+      "sha256": "5a69a919a15507f7773e5236ea524d8388f52b69e1b12ff51591ce79dd10d264",
+      "git_blob_sha1": "ed9afc3a965c0192257eff12424d7d57a72229fc",
+      "records": 512,
+      "first_row": 4608
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0010.pb",
+      "bytes": 62902,
+      "sha256": "bf6e71d0b014b729ba5735224eaa251c9fffd3522dc1e62d675f9207150612dc",
+      "git_blob_sha1": "51d01adb4c1ac10bb02451c59d496128e2935ec5",
+      "records": 512,
+      "first_row": 5120
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0011.pb",
+      "bytes": 62995,
+      "sha256": "657712bdd860d79cf5271707e4d90ec9fb8755dd7d75ad056955f5f0e1676927",
+      "git_blob_sha1": "64e029e71b2a86e6844c18def8940ab118edebad",
+      "records": 512,
+      "first_row": 5632
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0012.pb",
+      "bytes": 63173,
+      "sha256": "f4fff9f3029d433fe6c5f4c10a1cb8dcf1292566f930924b8d05467788f74e35",
+      "git_blob_sha1": "4f406c58f00f82696f6e90a40b2a176cc9d8501c",
+      "records": 512,
+      "first_row": 6144
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0013.pb",
+      "bytes": 63252,
+      "sha256": "3321a15f866ec6334ee80111314e2c7439e4006e8f1f91e7b32c2854de9bd941",
+      "git_blob_sha1": "ea5dd2088a72e0fb1f570715555bcba9c4556ed3",
+      "records": 512,
+      "first_row": 6656
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0014.pb",
+      "bytes": 62962,
+      "sha256": "34a3f95240141e5e470bf98feeddba7fa6943faf3d5cbb41e752c57e40dc9d9a",
+      "git_blob_sha1": "4c936971ec832bef2ae7fd9568716bb8ee49448a",
+      "records": 512,
+      "first_row": 7168
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0015.pb",
+      "bytes": 62764,
+      "sha256": "87013c59e5091ccb6b78ab13e58d2097195888fcc5ebd63251aafd98692af150",
+      "git_blob_sha1": "db593660dad90b8cb0eba53cba56edb3394e8564",
+      "records": 512,
+      "first_row": 7680
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0016.pb",
+      "bytes": 62897,
+      "sha256": "d345668fce767f63b7db1ec67f1c9ef91fff15d5ce93790dd6fcccb225823f12",
+      "git_blob_sha1": "6404e08e1d768881c9db8cbab2534932fc450aed",
+      "records": 512,
+      "first_row": 8192
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0017.pb",
+      "bytes": 62969,
+      "sha256": "fbbb642d96989954b7136e396eba9bba74b9537d58fd8cace5d980099b4a0538",
+      "git_blob_sha1": "a2cf039c39e10e050607baad5a42569bebe50090",
+      "records": 512,
+      "first_row": 8704
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0018.pb",
+      "bytes": 62872,
+      "sha256": "158eb575dd895cf645ac371d74a8889e5156eab50090f87c9726eb30427d1fb4",
+      "git_blob_sha1": "b726298940032bf55debe34c20fecab41c72d5c0",
+      "records": 512,
+      "first_row": 9216
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0019.pb",
+      "bytes": 63291,
+      "sha256": "961df4cb23ff5be9fb83afb8024c8224e3b7d2aa893ea1dd736f5f239a5e2a4e",
+      "git_blob_sha1": "fcdaa2a5c058f52d4b3bea52a185b9ae5296ecc5",
+      "records": 512,
+      "first_row": 9728
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0020.pb",
+      "bytes": 62662,
+      "sha256": "69ad2b88a6de342e52c5437ae8096cbf8c99353554fdb3c57e3dda158cd1f231",
+      "git_blob_sha1": "c1868f9c93e96bed8737f73fb37aaba390f5a866",
+      "records": 512,
+      "first_row": 10240
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0021.pb",
+      "bytes": 62751,
+      "sha256": "ab2a0e586245fa20c8cdabcfbf7c7e8cf014c06a9f6c3c107e47cb49472b7f7b",
+      "git_blob_sha1": "31ee10fde385fa7d20ed9435e93c64d988f055be",
+      "records": 512,
+      "first_row": 10752
+    },
+    {
+      "file": "datasets/public-records/usgs-earthquakes/0022.pb",
+      "bytes": 10412,
+      "sha256": "40ee1ab7073e6eac6d352f1b32b9f6c2b72b6c126f643f33f2d78c5d58396a1d",
+      "git_blob_sha1": "dbbaa7f0fcfb9b991b3da51a344f63ecd4b10085",
+      "records": 85,
+      "first_row": 11264
+    }
+  ]
+}

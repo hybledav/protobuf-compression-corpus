@@ -1,0 +1,46 @@
+{
+  "format_version": 2,
+  "id": "google-message2",
+  "kind": "original-protobuf",
+  "description": "Original Protocol Buffers v21.12 benchmark payload; extracted without reserialization.",
+  "schema": "schemas/google-protobuf/benchmark_message2.proto",
+  "message_type": "benchmarks.proto2.GoogleMessage2",
+  "source_snapshots": [
+    {
+      "url": "https://raw.githubusercontent.com/protocolbuffers/protobuf/v21.12/benchmarks/datasets/google_message2/dataset.google_message2.pb",
+      "final_url": "https://raw.githubusercontent.com/protocolbuffers/protobuf/v21.12/benchmarks/datasets/google_message2/dataset.google_message2.pb",
+      "retrieved_at": "2026-11-18T16:11:57Z",
+      "bytes": 84625,
+      "sha256": "2d408fb9e0ba8d6cb86461d19d59bbce877ab57fc51be2531d3eeed05be2405b",
+      "upstream_ref": "v21.12",
+      "upstream_blob_sha1": "3fa0e49e57db704a0f371d2b58a2d5b315acd554",
+      "stored_path": "provenance/source-snapshots/2d408fb9e0ba8d6cb86461d19d59bbce877ab57fc51be2531d3eeed05be2405b.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 73533,
+      "stored_sha256": "a7f4720c3efdd340d0f82a63ef55baf477595e38ba39ee04c72a28fa183c2c14"
+    }
+  ],
+  "rights": {
+    "id": "BSD-3-Clause",
+    "notice": "licenses/google-protobuf-BSD-3-Clause.txt",
+    "evidence_urls": [
+      "https://github.com/protocolbuffers/protobuf/blob/v21.12/LICENSE"
+    ],
+    "attribution": "Copyright 2008 Google Inc.; Protocol Buffers authors. See the retained upstream notice."
+  },
+  "conversion": {
+    "selection": "First payload (field 3) from the upstream benchmark Dataset wrapper. Source wire bytes preserved.",
+    "missing_values": "Unmodified upstream message."
+  },
+  "record_count": 1,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/google-protobuf/message2/000000.pb",
+      "bytes": 84570,
+      "sha256": "c08fea63b01439339469a2cc841c4c2e3c5fea2d12f5f4389ba59795155f5a7e",
+      "git_blob_sha1": "06c09441b9e1a3fc8577f6c36dbb583d85481b2c",
+      "records": 1
+    }
+  ]
+}

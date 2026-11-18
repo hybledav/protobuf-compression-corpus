@@ -1,0 +1,7 @@
+# U.S. counties, with American Community Survey estimates.
+# Source: U.S. Census Bureau, ACS 5-year estimates
+# Every estimate is accompanied by its 90% margin of error. An estimate whose margin
+# exceeds 30% of the value is withheld on the website but present here — decide for yourself.
+# https://www.census.gov/programs-surveys/acs
+# Licence: U.S. Public Domain (17 U.S.C. §105)
+# Assembled by PublicDataHub · https://publicdatahub.org · generated 2026-08-27

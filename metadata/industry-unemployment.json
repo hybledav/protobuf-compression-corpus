@@ -1,0 +1,120 @@
+{
+  "format_version": 2,
+  "id": "industry-unemployment",
+  "kind": "real-source-converted",
+  "description": "Published industry-unemployment observations converted to protobuf; original source order and existing batch boundaries retained.",
+  "schema": "schemas/public-records/industry_unemployment.proto",
+  "message_type": "pbcorpus.industry_unemployment.v1.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://raw.githubusercontent.com/vega/vega-datasets/v3.3.1/data/unemployment-across-industries.json",
+      "final_url": "https://raw.githubusercontent.com/vega/vega-datasets/v3.3.1/data/unemployment-across-industries.json",
+      "retrieved_at": "2026-11-18T16:10:39Z",
+      "bytes": 185641,
+      "sha256": "c12e32b5b8bf66d5ce40081a22b5557b2a8649dbdcbe03028b3df65cd66257a1",
+      "stored_path": "provenance/source-snapshots/c12e32b5b8bf66d5ce40081a22b5557b2a8649dbdcbe03028b3df65cd66257a1.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 16415,
+      "stored_sha256": "e163b046514703e1795be15c808a8e9d57cc1fc33ecd6bad3ff8bb2541a0c59c"
+    }
+  ],
+  "rights": {
+    "id": "LicenseRef-US-Government-Public-Domain",
+    "notice": "licenses/bls-data-notice.txt",
+    "evidence_urls": [
+      "https://www.bls.gov/developers/termsOfService.htm",
+      "https://github.com/vega/vega-datasets/blob/192178cf90a83fedccbab80c1f067c29cac6a697/datapackage.json"
+    ],
+    "attribution": "U.S. Bureau of Labor Statistics / Current Population Survey, distributed by Vega Datasets."
+  },
+  "conversion": {
+    "selection": "All published Vega v3.3.1 rows, preserving source order and existing batch boundaries.",
+    "field_mapping": "Source columns map directly by name. Numeric source values are encoded as the schema specifies; date strings remain unchanged.",
+    "serialization": "Retained original corpus bytes, independently compared field-by-field with every source row.",
+    "missing_values": "No missing source values in the retained column sets."
+  },
+  "record_count": 1708,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/industry-unemployment/0000.pb",
+      "bytes": 912,
+      "sha256": "db5c844c36b8fc1bc7e2821cff1e49ce5966d81166bc0731d2c9a212237526de",
+      "git_blob_sha1": "3ffd927456396cdffc45c585d5f83df648f5ed3b",
+      "records": 16,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0001.pb",
+      "bytes": 1824,
+      "sha256": "12a0047cfeb91fe000a6133c08d6ef8579ecb52a5e053f5e9eaac84fedf06faf",
+      "git_blob_sha1": "b22acd438a1c4af6a580574a55e8819f89e5f487",
+      "records": 32,
+      "first_row": 16
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0002.pb",
+      "bytes": 3648,
+      "sha256": "169af60934006df529f1e8f79b7892d785f95003345dc22f7ac7312f0d932bac",
+      "git_blob_sha1": "f341d50ccfc7ab05685cf54454315331fa7be8c8",
+      "records": 64,
+      "first_row": 48
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0003.pb",
+      "bytes": 8476,
+      "sha256": "833d6572f1c7e4aa7429e1dbe68ead6b7bf445f83ddbb0a2d6bf0107275263fc",
+      "git_blob_sha1": "8ac4caa28b71729da9164275b9a9f8eccd207bbc",
+      "records": 128,
+      "first_row": 112
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0004.pb",
+      "bytes": 15370,
+      "sha256": "36c4a094cb7af6cb5b953602f239344f721337f79005f85dbb9d86072a2036ea",
+      "git_blob_sha1": "057dcdd8a8c9c617bb3bbab12a92a7399121b511",
+      "records": 256,
+      "first_row": 240
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0005.pb",
+      "bytes": 18625,
+      "sha256": "6715b94569a36c44e530ccdccc541cd07316ce61e42018b52e03e62a484e51ac",
+      "git_blob_sha1": "e4a23ea7caa1f6f700610e8ed84ebca451470446",
+      "records": 256,
+      "first_row": 496
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0006.pb",
+      "bytes": 14537,
+      "sha256": "3faa9bd96733637f76195e3f7062abde931cc886b9b2e4c1cdb4e55a1991ccfe",
+      "git_blob_sha1": "af3c313415d1da888c8074e517fa9070be374c90",
+      "records": 256,
+      "first_row": 752
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0007.pb",
+      "bytes": 17014,
+      "sha256": "798e6e50d95d3c9fa83fef8357717948c2276fd7df4e139e2882982330cb976d",
+      "git_blob_sha1": "2c752361900ed1e4622487732cea4489eaf4911d",
+      "records": 256,
+      "first_row": 1008
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0008.pb",
+      "bytes": 15028,
+      "sha256": "dce733d924d4396f7ac7fb2c11cd10dfdcac134b956794797791dedaabe48d70",
+      "git_blob_sha1": "1e5171fbad9aef1115ed236986cce04526054c1e",
+      "records": 256,
+      "first_row": 1264
+    },
+    {
+      "file": "datasets/public-records/industry-unemployment/0009.pb",
+      "bytes": 11107,
+      "sha256": "b199802e148d371a811374879e65e07348c27de18607365d24118a4fc64675f1",
+      "git_blob_sha1": "d904a80cba5c82d215789a18ad99274cd8ac2410",
+      "records": 188,
+      "first_row": 1520
+    }
+  ]
+}

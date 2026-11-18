@@ -1,0 +1,580 @@
+{
+  "format_version": 2,
+  "id": "cdc-places-health",
+  "kind": "real-source-converted",
+  "description": "Selected published PLACES 2025 place-level population counts and 20 age-adjusted health estimates. Other measures and confidence intervals are outside this benchmark projection.",
+  "schema": "schemas/public-records/cdc-places-health.proto",
+  "message_type": "pbcorpus.cdc_places.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://data.cdc.gov/resource/vgc8-iyc4.json?%24limit=16384&%24order=placefips",
+      "final_url": "https://data.cdc.gov/resource/vgc8-iyc4.json?%24limit=16384&%24order=placefips",
+      "retrieved_at": "2026-11-18T16:10:49Z",
+      "bytes": 79660613,
+      "sha256": "0e73ef8df08ade86e0f5efaccb646ccb71768e471cfeda1ca0a66b1e52fca88a",
+      "stored_path": "provenance/source-snapshots/0e73ef8df08ade86e0f5efaccb646ccb71768e471cfeda1ca0a66b1e52fca88a.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 12210636,
+      "stored_sha256": "770d394bb1864b85961b3ac8506e02098eb8f8c5f13b7397c0cafa242c969425"
+    }
+  ],
+  "rights": {
+    "id": "LicenseRef-US-Government-Public-Domain",
+    "notice": "licenses/cdc-data-notice.txt",
+    "evidence_urls": [
+      "https://www.cdc.gov/other/agencymaterials.html",
+      "https://data.cdc.gov/api/views/vgc8-iyc4.json"
+    ],
+    "attribution": "Source: Centers for Disease Control and Prevention. The material is available from CDC without charge. No endorsement by CDC, ATSDR, HHS, or the U.S. Government is implied.",
+    "observed_license": "PUBLIC_DOMAIN"
+  },
+  "conversion": {
+    "selection": "First 16,384 places ordered by placefips, as returned by the recorded query.",
+    "field_mapping": {
+      "stateabbr": "stateabbr",
+      "locationname": "locationname",
+      "placefips": "placefips",
+      "totalpopulation": "totalpopulation",
+      "totalpop18plus": "totalpop18plus",
+      "access2_adjprev": "access2_adjprev",
+      "arthritis_adjprev": "arthritis_adjprev",
+      "binge_adjprev": "binge_adjprev",
+      "bphigh_adjprev": "bphigh_adjprev",
+      "cancer_adjprev": "cancer_adjprev",
+      "casthma_adjprev": "casthma_adjprev",
+      "chd_adjprev": "chd_adjprev",
+      "checkup_adjprev": "checkup_adjprev",
+      "copd_adjprev": "copd_adjprev",
+      "csmoking_adjprev": "csmoking_adjprev",
+      "depression_adjprev": "depression_adjprev",
+      "diabetes_adjprev": "diabetes_adjprev",
+      "highchol_adjprev": "highchol_adjprev",
+      "obesity_adjprev": "obesity_adjprev",
+      "stroke_adjprev": "stroke_adjprev",
+      "sleep_adjprev": "sleep_adjprev",
+      "phlth_adjprev": "phlth_adjprev",
+      "mhlth_adjprev": "mhlth_adjprev",
+      "disability_adjprev": "disability_adjprev",
+      "cognition_adjprev": "cognition_adjprev"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 256,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 16384,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/cdc-places-health/0000.pb",
+      "bytes": 56936,
+      "sha256": "44e7eefbae5d14d207dd2ae10b723f76eb262b22d6452a9476be52fa63aebef5",
+      "git_blob_sha1": "84286dc194bd96f2dbd9181af8f63e64f75959d5",
+      "records": 256,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0001.pb",
+      "bytes": 57026,
+      "sha256": "6310e6fde1111f868d008bf9887982173780225673a3cdbf74dd4cfec9a6f0e3",
+      "git_blob_sha1": "322f721c32200d5cbbbeb81f086e574036f5ec81",
+      "records": 256,
+      "first_row": 256
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0002.pb",
+      "bytes": 56963,
+      "sha256": "508dadd09806a11584209edf54c79827fa5b938d755465aab1e40b47dbec6491",
+      "git_blob_sha1": "41cac0c80a8f64f9c4d546ea5054065b570a6757",
+      "records": 256,
+      "first_row": 512
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0003.pb",
+      "bytes": 57276,
+      "sha256": "dc4caf5ab04c4332101a873798aaede5a4c32baad089dc78b080cfcb8bbbcac3",
+      "git_blob_sha1": "b22db0c4f76ad32718704872cda02f9a6a378102",
+      "records": 256,
+      "first_row": 768
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0004.pb",
+      "bytes": 57328,
+      "sha256": "f0c23ff86624e82eab5c0d6b37560bc7d50de0fd224a511d47a020fe449f84af",
+      "git_blob_sha1": "967a27fd3c057eeb4c2824221a206358d18cdbcb",
+      "records": 256,
+      "first_row": 1024
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0005.pb",
+      "bytes": 56770,
+      "sha256": "77dff38e081c364f76d20d299cca99ee7365a9d1d64e68f903597e4f1e5cc907",
+      "git_blob_sha1": "17345c8f47231d2412c18cb09635868a90663a8f",
+      "records": 256,
+      "first_row": 1280
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0006.pb",
+      "bytes": 56853,
+      "sha256": "2605bfbd81170633f48984a94a98e20ab35aa64c112daabad36b31699aea7f65",
+      "git_blob_sha1": "9616bf97dd7bc125bcd8a4793928f17b6d62b168",
+      "records": 256,
+      "first_row": 1536
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0007.pb",
+      "bytes": 57137,
+      "sha256": "894b1562941feed61f214bf7940849256ec981e2f5ec78d03e7bcbb7aaeefabc",
+      "git_blob_sha1": "acf783624bd9ddc951deedb9b0d2371074af720a",
+      "records": 256,
+      "first_row": 1792
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0008.pb",
+      "bytes": 57502,
+      "sha256": "556b652c355e8f791fc238526e26c229a22dd04dd03466b7a7a33ced00eb7866",
+      "git_blob_sha1": "1e29cda436328a99be12b6b929baa8fb6d6de480",
+      "records": 256,
+      "first_row": 2048
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0009.pb",
+      "bytes": 57343,
+      "sha256": "61818b613b678bca74788df63f8ef5bfe1c24a1f964a9b75d443dd6a08c3667f",
+      "git_blob_sha1": "4aeed2ad1cb1817d8400a2ed35ee87f42a08aa03",
+      "records": 256,
+      "first_row": 2304
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0010.pb",
+      "bytes": 57440,
+      "sha256": "129a9c4bd3b340a7ea9449f5be16635d2b51e1cb6cf7b0d62cb1ec1a9ac5f975",
+      "git_blob_sha1": "2f8dbd79cf975fbb34cb5634ee9032509c57680e",
+      "records": 256,
+      "first_row": 2560
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0011.pb",
+      "bytes": 57419,
+      "sha256": "f37d5234d4a1dc07225a95750cc990ce05359c83f3aa129effbb04bfc0c8a9cd",
+      "git_blob_sha1": "e26a5fdb09ed73362f73da6958ed54b951d170b6",
+      "records": 256,
+      "first_row": 2816
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0012.pb",
+      "bytes": 57651,
+      "sha256": "b51fbf2bd6e762e9d3fa19a5f5b335b14fed8c113d9aaaad4480e4e9ca2d4441",
+      "git_blob_sha1": "aca3f3e7ecd0686235cc6833a79314d014f201e9",
+      "records": 256,
+      "first_row": 3072
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0013.pb",
+      "bytes": 57265,
+      "sha256": "572bbc623420ba1c81dd5e1c25abe953bbe04319d00afdb7eac4d0767f519ab6",
+      "git_blob_sha1": "6db76507b64560f0945b7756fafc32c98a972c13",
+      "records": 256,
+      "first_row": 3328
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0014.pb",
+      "bytes": 57041,
+      "sha256": "6eed8b2c19033371a8b7467913131a0b6a2036f2800299b7cb9a1b439477b467",
+      "git_blob_sha1": "1405e9e3cf0ecca67af3174e65d7402c6b8a89be",
+      "records": 256,
+      "first_row": 3584
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0015.pb",
+      "bytes": 57600,
+      "sha256": "5ac9369d11a17690fe9ca1f22fc916e87eca66121307b76c5158539e05be40b2",
+      "git_blob_sha1": "f148a0c76309d894bce3cfff57b942577e05fea7",
+      "records": 256,
+      "first_row": 3840
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0016.pb",
+      "bytes": 57496,
+      "sha256": "a9d476dd1293948c3595815f9a91f0d54788f4eeac015775d3100ae08aab473d",
+      "git_blob_sha1": "2876b0fca8b0fe83a77543422ccdd8b4a2cd306c",
+      "records": 256,
+      "first_row": 4096
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0017.pb",
+      "bytes": 57794,
+      "sha256": "10ea1de29f82204803c7dc57533aede6d36f9c8a529f5084d421e3566a1d8c4f",
+      "git_blob_sha1": "7be337ed626ff809baa62ccc766cfccaadc04d59",
+      "records": 256,
+      "first_row": 4352
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0018.pb",
+      "bytes": 57678,
+      "sha256": "25e5fdb47a8fd9369979a65fad3380c9937a9ce69fec2ae0037cd815f0a9a9ee",
+      "git_blob_sha1": "3fb92e046686bb32920cbafcbc0414e8fc72ba2b",
+      "records": 256,
+      "first_row": 4608
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0019.pb",
+      "bytes": 57689,
+      "sha256": "95ed88c9a202ac38f20989dbf0e604d34a7e96879a1d747c4a07017b10a0b870",
+      "git_blob_sha1": "2c29313e9d616e3bda901c69c4b577e884cb1469",
+      "records": 256,
+      "first_row": 4864
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0020.pb",
+      "bytes": 57078,
+      "sha256": "82cc55e4897b54c1d660b2b5e8949d6c1fc4908a70f9af2af83f14b4506020fb",
+      "git_blob_sha1": "6b0288f964ffb0465f0c835aeafeb43062184605",
+      "records": 256,
+      "first_row": 5120
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0021.pb",
+      "bytes": 56993,
+      "sha256": "9d2c6f99fe23561f05fde378fb54dd7b7cac6689351f180e60bb10c36323ac81",
+      "git_blob_sha1": "fdde4e47051d9cf9bd440e95f07e5a349dab73a1",
+      "records": 256,
+      "first_row": 5376
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0022.pb",
+      "bytes": 57073,
+      "sha256": "8061d1cf4efc42104030ed56ac25f68c47c43181e87694e2db14e17f5fe8f6b1",
+      "git_blob_sha1": "b262791c3196c7f9f91c6ae285f4a300cc421530",
+      "records": 256,
+      "first_row": 5632
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0023.pb",
+      "bytes": 56890,
+      "sha256": "44fdead8791fc547b0034359985cf1c497048d704574a9b4d1358b5797eb62e6",
+      "git_blob_sha1": "dae3f8dd10c469bef9f3d056779f3a8c7cf2092f",
+      "records": 256,
+      "first_row": 5888
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0024.pb",
+      "bytes": 56948,
+      "sha256": "aaebad9936d5db7797bb35fe4e23007d670a1960b9e5de98400977b617fb6e9b",
+      "git_blob_sha1": "d8ca2b5ad7025de450e9bbb826f706fba2f238c0",
+      "records": 256,
+      "first_row": 6144
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0025.pb",
+      "bytes": 57009,
+      "sha256": "7ee9152489b01318ff5381337f10faacd94d0f761380467468faaaaf37d1b783",
+      "git_blob_sha1": "c29b1183b518e1d01b580a9ae4df111dd09bf9db",
+      "records": 256,
+      "first_row": 6400
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0026.pb",
+      "bytes": 56985,
+      "sha256": "c2be9a16b6ba2e6e6e30b7917ed59e484030ca1b143190da20c4c8b30e05fc43",
+      "git_blob_sha1": "8c2d062ad4c09562cf05c66723c17097db682628",
+      "records": 256,
+      "first_row": 6656
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0027.pb",
+      "bytes": 56949,
+      "sha256": "423aac162b5082fbf9eb160d66ce99f25b1a4eb67807da904a3b991ee70a7aae",
+      "git_blob_sha1": "47da3233b8393cd1f8ea2f0694edb87af08813b1",
+      "records": 256,
+      "first_row": 6912
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0028.pb",
+      "bytes": 57122,
+      "sha256": "c05a20d4429108a87d99436d9bbaf9261c3edaa265b6c3781991f18ee4bc8580",
+      "git_blob_sha1": "adbfb4c624aa5c2aaacdd7e28da54f3b3ac070f5",
+      "records": 256,
+      "first_row": 7168
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0029.pb",
+      "bytes": 56967,
+      "sha256": "68c912d0a5fb75a2b877396f908d51f7207a167bb465bf5cb623a4321322b3d2",
+      "git_blob_sha1": "d89740258c0f05d7a75c7b0fd6c25af474c926db",
+      "records": 256,
+      "first_row": 7424
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0030.pb",
+      "bytes": 57034,
+      "sha256": "9dadc2cf975bbacdb87d77e361f84ca6c3fcf71bbcce8df2dd95260f5945449c",
+      "git_blob_sha1": "f9218ebd57647db38d3e8db30fe3ea7e818bb04d",
+      "records": 256,
+      "first_row": 7680
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0031.pb",
+      "bytes": 57146,
+      "sha256": "6e911d0984eabebec51625c4005c15ff07edf9dbcbf799d0bf6bbdf1318d0b07",
+      "git_blob_sha1": "2edbc18f42444f1c7dc1989ba3df4422b9356801",
+      "records": 256,
+      "first_row": 7936
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0032.pb",
+      "bytes": 56865,
+      "sha256": "7daa19340d3e238ddec820a7c79f0e189ca65859a4225907ed55ba8f3d2c101a",
+      "git_blob_sha1": "27bca7e8ab7bbbab4b77f26c3da55d10f51c34df",
+      "records": 256,
+      "first_row": 8192
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0033.pb",
+      "bytes": 56720,
+      "sha256": "ce101151a31d5f3c57cabb573017220bd4dfa22c4701bdae08a16c9ea8f17113",
+      "git_blob_sha1": "342e4795ebb9d8b5f3784ec73a87efe89fdc3509",
+      "records": 256,
+      "first_row": 8448
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0034.pb",
+      "bytes": 56851,
+      "sha256": "45092d398635e9f5cc3d34b64f0926ded07b6c51c01b1da8bf456dca6effb018",
+      "git_blob_sha1": "5aa553f6eb3d58d3eb3536d60582084154f82a7d",
+      "records": 256,
+      "first_row": 8704
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0035.pb",
+      "bytes": 56728,
+      "sha256": "f4b102ce4985b39f8659880478c3aa13cd7bb226f1c5fdb0305b0f88561be100",
+      "git_blob_sha1": "b58415bed24c27f392971aedf26f4aa85167da24",
+      "records": 256,
+      "first_row": 8960
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0036.pb",
+      "bytes": 56694,
+      "sha256": "14c982816514fc1c956fa23c2185a2fa22b745ff09dfe7aca3eb232dc7001924",
+      "git_blob_sha1": "85f7e77bef2ac1cc3b7af704ce945d9cfd4279ca",
+      "records": 256,
+      "first_row": 9216
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0037.pb",
+      "bytes": 56700,
+      "sha256": "ac052939ff7db6c8f2720f1f1d6668d36cce1230e1f38f7842b585003c28e889",
+      "git_blob_sha1": "7d3a4d0e85c74304dd83d453c924993c73d90a67",
+      "records": 256,
+      "first_row": 9472
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0038.pb",
+      "bytes": 23136,
+      "sha256": "eec0744ccb3311274923d56d4881a25a25d155ab2a94cba0d2eb562239881480",
+      "git_blob_sha1": "6f312bc24cdbac7e16e3226fc65ac441937531bc",
+      "records": 256,
+      "first_row": 9728
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0039.pb",
+      "bytes": 10942,
+      "sha256": "d577a9efc1e15d35c9234e14c6a8b93f30eacf5c517774d659f5066db0beb3b8",
+      "git_blob_sha1": "f5849951769d6f941cd8ba714efe7c2a1663c54c",
+      "records": 256,
+      "first_row": 9984
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0040.pb",
+      "bytes": 37657,
+      "sha256": "57910898c71cef9714abbd3b077891da9ca38388ac2c7df273ec958d03bbc556",
+      "git_blob_sha1": "106e605bd7601e2f70f206d992795568a068a874",
+      "records": 256,
+      "first_row": 10240
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0041.pb",
+      "bytes": 57002,
+      "sha256": "0b2cb8b1b71a0060fda18e8d31fa26b84ff40602a49b8ad0f8338148ffe4b431",
+      "git_blob_sha1": "7a12e190cfb444c9b75093ccd0b24d4a244f09fa",
+      "records": 256,
+      "first_row": 10496
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0042.pb",
+      "bytes": 57106,
+      "sha256": "a4c7c5ec13da35e13bd296eb774132bff9803baab7983c51403552f0eb2a6ec6",
+      "git_blob_sha1": "269053d016867dc7eeccd6c8716be9fb75099f55",
+      "records": 256,
+      "first_row": 10752
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0043.pb",
+      "bytes": 57423,
+      "sha256": "6ab331e1bf781286adf63803bcf6338b7ced3bddbc23d021c31ecf4e734a9b55",
+      "git_blob_sha1": "af42e9f01d95167c6e1504c31ac5a213a1b1fd78",
+      "records": 256,
+      "first_row": 11008
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0044.pb",
+      "bytes": 57493,
+      "sha256": "1af7d1f813a6d2a0f2ccd74e05375d882268ed83b8acc2fcbe2e86ef8e42ff0a",
+      "git_blob_sha1": "1a1fa22723bb21ec73882cfd550fc4e6b85a5a43",
+      "records": 256,
+      "first_row": 11264
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0045.pb",
+      "bytes": 57403,
+      "sha256": "f6e8458a11077cdbd80012050880f2facfaf39ed6400e77c5a4b949ce5cf2413",
+      "git_blob_sha1": "345ae4f8dfff32cb4cccd935f6aa338e8bc8915c",
+      "records": 256,
+      "first_row": 11520
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0046.pb",
+      "bytes": 57069,
+      "sha256": "2dccacb29fb809ff923038520278cc30f0e2d17ec821a660a2cae2dba683786c",
+      "git_blob_sha1": "84bcfc7a1aa581d9c35db4e1d94438ff19b44edd",
+      "records": 256,
+      "first_row": 11776
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0047.pb",
+      "bytes": 57098,
+      "sha256": "181c6f07302c7bae2fd2b338d6d74e5df1ba24e439edb287f0e1e56875b31a58",
+      "git_blob_sha1": "aa4986b7b20ce73a6ad18a37bc1822bedded56c5",
+      "records": 256,
+      "first_row": 12032
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0048.pb",
+      "bytes": 57106,
+      "sha256": "5a5e502e1873aa01f556c54cac88397638621081277207d085d700fac336b760",
+      "git_blob_sha1": "41226a393456962841d69669deace13c5b1c0e83",
+      "records": 256,
+      "first_row": 12288
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0049.pb",
+      "bytes": 56830,
+      "sha256": "120571e5c3582fdddbce8c054b3ade4a577bb96e9b7cdc38987ddce2d35451d2",
+      "git_blob_sha1": "1cda6cc5da6667eff31d409e3dee52d8d0c2f9a6",
+      "records": 256,
+      "first_row": 12544
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0050.pb",
+      "bytes": 56974,
+      "sha256": "5412e0763cf6d181bfde54f60d877cf1b1a4a2979451eb88ba6b254f32a9b08a",
+      "git_blob_sha1": "23caeb96581f0afa2f3853b427fb20b6a6f00d6c",
+      "records": 256,
+      "first_row": 12800
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0051.pb",
+      "bytes": 56938,
+      "sha256": "09a05c5d0eb84bdf871a01335cf8978eec66a5614c25f776ad77c08458e581c0",
+      "git_blob_sha1": "a59532e7239bfb99eb6cda7269f51032633a9613",
+      "records": 256,
+      "first_row": 13056
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0052.pb",
+      "bytes": 56855,
+      "sha256": "5ffdd9b6227283c38997b3aa33b766cf81a2bda4fe923e510c1fefff3940a369",
+      "git_blob_sha1": "ad1d97c75ad2bfc46e476a483e5dc140a800a183",
+      "records": 256,
+      "first_row": 13312
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0053.pb",
+      "bytes": 56914,
+      "sha256": "fd2afbc3be219d0cbf520f986e421f150466a5959dfd613be7058345189a413a",
+      "git_blob_sha1": "71e325aefe21a3f066fea6bbab0078325489e347",
+      "records": 256,
+      "first_row": 13568
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0054.pb",
+      "bytes": 57030,
+      "sha256": "158b39160f54468ff9d7441b3a40d11c2e94a35d02a365bab6347942de0087a7",
+      "git_blob_sha1": "9daae7690a2389611b45407495f7cf8569d05ebd",
+      "records": 256,
+      "first_row": 13824
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0055.pb",
+      "bytes": 57058,
+      "sha256": "9474836985c19474fb02cc16d49c340c82ad4956129ef66ea2c92b6ca1f8b6a7",
+      "git_blob_sha1": "01646494493988015c214a086766fa7f665bcdf5",
+      "records": 256,
+      "first_row": 14080
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0056.pb",
+      "bytes": 57074,
+      "sha256": "18a05391a019deb5c581a514fefde5ef2de642c46222430c722b99ac04570aeb",
+      "git_blob_sha1": "99356dbd6c30e80a8f4be2629e3b012e1bf6cbaf",
+      "records": 256,
+      "first_row": 14336
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0057.pb",
+      "bytes": 57006,
+      "sha256": "f6453602bd5bf116aa7a38dfeff13e7b412a8f54e15fecbbc6693239befa8306",
+      "git_blob_sha1": "c900a0c5f2b3f8dee0b002cd0fda67f9d11b46e0",
+      "records": 256,
+      "first_row": 14592
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0058.pb",
+      "bytes": 57096,
+      "sha256": "049d8905f74c4b025d4259e0e7e2442ffc5e38dc76db0924a824696bb5deeb76",
+      "git_blob_sha1": "d1e223ab4070154b718dbf372b506cf6be1d1003",
+      "records": 256,
+      "first_row": 14848
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0059.pb",
+      "bytes": 56552,
+      "sha256": "fc3a27bca9ae8717b3879bc6dba1398b4826b8a81ccf60e393c28a4e75b6b42b",
+      "git_blob_sha1": "47f40a0dc0d25ab9d91e4e1d197d0b0dbe97884f",
+      "records": 256,
+      "first_row": 15104
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0060.pb",
+      "bytes": 56678,
+      "sha256": "c8522193e2094df435269284cc70bfc4850d7c309729ec7ee6691191cf144f1e",
+      "git_blob_sha1": "283327ba87cd4c0357265503c5163853ac394a52",
+      "records": 256,
+      "first_row": 15360
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0061.pb",
+      "bytes": 57221,
+      "sha256": "3e3f26c2721c3e6dbfb7146293eae8f2f376894786a7b3d54581d7943b786f2f",
+      "git_blob_sha1": "a4ef7e4ffd2e92178bc9e5a13e96a1285abbd734",
+      "records": 256,
+      "first_row": 15616
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0062.pb",
+      "bytes": 57450,
+      "sha256": "3d3f777f8431d262d53d8601a6e85cbd71b77b391bc24b2985660c3336943f93",
+      "git_blob_sha1": "3ccd49d0d7bd9bb24df07aca3252cf7272242599",
+      "records": 256,
+      "first_row": 15872
+    },
+    {
+      "file": "datasets/public-records/cdc-places-health/0063.pb",
+      "bytes": 57654,
+      "sha256": "7bdcab3d47952ea372db8bfa44926d8658ae8dd76238e6eb7452c88bd36e0223",
+      "git_blob_sha1": "06949723010227d054fa5771fdbaae7af5f23669",
+      "records": 256,
+      "first_row": 16128
+    }
+  ]
+}

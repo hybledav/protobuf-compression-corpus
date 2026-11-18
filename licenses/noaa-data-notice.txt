@@ -1,0 +1,4 @@
+Source: NOAA weather observations distributed as Vega Datasets v3.3.1 weather.csv.
+https://www.weather.gov/disclaimer
+https://github.com/vega/vega-datasets/blob/192178cf90a83fedccbab80c1f067c29cac6a697/datapackage.json
+The dataset resource is designated a U.S. Government Dataset by upstream. Vega converted numeric observations and derived the categorical weather field; that field is not a separate NOAA observation. This corpus retains the published CSV values. No claim of ownership of NOAA information or NOAA/NWS endorsement is made; these converted messages are not official NOAA products.

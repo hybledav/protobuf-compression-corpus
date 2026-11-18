@@ -1,0 +1,5 @@
+# Medicare-certified hospitals, with CMS quality measures.
+# Source: Centers for Medicare & Medicaid Services, Provider Data Catalog
+# https://data.cms.gov/provider-data/
+# Licence: U.S. Public Domain (17 U.S.C. §105)
+# Assembled by PublicDataHub · https://publicdatahub.org · generated 2026-08-27

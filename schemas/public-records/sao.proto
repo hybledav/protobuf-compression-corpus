@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+syntax = "proto3";
+package pbcorpus.sao.v2;
+
+message Star {
+  optional string name = 1;
+  optional double ra = 2;
+  optional double dec = 3;
+  optional double proper_motion_ra = 4;
+  optional double proper_motion_dec = 5;
+  optional double vmag = 6;
+  optional string spect_type = 7;
+}
+message Batch { repeated Star records = 1; }

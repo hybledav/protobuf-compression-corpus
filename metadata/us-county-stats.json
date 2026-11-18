@@ -1,0 +1,410 @@
+{
+  "format_version": 2,
+  "id": "us-county-stats",
+  "kind": "real-source-converted",
+  "description": "Published us-county-stats records from the pinned PublicDataHub CC0 deposit. A documented column projection is encoded; missing numeric values remain absent.",
+  "schema": "schemas/public-records/us-county-stats.proto",
+  "message_type": "pbcorpus.us_county_stats.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://zenodo.org/api/records/22152382/files/counties.csv/content",
+      "final_url": "https://zenodo.org/api/records/22152382/files/counties.csv/content",
+      "retrieved_at": "2026-11-18T16:10:50Z",
+      "bytes": 1270505,
+      "sha256": "1471f9fe5178a514ae90113c345745c5e404c5d065e8a00465c76185b30fbd6b",
+      "doi": "10.5281/zenodo.22152382",
+      "version": "2026.08.29",
+      "upstream_md5": "7c1d58fe4428001c26306c9d6d310c9b",
+      "stored_path": "provenance/source-snapshots/1471f9fe5178a514ae90113c345745c5e404c5d065e8a00465c76185b30fbd6b.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 391137,
+      "stored_sha256": "2cc651ddad7898a96496bf1b506abdb3908ef57dd068f0c5c68d1de1e706f4f7"
+    }
+  ],
+  "rights": {
+    "id": "CC0-1.0",
+    "notice": "licenses/publicdatahub-data-notice.txt",
+    "license_text": "licenses/CC0-1.0.txt",
+    "evidence_urls": [
+      "https://zenodo.org/records/22152382"
+    ],
+    "attribution": "PublicDataHub, Quan Nguyen, PublicDataHub: United States federal reference data as bulk CSV (2026.08), version 2026.08.29, DOI 10.5281/zenodo.22152382. Original agencies are identified per file."
+  },
+  "conversion": {
+    "selection": "All source rows, in source order.",
+    "field_mapping": {
+      "geoid": "geoid",
+      "metric_key": "metric_key",
+      "period": "period",
+      "value": "value",
+      "margin_of_error": "margin_of_error"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 512,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 22541,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/us-county-stats/0000.pb",
+      "bytes": 25677,
+      "sha256": "96a865a55ef0013ca65ae51b3d37538bc6c3ed2f810a99fe7dcdfcc74d76dfce",
+      "git_blob_sha1": "29f944228438bdd937caa788894a24469efe239a",
+      "records": 512,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0001.pb",
+      "bytes": 25702,
+      "sha256": "1fb2c98e725016f5e75cb75ffb0f1d69d1876bba2b9556f4f3e910dccf831cda",
+      "git_blob_sha1": "ccd50809060a1f5ceff268edda4185bd05ef3398",
+      "records": 512,
+      "first_row": 512
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0002.pb",
+      "bytes": 25654,
+      "sha256": "3ca822384d11a601abff960432e103894f0d34bcc2b51bd6c592f42355fb47b7",
+      "git_blob_sha1": "14f0bde31c18f8bce43a4abbe6362918fec1ba46",
+      "records": 512,
+      "first_row": 1024
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0003.pb",
+      "bytes": 25672,
+      "sha256": "e992f46cded1b30f96a47cc9c4b15e1d5c099b4ca8b197b9d2e341cb9d393aae",
+      "git_blob_sha1": "f1bf65679376f87fbc59e4f9e8a0027e66eb2273",
+      "records": 512,
+      "first_row": 1536
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0004.pb",
+      "bytes": 25684,
+      "sha256": "094e7f813321a2edc1387fbf66ff3326b5594d0c0161cc3fba6b8851fab2c1f5",
+      "git_blob_sha1": "bbf6a9b3ccbe8e2dfc347762485ed9f1547b6c7d",
+      "records": 512,
+      "first_row": 2048
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0005.pb",
+      "bytes": 25668,
+      "sha256": "cc41b4b2f93999fdd55ff0f568a8dae47598bcf07afba13aed6ba70a498d1809",
+      "git_blob_sha1": "d1ec9421c5de9772818ca00ee7bbf30797f7c2f9",
+      "records": 512,
+      "first_row": 2560
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0006.pb",
+      "bytes": 25675,
+      "sha256": "3f3bc8627fce5865f9265c7c81c23783a254f6168cae814d260ca7dc17843c7d",
+      "git_blob_sha1": "b8a0625123ddb79d1f343eed0a8c93d679d59476",
+      "records": 512,
+      "first_row": 3072
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0007.pb",
+      "bytes": 25726,
+      "sha256": "e58348ff8ef51434a94317ccafa167671ffbb8f1223f718ded5c9b4e7e48303e",
+      "git_blob_sha1": "fff6c0a98f5755275cd8951d6ce6a578405e3ac3",
+      "records": 512,
+      "first_row": 3584
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0008.pb",
+      "bytes": 25659,
+      "sha256": "2c87de1e96cb6a043300d1c134a4af83abdd208e1248fae3d932ab755240b47a",
+      "git_blob_sha1": "bb0fe439ed2a32dccca93d94bedf4bc3f44ca934",
+      "records": 512,
+      "first_row": 4096
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0009.pb",
+      "bytes": 25670,
+      "sha256": "43ed09d39507f55ff14ca98bfb0e3ff411b9bda694ba754121be515813cc0777",
+      "git_blob_sha1": "316c3434045ef271169032bae6d9469c6e61f299",
+      "records": 512,
+      "first_row": 4608
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0010.pb",
+      "bytes": 25675,
+      "sha256": "df6ffe69fa01e0df48e4afdb252b056400415995dbc643627068b1deeda01134",
+      "git_blob_sha1": "ddefcdd2e4695b54f1db36a40ac711a7a7b305e6",
+      "records": 512,
+      "first_row": 5120
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0011.pb",
+      "bytes": 25677,
+      "sha256": "05e6be15e937883d859fbc0c651c688393072ca54314c3826eb7de370ddfd1bd",
+      "git_blob_sha1": "e9cbedb38e54f1afb1469b2b96b407f7648c2c39",
+      "records": 512,
+      "first_row": 5632
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0012.pb",
+      "bytes": 25747,
+      "sha256": "95dd8a678161b463723a193bed0e862665e9be20d4c46d5e9aca5dde1bb50a18",
+      "git_blob_sha1": "d8fab67ee6585bb4b34f1f33433740a18c6b6c5e",
+      "records": 512,
+      "first_row": 6144
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0013.pb",
+      "bytes": 25693,
+      "sha256": "c3f5381ab5ab826d8ac471b0370dc521a8c3b0eac2f563e0894f3533ea6dc2d7",
+      "git_blob_sha1": "6f1948be8589a283f025cdb19e8d7a1dacfb2478",
+      "records": 512,
+      "first_row": 6656
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0014.pb",
+      "bytes": 25681,
+      "sha256": "55bab27d752e408df8ec074fa0e7ebf1da34bf969fe2fe5bf4b331a183e9eb9c",
+      "git_blob_sha1": "5439e628355fc6d79678af8639485163e3f7ce38",
+      "records": 512,
+      "first_row": 7168
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0015.pb",
+      "bytes": 25659,
+      "sha256": "ed34cd372175da2e6f5c77722f23c017c493af8128b3c7ab3432d6dc9080099d",
+      "git_blob_sha1": "1ce4b4d692797747c1399f7e6f769557ae6e8cfe",
+      "records": 512,
+      "first_row": 7680
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0016.pb",
+      "bytes": 25670,
+      "sha256": "00ad3d7dcc2fa9a77f7b158d0ce6a4cd4ccfbb387e1dcbfa5bca16fd6ea75ab8",
+      "git_blob_sha1": "7baa32996a339b631befce7a00e587f4a6f9475b",
+      "records": 512,
+      "first_row": 8192
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0017.pb",
+      "bytes": 25675,
+      "sha256": "4716c455f166e8e64060e760a397e7e6a24d5e4989a8d4c26ff5c6a3d48f08c0",
+      "git_blob_sha1": "7a22927895a217510e05dab5b7ec73917e7413a9",
+      "records": 512,
+      "first_row": 8704
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0018.pb",
+      "bytes": 25677,
+      "sha256": "f139a6044e47834c457bfe643548c95d9000fe09fab3bcc9aec1543d6242fb43",
+      "git_blob_sha1": "5f64c5f368f48e3a9e1940b36a057ef4b552cd8d",
+      "records": 512,
+      "first_row": 9216
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0019.pb",
+      "bytes": 25675,
+      "sha256": "f5893b53ee1a92c884503f485e97c7f4fffc1fc330bcf0ed8904a22cfddb9c44",
+      "git_blob_sha1": "68311aa926de53399ba592e2f9ccc926342527ff",
+      "records": 512,
+      "first_row": 9728
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0020.pb",
+      "bytes": 25684,
+      "sha256": "0092e7d1b6e539c7039a34b6d992361a5a0cf35dac2e88f41a0b3a2e4511ec13",
+      "git_blob_sha1": "3f7b355692be187e9df73a939dd673a4d179593f",
+      "records": 512,
+      "first_row": 10240
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0021.pb",
+      "bytes": 25690,
+      "sha256": "a949e9605aa48f47a8afa7171cafda898e98546180a31517e2e9de4188881d18",
+      "git_blob_sha1": "60d4de8744aacb63486bcc31d6eda40ffded50f9",
+      "records": 512,
+      "first_row": 10752
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0022.pb",
+      "bytes": 25830,
+      "sha256": "50b83d10f08b6468181b7fb1051ba2e7268a5fd9e9e5369cdefeda05eb372524",
+      "git_blob_sha1": "9df7ff0785a2459830623fdd0685edbef119f347",
+      "records": 512,
+      "first_row": 11264
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0023.pb",
+      "bytes": 25850,
+      "sha256": "cdda116860f4d8599238f10556354a16eb393fed074d7752018c4c62c8e5605c",
+      "git_blob_sha1": "20412b8757319c08f67593d3ab77f5380f173fd8",
+      "records": 512,
+      "first_row": 11776
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0024.pb",
+      "bytes": 25680,
+      "sha256": "4892a5f1a4a8e9477ff7c3d53d586327caba1432508512c2539ce77b08dbd9cd",
+      "git_blob_sha1": "359168e4ebe7ca552b80eb71916986e1d5dd8378",
+      "records": 512,
+      "first_row": 12288
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0025.pb",
+      "bytes": 25675,
+      "sha256": "8863b0b9fef70bda74dc44bf1d2255440ad7b8fd7937b0b47233efb5cdc8ac0a",
+      "git_blob_sha1": "fb35fe64ead3e3dbcc4f9a6093f64c9a25025387",
+      "records": 512,
+      "first_row": 12800
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0026.pb",
+      "bytes": 25675,
+      "sha256": "e6d08eec835ffa8bf0e5179a5397403f41488189633059a341b4b07dea72853d",
+      "git_blob_sha1": "1d0dc06a86dbb093461b7fa377d09a4e4db7121c",
+      "records": 512,
+      "first_row": 13312
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0027.pb",
+      "bytes": 25753,
+      "sha256": "3a372a020ba9ed1085e72f658abb36ae1d42704f808801a59e227b31f7a98461",
+      "git_blob_sha1": "64274519a45b568670e090b71066cea986e6d4a6",
+      "records": 512,
+      "first_row": 13824
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0028.pb",
+      "bytes": 25659,
+      "sha256": "66788aa018d725c727b49db858d881d674b5cd0eea357e8ce18519e79920d6a1",
+      "git_blob_sha1": "9d57bb79434d13cc31322344c5c9cf8e5d3e2437",
+      "records": 512,
+      "first_row": 14336
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0029.pb",
+      "bytes": 25661,
+      "sha256": "09cb53f9b642b80e80c67635a25fa6c8b074068e5d34f8b9c714b49cc344a3c0",
+      "git_blob_sha1": "108a56259989e12f34fc655b169dab594e15d340",
+      "records": 512,
+      "first_row": 14848
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0030.pb",
+      "bytes": 25684,
+      "sha256": "f2c4522a06eae244bceac7f42933bff8875364e943691fbe57c77541ff4f109c",
+      "git_blob_sha1": "84d22fa19cfd355628fbac5a35c5c1bc61ed3f81",
+      "records": 512,
+      "first_row": 15360
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0031.pb",
+      "bytes": 25677,
+      "sha256": "b8a67c57f54f03edd5ac183ce8fe6df364a69e414d2ad9aafa60ebee0d054879",
+      "git_blob_sha1": "eedaa465e5c754dc73921ae3505a465972563ab1",
+      "records": 512,
+      "first_row": 15872
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0032.pb",
+      "bytes": 25765,
+      "sha256": "f6e93f09f6b96f825e0b447ead212d285a343749884edfde5f2cf74be8215c67",
+      "git_blob_sha1": "4e4ba5e26215130728dc2af4afe4935a34be4976",
+      "records": 512,
+      "first_row": 16384
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0033.pb",
+      "bytes": 25702,
+      "sha256": "ee29fce862b6bcc8d5626b82e6ff9477da7f034a97f1e45986d777688cdd06b8",
+      "git_blob_sha1": "36e5af37617d2e5a85e73fa36d14d1f1659128ce",
+      "records": 512,
+      "first_row": 16896
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0034.pb",
+      "bytes": 25701,
+      "sha256": "ab82165fbdb48b2d36d9b48fc3031855dc8d7b6c45c071669b3fc2025c405ff7",
+      "git_blob_sha1": "0095698546efe5223c20241c5b4a3647f92d659a",
+      "records": 512,
+      "first_row": 17408
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0035.pb",
+      "bytes": 25744,
+      "sha256": "8742574d1e5259d5ed45d0bc14d5ed4e09ac4da6aa2642cb558f158f161dd2f8",
+      "git_blob_sha1": "34cbe62d0ad20e61dac74e64d5017e0aae78ab7a",
+      "records": 512,
+      "first_row": 17920
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0036.pb",
+      "bytes": 25750,
+      "sha256": "5f501c04df3f0007f73035bd766b334aaf1036cd61769729a21fcd0e9fae3a21",
+      "git_blob_sha1": "6e87f14589e6a17d53db7b5b3da7dbd08bb77bbe",
+      "records": 512,
+      "first_row": 18432
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0037.pb",
+      "bytes": 25731,
+      "sha256": "f721c859ae807deb7aa434492284f06de391f13d6c988b940151bd28c24e3694",
+      "git_blob_sha1": "43d27cbb279ce6fd0eb0cd9a908c8a338e0f33f8",
+      "records": 512,
+      "first_row": 18944
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0038.pb",
+      "bytes": 25675,
+      "sha256": "f2d13cd792cf961bbbd5c45c5ce10a05707ee585c24c71ec95b7685e733403c3",
+      "git_blob_sha1": "6c3eea5670ced82b007f714c78e06fd451a3300a",
+      "records": 512,
+      "first_row": 19456
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0039.pb",
+      "bytes": 25681,
+      "sha256": "743a0ebf39d57a62bf9288ca42e366903410b644fea44b45b4a7c013b6533220",
+      "git_blob_sha1": "5507a4910dd5404dd12475bd8ee5c92cf2d28972",
+      "records": 512,
+      "first_row": 19968
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0040.pb",
+      "bytes": 25623,
+      "sha256": "0896a8b2a5f1c6bbd2027dce7de5125d1a5c1d400530004b499d0237658f2a79",
+      "git_blob_sha1": "ec299567f62f256d940d536096ede6ba8cedaef7",
+      "records": 512,
+      "first_row": 20480
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0041.pb",
+      "bytes": 25670,
+      "sha256": "dbca039a6fd15ea1483b8048971d8eb9aecb8792e1911776a08d2df31f73976c",
+      "git_blob_sha1": "8ad510894d627a0a49844efbbf48a82a2fec84db",
+      "records": 512,
+      "first_row": 20992
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0042.pb",
+      "bytes": 25648,
+      "sha256": "2c18e6b19e347f1749e02b544c08a888c6ee9ca54e36bd9e5d71eae5f1d3b80a",
+      "git_blob_sha1": "3138ff7d5967e69a4f635423d064f5a422a67ebf",
+      "records": 512,
+      "first_row": 21504
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0043.pb",
+      "bytes": 25074,
+      "sha256": "eaa631169e46e9d5ca8cc027150bc0e5e15ba8ed1c2f3abd5ce4610282050432",
+      "git_blob_sha1": "2643141cd8413cb19b4caa9886f7cb08554d6204",
+      "records": 512,
+      "first_row": 22016
+    },
+    {
+      "file": "datasets/public-records/us-county-stats/0044.pb",
+      "bytes": 639,
+      "sha256": "d4eab3c47828fcc40bac7fa46cad0276b028a89b17f09d5f8ff19baca56a8568",
+      "git_blob_sha1": "bf9873ee3168fb356748e52604e40ff100c92a26",
+      "records": 13,
+      "first_row": 22528
+    }
+  ]
+}

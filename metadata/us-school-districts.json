@@ -1,0 +1,363 @@
+{
+  "format_version": 2,
+  "id": "us-school-districts",
+  "kind": "real-source-converted",
+  "description": "Published us-school-districts records from the pinned PublicDataHub CC0 deposit. A documented column projection is encoded; missing numeric values remain absent.",
+  "schema": "schemas/public-records/us-school-districts.proto",
+  "message_type": "pbcorpus.us_school_districts.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://zenodo.org/api/records/22152382/files/districts.csv/content",
+      "final_url": "https://zenodo.org/api/records/22152382/files/districts.csv/content",
+      "retrieved_at": "2026-11-18T16:10:49Z",
+      "bytes": 2134304,
+      "sha256": "b163133d1c8ea2a33b3d4ef92278945a71baed7e5f4e1a93e28066233f2fe910",
+      "doi": "10.5281/zenodo.22152382",
+      "version": "2026.08.29",
+      "upstream_md5": "07fc1c7236c12997427cff48b8e6559a",
+      "stored_path": "provenance/source-snapshots/b163133d1c8ea2a33b3d4ef92278945a71baed7e5f4e1a93e28066233f2fe910.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 499559,
+      "stored_sha256": "c5b683c409d4ab85caaac81a7d3987ab26897a703509f6061fd9157947a5a3fb"
+    }
+  ],
+  "rights": {
+    "id": "CC0-1.0",
+    "notice": "licenses/publicdatahub-data-notice.txt",
+    "license_text": "licenses/CC0-1.0.txt",
+    "evidence_urls": [
+      "https://zenodo.org/records/22152382"
+    ],
+    "attribution": "PublicDataHub, Quan Nguyen, PublicDataHub: United States federal reference data as bulk CSV (2026.08), version 2026.08.29, DOI 10.5281/zenodo.22152382. Original agencies are identified per file."
+  },
+  "conversion": {
+    "selection": "All source rows, in source order.",
+    "field_mapping": {
+      "id": "id",
+      "name": "name",
+      "city": "city",
+      "state_code": "state_code",
+      "schools": "schools",
+      "enrollment": "enrollment"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 512,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 19714,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/us-school-districts/0000.pb",
+      "bytes": 39077,
+      "sha256": "12c24a73dd93d1c76ebb120bfd861ac2b4a492ca565aee439e8fbea3e45631c5",
+      "git_blob_sha1": "0dd565a4aa98baf3c5bc7e756b4c69f240c0433b",
+      "records": 512,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0001.pb",
+      "bytes": 41783,
+      "sha256": "e509b0dbcb8918158ddd3feb64e9e8cfbd3c9276ee10df60f1af592b736873a2",
+      "git_blob_sha1": "4c94164a05642695d061b06cb4ca95d0265770e4",
+      "records": 512,
+      "first_row": 512
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0002.pb",
+      "bytes": 37578,
+      "sha256": "00dac8204344737dad0f5391bdda3d61ced9d83cd3c76e0c2673b2e7913fbe4b",
+      "git_blob_sha1": "62a3522e12347ad8e6111c60b0eecdf6a116e9dd",
+      "records": 512,
+      "first_row": 1024
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0003.pb",
+      "bytes": 42490,
+      "sha256": "ac23f6e94fe35ed6f5ff2f88318b8cc1c3091ce0cc83359849eeaefdcd1b3345",
+      "git_blob_sha1": "75b49eac581263e58f59e5b5517b3e08b9b07891",
+      "records": 512,
+      "first_row": 1536
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0004.pb",
+      "bytes": 40522,
+      "sha256": "241b8d0cd4da15deb59064efac28e588a1f3da750b138c6bc3524af4213805be",
+      "git_blob_sha1": "4fbfc6cbe6a0ebd684d4199f9842c3f1eb37fb39",
+      "records": 512,
+      "first_row": 2048
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0005.pb",
+      "bytes": 34371,
+      "sha256": "16f118d0ad9159f0d3af6c6a96ceb132cab6dacc463d0985066747de314edc9c",
+      "git_blob_sha1": "ea28a596121b8ae80bc49b27ec367a8032f22be9",
+      "records": 512,
+      "first_row": 2560
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0006.pb",
+      "bytes": 37619,
+      "sha256": "67aba2a44d73582efdee31f86a3723d48146ae34a255f4985b288bf04518aa17",
+      "git_blob_sha1": "d5a77dd3f321e2a3f42f55a6557a5d4fdc293dc6",
+      "records": 512,
+      "first_row": 3072
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0007.pb",
+      "bytes": 36439,
+      "sha256": "195d979b17ffe9e1ee15235c7872bdb30cca08b97dcc81dd85430af499e48460",
+      "git_blob_sha1": "1ca80e2b0c534de46068b7c8596155001b8ad60d",
+      "records": 512,
+      "first_row": 3584
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0008.pb",
+      "bytes": 35063,
+      "sha256": "00aefbffd0b9a7e5912d8e1693583260e8a595f73c30ae9080c7047c674db880",
+      "git_blob_sha1": "3e4357bf0d3815791c090d2efb20187dd792252e",
+      "records": 512,
+      "first_row": 4096
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0009.pb",
+      "bytes": 33456,
+      "sha256": "e9c6068c4f0ea17173ef845180b8951f17876144675570082384caa2ca23c312",
+      "git_blob_sha1": "c9226ee9eccdf332f393ea90345dd628ec2f06bf",
+      "records": 512,
+      "first_row": 4608
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0010.pb",
+      "bytes": 34061,
+      "sha256": "f4bef614952b3c08c31eeaf268b82c67d30dec1a61480319b9cfc013b6c2c8bd",
+      "git_blob_sha1": "00bdddc8dc08747e1da4aaf726d53b7f6bc0239a",
+      "records": 512,
+      "first_row": 5120
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0011.pb",
+      "bytes": 38707,
+      "sha256": "bc3c2213b724cdc34379f4c10b99359e90fb29a751e0a483a9ef0f60e36328d6",
+      "git_blob_sha1": "6bec45edcbf2aca2987c3864692acfc7c5fdcfab",
+      "records": 512,
+      "first_row": 5632
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0012.pb",
+      "bytes": 33951,
+      "sha256": "8c72fa63b36592e90331e371c209e88f95cf5a2e955b01b67211e1c3f8948332",
+      "git_blob_sha1": "bc1152d8f5e2a7ab687e2dfb78f640cb33e6672f",
+      "records": 512,
+      "first_row": 6144
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0013.pb",
+      "bytes": 35001,
+      "sha256": "07887b904f78dd48d87cc01025cc238d1f3ffdb9eb83ce0174a4b8d534f9c02b",
+      "git_blob_sha1": "e79385f9a53ea5440862806e6ab0ce144bc7e379",
+      "records": 512,
+      "first_row": 6656
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0014.pb",
+      "bytes": 34396,
+      "sha256": "6f429a9a930786b426519ce210e29d63a0ef5c0cc67b24bc40a725238e838fd3",
+      "git_blob_sha1": "806b23486086c4e0c83599c9bef5103375ebec22",
+      "records": 512,
+      "first_row": 7168
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0015.pb",
+      "bytes": 36176,
+      "sha256": "4ef3d70e4a28f1566abe9f995b1763a93f0adcc6c23f37a57dd961397187135f",
+      "git_blob_sha1": "b9b9bb31cfb8d6eb3ab71244398caac6684c9790",
+      "records": 512,
+      "first_row": 7680
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0016.pb",
+      "bytes": 37376,
+      "sha256": "22f345da4c96cf8cff2e119e64ec7c6d9861913e2aa5b768ed017e44181e4405",
+      "git_blob_sha1": "1a740b154a61e38b9f27c25b3eeda33476d14839",
+      "records": 512,
+      "first_row": 8192
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0017.pb",
+      "bytes": 38742,
+      "sha256": "7a1ac6b2b2e3d329c943f69bd1bb42034ae6e2cf4b6172d13121eaa7b4935f6a",
+      "git_blob_sha1": "c4e5aec54b42f12b9a29c54c7a9c8f013957139b",
+      "records": 512,
+      "first_row": 8704
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0018.pb",
+      "bytes": 33521,
+      "sha256": "0e41691f7c507c824c1c38ed8b60cd93950fe02c90f8609bcfb7b879f0457979",
+      "git_blob_sha1": "92c519a00abab3b48f8259d601aa0fb05015e75c",
+      "records": 512,
+      "first_row": 9216
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0019.pb",
+      "bytes": 30524,
+      "sha256": "6dc58ba1df4cdb4999f8682ac209588af91a3ba994f50e4813851accc10fa8ac",
+      "git_blob_sha1": "6e7780043eeb0a50088331bdb62a653e923e7c8b",
+      "records": 512,
+      "first_row": 9728
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0020.pb",
+      "bytes": 33538,
+      "sha256": "b1174c715495d2db8d761467cfbcb475444d98bb45ca86845188b9d33575f130",
+      "git_blob_sha1": "8c3af29a97798f83f41cbfdeb503bc164ffef852",
+      "records": 512,
+      "first_row": 10240
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0021.pb",
+      "bytes": 38025,
+      "sha256": "c936e92e63b88da5867398b10664f5ba9109dcc8760bfc32d21917b8bf5e85ef",
+      "git_blob_sha1": "9a93bd62be6b7a58bd7d68c74319207c0f6d79a7",
+      "records": 512,
+      "first_row": 10752
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0022.pb",
+      "bytes": 41538,
+      "sha256": "30a1448cd6d73e0f3bdce6e7b2bc3cdbd71d1bcadcdef4313de1a027b3c9da47",
+      "git_blob_sha1": "0654eab56e1a1a5b48802897c32e9e109e0dbc37",
+      "records": 512,
+      "first_row": 11264
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0023.pb",
+      "bytes": 40646,
+      "sha256": "e9139710e91ced65782d11e370aa180c4ce2128fcd9356c163fd86ac7da19593",
+      "git_blob_sha1": "57b7560f88925e5bddd0e48156dd90c160e103d2",
+      "records": 512,
+      "first_row": 11776
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0024.pb",
+      "bytes": 42054,
+      "sha256": "b1a58123172dfe29ae5278e2830627e46fe91f1e17fd8c7ac05077e40082ff66",
+      "git_blob_sha1": "00f4e4f680714d266e087f82ac1e3a942381b38a",
+      "records": 512,
+      "first_row": 12288
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0025.pb",
+      "bytes": 38928,
+      "sha256": "1d2015f54e236e32eebc75f47136475643b7bafea0d18811504822191dda0088",
+      "git_blob_sha1": "17e7ef98ca6f3ffcd5dd05d70aecbc0d2ca79f02",
+      "records": 512,
+      "first_row": 12800
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0026.pb",
+      "bytes": 35008,
+      "sha256": "2285fb5238fc8eb0e939adc6485ac63c95a29344426905eed3eeccf7026d8f95",
+      "git_blob_sha1": "65b75154fdbffa111b64a05fceab975f13eddd33",
+      "records": 512,
+      "first_row": 13312
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0027.pb",
+      "bytes": 35124,
+      "sha256": "95ef65fe2c0ff9681ca581f1e4e6543994938ee3fe12b0a698f51e929c3eaa53",
+      "git_blob_sha1": "2a81dd99691f316f2b865e399f096890bff0f9bd",
+      "records": 512,
+      "first_row": 13824
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0028.pb",
+      "bytes": 32640,
+      "sha256": "c1ff4f3b0af95fb8189656bd0e0e84f6af1ff95dfd70188421e71b2e1e233983",
+      "git_blob_sha1": "289f5f4207e951cf5c8cd8508a34e73ee78d3683",
+      "records": 512,
+      "first_row": 14336
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0029.pb",
+      "bytes": 27655,
+      "sha256": "488353b09b55f7ef169aa0ec80c8981cc397fc43bbe5a3f80e0842607fe87a89",
+      "git_blob_sha1": "9e9d07e0d990d860f645229afb74550648e5c205",
+      "records": 512,
+      "first_row": 14848
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0030.pb",
+      "bytes": 33981,
+      "sha256": "d8391b39afd5952286c647508cbe24b234dcf4b0db9cec8540c16d08453b58d7",
+      "git_blob_sha1": "d8126e09154d4089c8182b754e25a8bc3b88f564",
+      "records": 512,
+      "first_row": 15360
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0031.pb",
+      "bytes": 33454,
+      "sha256": "6472124b52bc221343b8873bc5d8baa6cf09fe5bb050576f7b5f032dd4edd691",
+      "git_blob_sha1": "00c0bafcc74a10d0a62d292ec5e82535eaeb0c90",
+      "records": 512,
+      "first_row": 15872
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0032.pb",
+      "bytes": 34512,
+      "sha256": "a6c67ff9b4f5c9722482c38b353194852bef14c9e2c8ce3a64a36e6c1dc88bef",
+      "git_blob_sha1": "203fff4d9ce3581c0ecadf4bb7736f08d4142fcd",
+      "records": 512,
+      "first_row": 16384
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0033.pb",
+      "bytes": 31859,
+      "sha256": "e88f6fbd65bf0d275fa6ff10050311f82b7faee3a5f09886723e7aef4483a4d8",
+      "git_blob_sha1": "6c18cfab186560d4563d82bc4577c10eb24dbf3b",
+      "records": 512,
+      "first_row": 16896
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0034.pb",
+      "bytes": 29944,
+      "sha256": "830659033269bb0b9e2ff5e91bc6e4bdf7ce6295dd95c35f554de3a81d696786",
+      "git_blob_sha1": "789a03ec8dff40bad1ab8cf5353ceacb49485a58",
+      "records": 512,
+      "first_row": 17408
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0035.pb",
+      "bytes": 36769,
+      "sha256": "9b89008c5f3d3bc1d2f875482937455064e371a878d2386e427cb06069c9e828",
+      "git_blob_sha1": "a53689325086c67a9484a365919c1b56e852af78",
+      "records": 512,
+      "first_row": 17920
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0036.pb",
+      "bytes": 37802,
+      "sha256": "4234c51339aa6006c15b10f89b69cb276ccbe5338917663211eada878aa9e3af",
+      "git_blob_sha1": "2dd608f46446896be13d663927c5d6130d995981",
+      "records": 512,
+      "first_row": 18432
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0037.pb",
+      "bytes": 37666,
+      "sha256": "4438c07c042251a910d8b9b95b9c19e28ed20c40950f571e1402699213073a62",
+      "git_blob_sha1": "292ad6f094677909e370297f521c53f241bd8a83",
+      "records": 512,
+      "first_row": 18944
+    },
+    {
+      "file": "datasets/public-records/us-school-districts/0038.pb",
+      "bytes": 19001,
+      "sha256": "840ac2a5b8bf210d9004ef7d4797187a3adb8475342ce7703f0cad12fef24b60",
+      "git_blob_sha1": "708f9fef949cab2905dd66c87945bee1787a1c15",
+      "records": 258,
+      "first_row": 19456
+    }
+  ]
+}

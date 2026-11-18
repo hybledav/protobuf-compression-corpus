@@ -1,0 +1,136 @@
+{
+  "format_version": 2,
+  "id": "weather",
+  "kind": "real-source-converted",
+  "description": "Published weather observations converted to protobuf; original source order and existing batch boundaries retained.",
+  "schema": "schemas/public-records/weather.proto",
+  "message_type": "pbcorpus.weather.v1.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://raw.githubusercontent.com/vega/vega-datasets/v3.3.1/data/weather.csv",
+      "final_url": "https://raw.githubusercontent.com/vega/vega-datasets/v3.3.1/data/weather.csv",
+      "retrieved_at": "2026-11-18T16:10:39Z",
+      "bytes": 121417,
+      "sha256": "27219f1ca8dbd94c9b6f4b9f4f52ab2f1eb33dfdcf719cd9fc6481ed50b74549",
+      "stored_path": "provenance/source-snapshots/27219f1ca8dbd94c9b6f4b9f4f52ab2f1eb33dfdcf719cd9fc6481ed50b74549.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 23182,
+      "stored_sha256": "7ef49eefb790d0b5a546041237ac2aea5d92df948479a0641aba07750d098932"
+    }
+  ],
+  "rights": {
+    "id": "LicenseRef-US-Government-Public-Domain",
+    "notice": "licenses/noaa-data-notice.txt",
+    "evidence_urls": [
+      "https://www.weather.gov/disclaimer",
+      "https://github.com/vega/vega-datasets/blob/192178cf90a83fedccbab80c1f067c29cac6a697/datapackage.json"
+    ],
+    "attribution": "NOAA observations, transformed by Vega Datasets. The categorical weather label is derived by Vega and is not a separate NOAA observation."
+  },
+  "conversion": {
+    "selection": "All published Vega v3.3.1 rows, preserving source order and existing batch boundaries.",
+    "field_mapping": "Source columns map directly by name. Numeric source values are encoded as the schema specifies; date strings remain unchanged.",
+    "serialization": "Retained original corpus bytes, independently compared field-by-field with every source row.",
+    "missing_values": "No missing source values in the retained column sets."
+  },
+  "record_count": 2922,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/weather/0000.pb",
+      "bytes": 2082,
+      "sha256": "445a95e8d6fa454f1d57612e1a5825ec62f9ac120d9f99a02540312ca96b4f9d",
+      "git_blob_sha1": "41f53ab89790f6687001118fa88157a07ef85231",
+      "records": 32,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/weather/0001.pb",
+      "bytes": 4150,
+      "sha256": "79d9f613207b41a6a1769bb8a6acdf0d5f9fa74c830a88ca19ce2e27b9c393e3",
+      "git_blob_sha1": "cb93afd447e3e909897e156763e06cf123d7bfb0",
+      "records": 64,
+      "first_row": 32
+    },
+    {
+      "file": "datasets/public-records/weather/0002.pb",
+      "bytes": 8309,
+      "sha256": "4227aa0c880695bc66a0e831d3097eb5b29285d48f9ce422ed5d442b4c523777",
+      "git_blob_sha1": "bd0a9f408ea73d300d80b3aeb197e08469d9d75a",
+      "records": 128,
+      "first_row": 96
+    },
+    {
+      "file": "datasets/public-records/weather/0003.pb",
+      "bytes": 16644,
+      "sha256": "c48771ab276603a6895408f46cd8720fc0f3a48e3c3bab0d65c49bd3d204fb32",
+      "git_blob_sha1": "7a7891f17af8d9d501aff2ddc59ef180f50ebb06",
+      "records": 256,
+      "first_row": 224
+    },
+    {
+      "file": "datasets/public-records/weather/0004.pb",
+      "bytes": 32954,
+      "sha256": "b04fd4ea6cd7e4ae4f6780d29f63b0d75cfb74e1fd47cc53dae087bc9f5228ed",
+      "git_blob_sha1": "fba5bd7bfebbc487f1ce1df5943676bb2e35a7ae",
+      "records": 512,
+      "first_row": 480
+    },
+    {
+      "file": "datasets/public-records/weather/0005.pb",
+      "bytes": 16505,
+      "sha256": "d09b7bd3931a9a45a3dd799a3f43edafa6f99bc88fc7c4a9d8803660f5f201de",
+      "git_blob_sha1": "8b1e60f5419b176aafc72bf21b8c8d513eda7435",
+      "records": 256,
+      "first_row": 992
+    },
+    {
+      "file": "datasets/public-records/weather/0006.pb",
+      "bytes": 8241,
+      "sha256": "2b16e5c34c47f3ff25da69103947617c43811af61a20ffdd35d4c5b3bd11a851",
+      "git_blob_sha1": "989033cec58a075d92f1f677d73f21c629d0371f",
+      "records": 128,
+      "first_row": 1248
+    },
+    {
+      "file": "datasets/public-records/weather/0007.pb",
+      "bytes": 4139,
+      "sha256": "8c02ec89c58d2378defb7e36cc3fbdcd77e6cbdab0d49ab90e4e34bce222d1f7",
+      "git_blob_sha1": "295741f03e2f19f52c59c8e5488b90680146359e",
+      "records": 64,
+      "first_row": 1376
+    },
+    {
+      "file": "datasets/public-records/weather/0008.pb",
+      "bytes": 2080,
+      "sha256": "6b4aa2f53f2fa36924c93f53d43ce1febb7a0ccb37d632bc8db2b825d9f54dab",
+      "git_blob_sha1": "7099ba20b51b786ecc1d50b5d84de8c0a45fc084",
+      "records": 32,
+      "first_row": 1440
+    },
+    {
+      "file": "datasets/public-records/weather/0009.pb",
+      "bytes": 33639,
+      "sha256": "ff3b1b4ee84f95880243c0721dc246bd6a3874bee1ceef92829c990139883172",
+      "git_blob_sha1": "4955160e7ef4370322a5cb0532347092802061ea",
+      "records": 512,
+      "first_row": 1472
+    },
+    {
+      "file": "datasets/public-records/weather/0010.pb",
+      "bytes": 33456,
+      "sha256": "4f76120e16d6711e7283cab690a598d0198363e6651161eedc548322c5d64177",
+      "git_blob_sha1": "05b85a9f3c1ddba38e68d13e2d7632a064d913d8",
+      "records": 512,
+      "first_row": 1984
+    },
+    {
+      "file": "datasets/public-records/weather/0011.pb",
+      "bytes": 27920,
+      "sha256": "92726dd3284cc605a01b686e9a61d37415e8d03c9cc5a961cc809f4d8973c8a4",
+      "git_blob_sha1": "010470a7564807d3dfc1cfb419eb5c767d548b8c",
+      "records": 426,
+      "first_row": 2496
+    }
+  ]
+}

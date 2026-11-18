@@ -1,0 +1,4 @@
+Source: U.S. Geological Survey Earthquake Hazards Program, FDSN event catalog.
+https://earthquake.usgs.gov/fdsnws/event/1/
+https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+USGS-produced information is in the U.S. public domain unless marked otherwise. This selection contains event catalog facts, not third-party images, illustrations, logos or text articles. Data remain provisional and subject to revision. Conversion, selection and retrieval hashes are recorded in metadata/usgs-earthquakes.json. No USGS endorsement is implied.

@@ -1,0 +1,5 @@
+Source: U.S. Bureau of Labor Statistics / Current Population Survey, distributed as Vega Datasets v3.3.1 unemployment-across-industries.json. Retrieved 2026-11-18.
+https://www.bls.gov/developers/termsOfService.htm
+https://github.com/vega/vega-datasets/blob/192178cf90a83fedccbab80c1f067c29cac6a697/datapackage.json
+BLS.gov cannot vouch for the data or analyses derived from these data after the data have been retrieved from BLS.gov.
+The dataset resource is designated a U.S. Government Dataset by upstream. No agency endorsement is implied and no BLS logo is included. Published source values are retained.

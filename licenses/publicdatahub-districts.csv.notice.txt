@@ -1,0 +1,5 @@
+# U.S. public school districts.
+# Source: National Center for Education Statistics, Common Core of Data
+# https://nces.ed.gov/ccd/
+# Licence: U.S. Public Domain (17 U.S.C. §105)
+# Assembled by PublicDataHub · https://publicdatahub.org · generated 2026-08-27

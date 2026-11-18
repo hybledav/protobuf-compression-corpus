@@ -1,0 +1,227 @@
+{
+  "format_version": 2,
+  "id": "us-hospitals",
+  "kind": "real-source-converted",
+  "description": "Published us-hospitals records from the pinned PublicDataHub CC0 deposit. A documented column projection is encoded; missing numeric values remain absent.",
+  "schema": "schemas/public-records/us-hospitals.proto",
+  "message_type": "pbcorpus.us_hospitals.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://zenodo.org/api/records/22152382/files/hospitals.csv/content",
+      "final_url": "https://zenodo.org/api/records/22152382/files/hospitals.csv/content",
+      "retrieved_at": "2026-11-18T16:10:51Z",
+      "bytes": 696782,
+      "sha256": "c35d47fa76033ae32e14220dca3c2fc28653565c662de17d75974d00f5f58c8c",
+      "doi": "10.5281/zenodo.22152382",
+      "version": "2026.08.29",
+      "upstream_md5": "49eaf4abf4e9474baeef6f29d1a6b815",
+      "stored_path": "provenance/source-snapshots/c35d47fa76033ae32e14220dca3c2fc28653565c662de17d75974d00f5f58c8c.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 162566,
+      "stored_sha256": "0cdaefc8ad5ee7f1511173741e8194ac82670bacf49cf5ac5d544f3854e121c3"
+    }
+  ],
+  "rights": {
+    "id": "CC0-1.0",
+    "notice": "licenses/publicdatahub-data-notice.txt",
+    "license_text": "licenses/CC0-1.0.txt",
+    "evidence_urls": [
+      "https://zenodo.org/records/22152382"
+    ],
+    "attribution": "PublicDataHub, Quan Nguyen, PublicDataHub: United States federal reference data as bulk CSV (2026.08), version 2026.08.29, DOI 10.5281/zenodo.22152382. Original agencies are identified per file."
+  },
+  "conversion": {
+    "selection": "All source rows, in source order.",
+    "field_mapping": {
+      "id": "id",
+      "name": "name",
+      "city": "city",
+      "state_code": "state_code",
+      "county_name": "county_name",
+      "overall_rating": "overall_rating"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 256,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 5419,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/us-hospitals/0000.pb",
+      "bytes": 21881,
+      "sha256": "03bdb9a129ff7247d8d47877d4512c23a099c30ea37fea4d6c3f5d6df4b93f39",
+      "git_blob_sha1": "566ac4ae5a776d20f84ff2f359c06f83066510d4",
+      "records": 256,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0001.pb",
+      "bytes": 23133,
+      "sha256": "514dedf918b21c5ebd6961695817a1d3ee0de8aeff9ca6238da1123601822638",
+      "git_blob_sha1": "643d561fc159c50ce655111f72ba5f974b26f340",
+      "records": 256,
+      "first_row": 256
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0002.pb",
+      "bytes": 22570,
+      "sha256": "55e0cf3f50c6672bc0c164e7dc1f69f17d715d1b44e8aad75d7067335b10f5c7",
+      "git_blob_sha1": "2c6c7d4b4c596397a281d8919c6902dc14f1480b",
+      "records": 256,
+      "first_row": 512
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0003.pb",
+      "bytes": 23032,
+      "sha256": "c60113cb279e43e031c7a5a6c26fb39f981acbce21ca2dd59d9f4e896356dd29",
+      "git_blob_sha1": "83ecfb061fc291ad63fd5e0977c682ee1860e72c",
+      "records": 256,
+      "first_row": 768
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0004.pb",
+      "bytes": 21154,
+      "sha256": "fe13f19a12eef963db2c8477ec2d9a17a951348d8b457ff0167190a0981ec486",
+      "git_blob_sha1": "47cc922ef0dc60093c15109bbb1ed12bc697a21b",
+      "records": 256,
+      "first_row": 1024
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0005.pb",
+      "bytes": 21539,
+      "sha256": "1ce410bb237444a43f05a1e0d52900334ccbf0b9242fcae05e99076ef5883a3d",
+      "git_blob_sha1": "33203d2046fc0e307fc365e7a25a7871c20a31cd",
+      "records": 256,
+      "first_row": 1280
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0006.pb",
+      "bytes": 21470,
+      "sha256": "b3bba46bf883a9b858f8643dd9204181ce15c139e1155c2eca927e87e55767c0",
+      "git_blob_sha1": "51a1173aa7c82b833cd30c993d57488ca4744f4a",
+      "records": 256,
+      "first_row": 1536
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0007.pb",
+      "bytes": 21344,
+      "sha256": "789adf02943fb5b13992b830f432a3aece5872bf8630b781188e2f4bd47922ba",
+      "git_blob_sha1": "b2089068ecdffa23b570a433dae3e00363418bcf",
+      "records": 256,
+      "first_row": 1792
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0008.pb",
+      "bytes": 22387,
+      "sha256": "d6449e4d36a4d37c1976243b21851e251c2d8ed40acb0355a07efb5942b5b3ec",
+      "git_blob_sha1": "24546cd0933e22132cfadd433dd3eff958ff0390",
+      "records": 256,
+      "first_row": 2048
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0009.pb",
+      "bytes": 21724,
+      "sha256": "859e34f3733a8b0b4dc13b8baa61d6246573b7b79cf33d7c98d1817eddede7fb",
+      "git_blob_sha1": "b7fa9235b1dc57f95b3c7d0b4b0230d5923123b8",
+      "records": 256,
+      "first_row": 2304
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0010.pb",
+      "bytes": 21824,
+      "sha256": "c46ab361af04453935acd8d75aea96c8a77c0ecb45e519d0fdd4a2469ded69d8",
+      "git_blob_sha1": "e347d0a8d3b846f3da0af1238cb7d834e7808f64",
+      "records": 256,
+      "first_row": 2560
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0011.pb",
+      "bytes": 20951,
+      "sha256": "890f297fa92c5155d17630be47e479eb798da7a0c9c232c86620a36778fe470d",
+      "git_blob_sha1": "fcd628d0955fdaf48313fd86a3cd4d25a233ef3a",
+      "records": 256,
+      "first_row": 2816
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0012.pb",
+      "bytes": 22408,
+      "sha256": "a7117717b5fe49251d750811db3d7156176021409863cd839c5d6b0b3ddbacba",
+      "git_blob_sha1": "1e2f0d3e9579d1bb25158e5614c4f2d86080b31b",
+      "records": 256,
+      "first_row": 3072
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0013.pb",
+      "bytes": 21430,
+      "sha256": "aec8b46c8fcb37788153ffc9900e7c23c4d3cf48eb0b32125d0483b0f8b03692",
+      "git_blob_sha1": "6fd0f37733c37f1a6a3bb5320f6d816f1576c38d",
+      "records": 256,
+      "first_row": 3328
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0014.pb",
+      "bytes": 21653,
+      "sha256": "44199d860c09b9124934ec44b667bae395035b28988d5634be2a9629531e02c1",
+      "git_blob_sha1": "952af85ae436b0edc44a74a576a5198957be6056",
+      "records": 256,
+      "first_row": 3584
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0015.pb",
+      "bytes": 21865,
+      "sha256": "de28087259c4074005dbb1fc476840c03c4d1451078a242cdb17f2b4b2d3c6ce",
+      "git_blob_sha1": "b002c3f5df8cb1f122c6425fa4c33929c32de653",
+      "records": 256,
+      "first_row": 3840
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0016.pb",
+      "bytes": 21982,
+      "sha256": "ce1cfaebf26a01442dddb0b245e544cf32c9c97f23d0b598b152731f43016de5",
+      "git_blob_sha1": "801cf335c4fcf6f48567d79f51d12f96db2f0a68",
+      "records": 256,
+      "first_row": 4096
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0017.pb",
+      "bytes": 22640,
+      "sha256": "f5d28d61f85b4ce6436c586149cd2814382df25a5e90ddfc86b8b3b1a2cc2db2",
+      "git_blob_sha1": "7145ed852a40f7c556dc5ee1f2585098441a35e4",
+      "records": 256,
+      "first_row": 4352
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0018.pb",
+      "bytes": 21191,
+      "sha256": "7a965ab76e486b170f1dd5ea02ede09566fdeac1a9d49a08335f9f5cc57dc8de",
+      "git_blob_sha1": "3f404627970054d26fe8f29a71881bc9c53ce96d",
+      "records": 256,
+      "first_row": 4608
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0019.pb",
+      "bytes": 21939,
+      "sha256": "c766a0316787e07fc5579657cd41827c9fc07d3987b265aedb44abd778106c27",
+      "git_blob_sha1": "fdc098e54674ef67de8e464876de3a459b2ca5a9",
+      "records": 256,
+      "first_row": 4864
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0020.pb",
+      "bytes": 22064,
+      "sha256": "0d64074b25019a1239fd50dfa707e99ebafdaa73fe744dcbf2aa275a44d3982d",
+      "git_blob_sha1": "22adf4db5bfdb8f562d5d6e89bcc3267a68c20a6",
+      "records": 256,
+      "first_row": 5120
+    },
+    {
+      "file": "datasets/public-records/us-hospitals/0021.pb",
+      "bytes": 3642,
+      "sha256": "d38d6817199470c725937ef9a1e23ae05a32ade48c8c61500277b8ac9c942912",
+      "git_blob_sha1": "6c2352ce8319e5a592e009a210250f02f3ac0bc7",
+      "records": 43,
+      "first_row": 5376
+    }
+  ]
+}

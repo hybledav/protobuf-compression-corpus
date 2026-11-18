@@ -1,0 +1,83 @@
+{
+  "format_version": 2,
+  "id": "us-federal-agencies",
+  "kind": "real-source-converted",
+  "description": "Published us-federal-agencies records from the pinned PublicDataHub CC0 deposit. A documented column projection is encoded; missing numeric values remain absent.",
+  "schema": "schemas/public-records/us-federal-agencies.proto",
+  "message_type": "pbcorpus.us_federal_agencies.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://zenodo.org/api/records/22152382/files/agencies.csv/content",
+      "final_url": "https://zenodo.org/api/records/22152382/files/agencies.csv/content",
+      "retrieved_at": "2026-11-18T16:10:48Z",
+      "bytes": 18468,
+      "sha256": "5a3572934e1486a5ad4c08c44b912114941a45d30d1d1ee040242aada960034c",
+      "doi": "10.5281/zenodo.22152382",
+      "version": "2026.08.29",
+      "upstream_md5": "467f7b5bf974c7e434b0701e75095e40",
+      "stored_path": "provenance/source-snapshots/5a3572934e1486a5ad4c08c44b912114941a45d30d1d1ee040242aada960034c.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 7432,
+      "stored_sha256": "252eeab0be6121e99aeb7a9dcccca9cdbc116227992b92b4893d80f69769bbcd"
+    }
+  ],
+  "rights": {
+    "id": "CC0-1.0",
+    "notice": "licenses/publicdatahub-data-notice.txt",
+    "license_text": "licenses/CC0-1.0.txt",
+    "evidence_urls": [
+      "https://zenodo.org/records/22152382"
+    ],
+    "attribution": "PublicDataHub, Quan Nguyen, PublicDataHub: United States federal reference data as bulk CSV (2026.08), version 2026.08.29, DOI 10.5281/zenodo.22152382. Original agencies are identified per file."
+  },
+  "conversion": {
+    "selection": "All source rows, in source order.",
+    "field_mapping": {
+      "id": "id",
+      "name": "name",
+      "aka": "aka",
+      "budget_authority": "budget_authority",
+      "obligated_amount": "obligated_amount",
+      "outlay_amount": "outlay_amount"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 32,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 111,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/us-federal-agencies/0000.pb",
+      "bytes": 2870,
+      "sha256": "0e1d12abd876e4c504ec560aae119d6f6efb7da8bef7da06fbdf1def450478a3",
+      "git_blob_sha1": "4058a4a07cb8be968fb82451b38a125e8c8754e8",
+      "records": 32,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/us-federal-agencies/0001.pb",
+      "bytes": 3006,
+      "sha256": "baf376096e074cb5d6fa03f14827fcf02e3ccf039da8940cf220c6aeef629bfa",
+      "git_blob_sha1": "4696f8cbeb53802af0099151588826983dd8cbe6",
+      "records": 32,
+      "first_row": 32
+    },
+    {
+      "file": "datasets/public-records/us-federal-agencies/0002.pb",
+      "bytes": 3002,
+      "sha256": "e062b213e57208e28eb21f3b3fb17784f7fd7a76a83c360551b60dc75fbf7cfd",
+      "git_blob_sha1": "b458cee68eb73a8e4bcd366a5ebd89634c8b4992",
+      "records": 32,
+      "first_row": 64
+    },
+    {
+      "file": "datasets/public-records/us-federal-agencies/0003.pb",
+      "bytes": 1353,
+      "sha256": "84b9cf923ca42b4e13b8b949dd9a4dd4e6f659adb80d2c19c9aaae026b05b5d5",
+      "git_blob_sha1": "62eb66f26f480fe4db1209f64aa2543ab1e96d30",
+      "records": 15,
+      "first_row": 96
+    }
+  ]
+}

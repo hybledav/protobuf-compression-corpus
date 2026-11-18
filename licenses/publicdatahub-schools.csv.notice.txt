@@ -1,0 +1,6 @@
+# U.S. public schools.
+# Source: National Center for Education Statistics, Common Core of Data
+# Retrieved via the Urban Institute Education Data Portal, which republishes the NCES files unchanged.
+# https://nces.ed.gov/ccd/
+# Licence: U.S. Public Domain (17 U.S.C. §105)
+# Assembled by PublicDataHub · https://publicdatahub.org · generated 2026-08-27

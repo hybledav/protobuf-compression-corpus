@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+syntax = "proto3";
+package pbcorpus.us_hospitals.v2;
+
+message Record {
+  optional string id = 1;
+  optional string name = 2;
+  optional string city = 3;
+  optional string state_code = 4;
+  optional string county_name = 5;
+  optional double overall_rating = 6;
+}
+message Batch { repeated Record records = 1; }

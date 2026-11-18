@@ -1,0 +1,114 @@
+{
+  "verified_on": "2026-11-18",
+  "scope": "Only the release tree. No assertion about excluded development-history material.",
+  "cdc": [
+    {
+      "dataset_id": "vbim-akqf",
+      "name": "COVID-19 Case Surveillance Public Use Data",
+      "attribution": "CDC Data, Analytics and Visualization Task Force",
+      "license_id": "USGOV_WORKS",
+      "source_metadata": {
+        "url": "https://data.cdc.gov/api/views/vbim-akqf.json",
+        "final_url": "https://data.cdc.gov/api/views/vbim-akqf.json",
+        "retrieved_at": "2026-11-18T16:10:39Z",
+        "bytes": 35496,
+        "sha256": "09e8ca6ce10fd779aac04a4801dca05dcaaa56861151feaeefb0e069c9581b92"
+      }
+    },
+    {
+      "dataset_id": "vgc8-iyc4",
+      "name": "PLACES: Place Data (GIS Friendly Format), 2025 release",
+      "attribution": "Centers for Disease Control and Prevention, National Center for Chronic Disease Prevention and Health Promotion, Division of Population Health",
+      "license_id": "PUBLIC_DOMAIN",
+      "source_metadata": {
+        "url": "https://data.cdc.gov/api/views/vgc8-iyc4.json",
+        "final_url": "https://data.cdc.gov/api/views/vgc8-iyc4.json",
+        "retrieved_at": "2026-11-18T16:08:50Z",
+        "bytes": 317011,
+        "sha256": "b32a7417236120dbdd6b03aa185020db750c4018cb655982ee538d74cfbd44b4"
+      }
+    }
+  ],
+  "publicdatahub": {
+    "record": "https://zenodo.org/records/22152382",
+    "license_id": "cc-zero",
+    "version": "2026.08.29",
+    "source_metadata": {
+      "url": "https://zenodo.org/api/records/22152382",
+      "final_url": "https://zenodo.org/api/records/22152382",
+      "retrieved_at": "2026-11-18T16:09:10Z",
+      "bytes": 8258,
+      "sha256": "6a1c91452eb382a0864455689c71de10ddb923ed8e629c6eb882cd6191a85669"
+    }
+  },
+  "nasa_sao": {
+    "dataset": "https://data.nasa.gov/dataset/smithsonian-astrophysical-observatory-star-catalog",
+    "observed_license_url": "https://www.usa.gov/government-works",
+    "source_metadata": {
+      "url": "https://data.nasa.gov/dataset/smithsonian-astrophysical-observatory-star-catalog",
+      "final_url": "https://data.nasa.gov/dataset/smithsonian-astrophysical-observatory-star-catalog",
+      "retrieved_at": "2026-11-18T16:08:49Z",
+      "bytes": 46051,
+      "sha256": "207f0f6bd0ac5ca2f8a382b29bb37d7480a56c4f8a10228bc8ce26341e1f2b11"
+    }
+  },
+  "nndss": {
+    "dataset": "https://catalog.data.gov/dataset/nndss-weekly-data",
+    "observed_license_url": "http://opendefinition.org/licenses/odc-odbl/",
+    "source_metadata": {
+      "url": "https://catalog.data.gov/dataset/nndss-weekly-data",
+      "final_url": "https://catalog.data.gov/dataset/nndss-weekly-data",
+      "retrieved_at": "2026-11-18T16:15:36Z",
+      "bytes": 155924,
+      "sha256": "eefefa672ff2d19dc6ec1c0c1453695173637f6a9d5214c4e374f630951dd30e"
+    }
+  },
+  "vega": {
+    "metadata_url": "https://github.com/vega/vega-datasets/blob/192178cf90a83fedccbab80c1f067c29cac6a697/datapackage.json",
+    "metadata_git_blob_sha1": "7f6b013cb8186da71328bbb8b342f1f72204c6a1",
+    "resources": [
+      {
+        "name": "unemployment_across_industries",
+        "licenses": [
+          {
+            "name": "other-pd",
+            "title": "U.S. Government Dataset",
+            "path": "https://www.usa.gov/government-works"
+          }
+        ],
+        "sources": [
+          {
+            "title": "U.S. Census Bureau Current Population Survey",
+            "path": "https://www.census.gov/programs-surveys/cps.html"
+          },
+          {
+            "title": "BLS LAUS Data Tools",
+            "path": "https://www.bls.gov/lau/data.htm"
+          },
+          {
+            "title": "Bureau of Labor Statistics Table A-31",
+            "path": "https://www.bls.gov/web/empsit/cpseea31.htm"
+          }
+        ],
+        "hash": "sha1:4d769356c95c40a9807a7d048ab81aa56ae77df0"
+      },
+      {
+        "name": "weather",
+        "licenses": [
+          {
+            "name": "other-pd",
+            "title": "U.S. Government Dataset",
+            "path": "https://www.usa.gov/government-works"
+          }
+        ],
+        "sources": [
+          {
+            "title": "NOAA Climate Data Online",
+            "path": "http://www.ncdc.noaa.gov/cdo-web/datatools/findstation"
+          }
+        ],
+        "hash": "sha1:0e7e853f4c5b67615da261d5d343824a43510f50"
+      }
+    ]
+  }
+}

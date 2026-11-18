@@ -1,0 +1,6 @@
+Source: Centers for Disease Control and Prevention (CDC).
+PLACES vgc8-iyc4 is explicitly marked PUBLIC_DOMAIN; COVID public-use vbim-akqf is explicitly marked USGOV_WORKS. Dataset-specific evidence is in rights-evidence.json and metadata/*.json. These benchmark selections preserve the published values of the selected columns. They are converted, partial historical snapshots, not official current CDC statistical products.
+The original material is available from CDC without charge. Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government. No agency logos are included.
+Policy: https://www.cdc.gov/other/agencymaterials.html
+Data: https://data.cdc.gov/d/vgc8-iyc4 and https://data.cdc.gov/d/vbim-akqf
+The U.S. government-work designation records U.S. copyright status and is not a blanket grant of unrelated rights.

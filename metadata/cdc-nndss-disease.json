@@ -1,0 +1,570 @@
+{
+  "format_version": 2,
+  "id": "cdc-nndss-disease",
+  "kind": "real-source-converted",
+  "description": "CDC NNDSS weekly data projection. m1-m4 and their source suppression/availability flags are preserved; absent counts remain absent, not zero. Geographic coordinates and portal-computed regions are omitted.",
+  "schema": "schemas/public-records/cdc-nndss-disease.proto",
+  "message_type": "pbcorpus.cdc_nndss.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=16384&%24order=sort_order%2Clabel",
+      "final_url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=16384&%24order=sort_order%2Clabel",
+      "retrieved_at": "2026-11-18T16:12:06Z",
+      "bytes": 4311092,
+      "sha256": "ba84fb7f78b867e119af75eee0e52aace8ec562beab445550cd906d54c076211",
+      "stored_path": "provenance/source-snapshots/ba84fb7f78b867e119af75eee0e52aace8ec562beab445550cd906d54c076211.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 169239,
+      "stored_sha256": "a0fa0c5cfab39b9aae693d2a127ff0387851ec7575a4e2e6eaddc462019a69c1"
+    }
+  ],
+  "rights": {
+    "id": "ODbL-1.0",
+    "notice": "licenses/nndss-data-notice.txt",
+    "license_text": "licenses/ODbL-1.0.txt",
+    "evidence_urls": [
+      "https://catalog.data.gov/dataset/nndss-weekly-data",
+      "https://opendatacommons.org/licenses/odbl/1-0/"
+    ],
+    "attribution": "Contains information from CDC NNDSS Weekly Data, which is made available under the Open Database License (ODbL) 1.0. This converted NNDSS database is distributed under ODbL 1.0."
+  },
+  "conversion": {
+    "selection": "First 16,384 rows ordered by sort_order,label. The complete converted derivative database is included as protobuf files with its schema, under ODbL 1.0.",
+    "field_mapping": {
+      "states": "states",
+      "year": "year",
+      "week": "week",
+      "label": "label",
+      "m1": "m1",
+      "m1_flag": "m1_flag",
+      "m2": "m2",
+      "m2_flag": "m2_flag",
+      "m3": "m3",
+      "m3_flag": "m3_flag",
+      "m4": "m4",
+      "m4_flag": "m4_flag",
+      "location1": "location1",
+      "location2": "location2",
+      "sort_order": "sort_order"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 256,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 16384,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0000.pb",
+      "bytes": 26458,
+      "sha256": "088ec96ca94b80f4e006bbbb341c153c44771aa112ef6bae097f56c64f690157",
+      "git_blob_sha1": "f42a4bf1c0be694a059cb296b464e2667cf91419",
+      "records": 256,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0001.pb",
+      "bytes": 28223,
+      "sha256": "44a8620a0abd9aa17c66675c91c4dd0280ed67d862ecba354587c806ec5a67b4",
+      "git_blob_sha1": "33d0f508237770c0ccbef19aecbebb034119637d",
+      "records": 256,
+      "first_row": 256
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0002.pb",
+      "bytes": 24478,
+      "sha256": "66893d7d53570f2f094fd4e35e184752106dfe3b2a7da72046c6cbdf604ead9d",
+      "git_blob_sha1": "146a8bda0c72923bd32ce471bd6cb48c071888c8",
+      "records": 256,
+      "first_row": 512
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0003.pb",
+      "bytes": 21712,
+      "sha256": "94ee8466e536ef59c7a728f6d93e3ea4ae7a367fe09338806fce6f365d2b2ea6",
+      "git_blob_sha1": "dc15cb9d19555433b609c63dff3b6b8faacfa80a",
+      "records": 256,
+      "first_row": 768
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0004.pb",
+      "bytes": 24148,
+      "sha256": "7700e097f49edf6fd6aea5bbe2adf3ac1f994dd77e71a51f0a66377f16d419f8",
+      "git_blob_sha1": "d6a73c40152d8bbfc902e0fee83676ed0ffa1021",
+      "records": 256,
+      "first_row": 1024
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0005.pb",
+      "bytes": 20914,
+      "sha256": "d4a198ae57db628d20f3e53ae348864172fc3238a8f8c688ec3a0e8ff81c2eb1",
+      "git_blob_sha1": "a5912aefc64a5fc12fc3b5f937161be94aad4376",
+      "records": 256,
+      "first_row": 1280
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0006.pb",
+      "bytes": 24141,
+      "sha256": "addf50b859aae632c5a693e5f4dd3fef83b6b85cd27da595845a9db4ec977b70",
+      "git_blob_sha1": "888ad70ebc9f02bf1d053ccdf1b47f4cc32baa9e",
+      "records": 256,
+      "first_row": 1536
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0007.pb",
+      "bytes": 31566,
+      "sha256": "c1cefcbf92c2c45b2c8de7a13dae1e97ab2a7c220a5b353349b29035e8497eb1",
+      "git_blob_sha1": "ddaa652b10556aa46a2a6254667fa8450f60bf11",
+      "records": 256,
+      "first_row": 1792
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0008.pb",
+      "bytes": 26122,
+      "sha256": "b792a915d2eafcff30b247b7631cef8e0d93721901235468242ae0354fa39772",
+      "git_blob_sha1": "0e84747f3cd8d218667d3eb87f531ac05df4453d",
+      "records": 256,
+      "first_row": 2048
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0009.pb",
+      "bytes": 33845,
+      "sha256": "ed230237fb85021d15d705695c3f08a274fd564232bf16dfc7d5adf2c1bbc81e",
+      "git_blob_sha1": "2be0571777fee5467e7ee4ac3e8a382051b348ca",
+      "records": 256,
+      "first_row": 2304
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0010.pb",
+      "bytes": 25780,
+      "sha256": "f9675bbe372dae422a71f36dab17efc8550e2df2e52c2a1764222476f8fea9cb",
+      "git_blob_sha1": "9483be0af797eb625bc9471b6f076db96cfbee0a",
+      "records": 256,
+      "first_row": 2560
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0011.pb",
+      "bytes": 24351,
+      "sha256": "9b25b1989d10a963873c064522f7a2245cfa38cd649bfe18d9b28ce8d62e048c",
+      "git_blob_sha1": "6876aeeb800cc41d35599705ec02d8244d1354c5",
+      "records": 256,
+      "first_row": 2816
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0012.pb",
+      "bytes": 23101,
+      "sha256": "9de0b1c1196ec98218eb37f358957739530435d81d4b32d00193f5ca63561901",
+      "git_blob_sha1": "b231921ef20432a6835498fbdde8242d41fdb2b2",
+      "records": 256,
+      "first_row": 3072
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0013.pb",
+      "bytes": 29364,
+      "sha256": "4b7e595950b006e6a9011efc345c99eafd63264be7511b8a6b0f77d9e831f55e",
+      "git_blob_sha1": "3f3d1efc028eaacc4000c2ed17470919214645b3",
+      "records": 256,
+      "first_row": 3328
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0014.pb",
+      "bytes": 22129,
+      "sha256": "8d9e141d7937467f093a4bc0963e11a36a4b7ca84d2eb259884890929f736261",
+      "git_blob_sha1": "545d6f1460ed57525d4b67b6e679a6ac64d5b5e1",
+      "records": 256,
+      "first_row": 3584
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0015.pb",
+      "bytes": 20332,
+      "sha256": "072fe09db52f778925347d380aa8fb82f3327e185809ef1c2adcf11a56c71b45",
+      "git_blob_sha1": "2a6bff93e0508adb5074665705a6ab9f0b9925ad",
+      "records": 256,
+      "first_row": 3840
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0016.pb",
+      "bytes": 24961,
+      "sha256": "99ec815784246abeac5048c8ea677fb0a3fbc0eaa267f18a34c623d526c56369",
+      "git_blob_sha1": "f7c56fc7dd870e5ea2b42f0f79dfa390846ff7d7",
+      "records": 256,
+      "first_row": 4096
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0017.pb",
+      "bytes": 23441,
+      "sha256": "161a3ddc323648a1670039bc0ceaa083d1c86ce5806b11a7da5a850921d2693f",
+      "git_blob_sha1": "7afdd34687d40e339da5ad60df2b774f4651ddcb",
+      "records": 256,
+      "first_row": 4352
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0018.pb",
+      "bytes": 20556,
+      "sha256": "e5651d63565ed3ffdb49cc2f6f43d4e143549acc6c70f14d32d4b3fd1743b4fc",
+      "git_blob_sha1": "3c9d2fd6b3e0af9bc74766b667315ae06f62eeb8",
+      "records": 256,
+      "first_row": 4608
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0019.pb",
+      "bytes": 20382,
+      "sha256": "74461312116ae0ea56806d0d8876193be1432a21cfe5e5f7c668996dfc6e51fd",
+      "git_blob_sha1": "04948ff0ff542e45e676a5743fedcec273cb084a",
+      "records": 256,
+      "first_row": 4864
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0020.pb",
+      "bytes": 19288,
+      "sha256": "e8b6ec02c4dc6901027ddd37baf94c330ca1c15d0fbf3f42fedccb9bdcdc1af7",
+      "git_blob_sha1": "aea1c54fc4155588d6a56d7f126035a2163a0c4a",
+      "records": 256,
+      "first_row": 5120
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0021.pb",
+      "bytes": 25088,
+      "sha256": "91ab2326ca7338f408e34f555cbf9e111cd703fc43d22efafa8786f83d9c59c6",
+      "git_blob_sha1": "608842b4192d632e9e10dc5d584c752da9bf4628",
+      "records": 256,
+      "first_row": 5376
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0022.pb",
+      "bytes": 28396,
+      "sha256": "192340a37b077ce32ebfc22635568b93dd6d296378250b65f850ccb9746b4590",
+      "git_blob_sha1": "d8e42a4d1ba3718bcecb93bc45dc3b9bb7fdfa65",
+      "records": 256,
+      "first_row": 5632
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0023.pb",
+      "bytes": 22317,
+      "sha256": "04e92e318b857a45f3ae52c392e2a3de14e188c8eb2a5ced8961d0379b33f945",
+      "git_blob_sha1": "482d0ce3ac4299521ec977ea4750c3ace3908e57",
+      "records": 256,
+      "first_row": 5888
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0024.pb",
+      "bytes": 21877,
+      "sha256": "f5fa12ecc78411c21f61679b7fea90ac4102f9af2bd3b3b5cdb1e93b073488ef",
+      "git_blob_sha1": "3ab72eb6f883620a0732822a77f108ed41475c0c",
+      "records": 256,
+      "first_row": 6144
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0025.pb",
+      "bytes": 23496,
+      "sha256": "2b1a7d39c3bcdfaa6e763b1feba6d005978ba36de0c7e76d9a466363cf557531",
+      "git_blob_sha1": "44d598b5e4a0219b95c5fca455febd6c648e90d7",
+      "records": 256,
+      "first_row": 6400
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0026.pb",
+      "bytes": 35005,
+      "sha256": "d6b65a517fae201fb3cb1c989958d998f65d2c7d60fb30ed7095b9661d211ca5",
+      "git_blob_sha1": "5c9ff3bf60c9885f2ceda8a00eef75ee344622f6",
+      "records": 256,
+      "first_row": 6656
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0027.pb",
+      "bytes": 27536,
+      "sha256": "0cbbdb9573a5cfad429b208454aa02556c2b0650c0e0238e58cfd63bfa376d29",
+      "git_blob_sha1": "88d2bdb7a62ce4483148ac5a345bdd161cb8f672",
+      "records": 256,
+      "first_row": 6912
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0028.pb",
+      "bytes": 25414,
+      "sha256": "485cdef2f21c356bc8e49cad67dba4343a0f5a25422e694f09bcd8ef897fbc99",
+      "git_blob_sha1": "d10448b43b9fe95b4381e31a4db62972bf9360af",
+      "records": 256,
+      "first_row": 7168
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0029.pb",
+      "bytes": 23723,
+      "sha256": "3581c5caf82b3af81d885bc2c51f30c7d8b5d7b5bb905ea4f7abcc40240474c3",
+      "git_blob_sha1": "764adeebd049b9bbbc26800b1084569a26b098d4",
+      "records": 256,
+      "first_row": 7424
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0030.pb",
+      "bytes": 26069,
+      "sha256": "b9d0741265a617d4f173d5509172e10fe4cf2d950da9c010a1f33dce7cb80dc7",
+      "git_blob_sha1": "7060e93bb1232e3c5a6e38a5a6c56324245c48fa",
+      "records": 256,
+      "first_row": 7680
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0031.pb",
+      "bytes": 28430,
+      "sha256": "29c2f2060636fd7733674c7f0ab144fbeeaedb2d2cfb4bc4c630a99232a68156",
+      "git_blob_sha1": "a8fb7a939a8345003b7df8ec24f33781d5576cfa",
+      "records": 256,
+      "first_row": 7936
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0032.pb",
+      "bytes": 25012,
+      "sha256": "c6c78606b70f4cd0889f897b9c635f88d47b2d73e75681776859ce14bfa8d6dc",
+      "git_blob_sha1": "5a2b1b532681d8131c5b919d315d6afb6f94b375",
+      "records": 256,
+      "first_row": 8192
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0033.pb",
+      "bytes": 21576,
+      "sha256": "937e2124a8ff8859360cf265024e340d5f734372119fe38f539c9072c4d4db5b",
+      "git_blob_sha1": "ac214b88523ebd78972ddf1b11413c65c3949d31",
+      "records": 256,
+      "first_row": 8448
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0034.pb",
+      "bytes": 23926,
+      "sha256": "00c632779c280a9caead157a2ea6536eb9487cba8712a6db0fc5db30438bb605",
+      "git_blob_sha1": "7b86523f19086fd85467af4ee77cbbea1d56ae84",
+      "records": 256,
+      "first_row": 8704
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0035.pb",
+      "bytes": 21445,
+      "sha256": "634ec8134a063b26069ee790dcf39713b7dbb8fc38bf9ed5bdb8438a090609ed",
+      "git_blob_sha1": "293cc3c01a3d35214b89c9c49309fe5907dd659a",
+      "records": 256,
+      "first_row": 8960
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0036.pb",
+      "bytes": 23700,
+      "sha256": "89eab546a3897a2b52073fe2c3c3eb3a65c6fb61a42c621b1b831bb40ee39a51",
+      "git_blob_sha1": "4b683676c576f5fdcedf9af9768f785bc4323e5a",
+      "records": 256,
+      "first_row": 9216
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0037.pb",
+      "bytes": 30955,
+      "sha256": "74bafc0430789c5285c76d572589ac0b3a94a33d4ba44d51c7b043ecfe38a7a5",
+      "git_blob_sha1": "e28cd13193b7cf4e4c22a9995524cb1d6c0f9949",
+      "records": 256,
+      "first_row": 9472
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0038.pb",
+      "bytes": 26242,
+      "sha256": "8c9057a41f8e96a586930fbe12696de5c3302e2e9ac7c4d51224b2a297663165",
+      "git_blob_sha1": "3d8d75f08fe80a286fb708c32e37c425061c322c",
+      "records": 256,
+      "first_row": 9728
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0039.pb",
+      "bytes": 33813,
+      "sha256": "9dd78adf4c32b7337d84fd20d32c591b80ef1d3d99a2dcb8b1596f55e3b0b350",
+      "git_blob_sha1": "245c6f2eb004363a0ca0353d0f4a505a6e865d17",
+      "records": 256,
+      "first_row": 9984
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0040.pb",
+      "bytes": 26348,
+      "sha256": "8b7a18fe60a60a4f05353dadbeb060dcddb4f31e440682b5d7f278181e34e34f",
+      "git_blob_sha1": "1a56ff6e9535dbe4bdb0383f22f1a9d8fcac62e4",
+      "records": 256,
+      "first_row": 10240
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0041.pb",
+      "bytes": 24765,
+      "sha256": "107edfb76fb6a64a58ba93bb82058dd4acb45016fee88dd45bee279de315c4d8",
+      "git_blob_sha1": "ba22d21b512abe3d059ff8096b27d1bd4dd44cec",
+      "records": 256,
+      "first_row": 10496
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0042.pb",
+      "bytes": 22807,
+      "sha256": "53d5d18d65e38e9bac374333ec34f4d3b7829f9e967f87100f69350e4bd94e79",
+      "git_blob_sha1": "6894ec3c5f4c17d73235a57eba3c6728862e51a6",
+      "records": 256,
+      "first_row": 10752
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0043.pb",
+      "bytes": 29166,
+      "sha256": "b8c8ac366a59004860db2f177d6ff18173b97a84dfe143f5dbeb921565fdea49",
+      "git_blob_sha1": "fbd581ae15c88865d8b4637c0ad956e0b76df8a4",
+      "records": 256,
+      "first_row": 11008
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0044.pb",
+      "bytes": 22919,
+      "sha256": "95ff29c7cd92a52217d2db0ca859b5a5bcd369237f72fe5600912f77f70689a1",
+      "git_blob_sha1": "bdf517cb5fa003456dd4e76d4dc1acd2a1860804",
+      "records": 256,
+      "first_row": 11264
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0045.pb",
+      "bytes": 20372,
+      "sha256": "828dbcf0b8eed7f789ea8ef355acf6833ac1490078afae195e71b7acc5993c6a",
+      "git_blob_sha1": "72a6ab5f21241de0377604b9a26a734272bc1fb6",
+      "records": 256,
+      "first_row": 11520
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0046.pb",
+      "bytes": 24559,
+      "sha256": "582665ff8e3f21a8943ae33b9361221db008c546440ec46a79a7c4af6f96925b",
+      "git_blob_sha1": "ea734e406f74482941825a1436bfe092280d2f27",
+      "records": 256,
+      "first_row": 11776
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0047.pb",
+      "bytes": 23687,
+      "sha256": "fd24d8796ed2d0a5395f6317980b15e7a6d7013e0ca30891d912db58a5abe7d0",
+      "git_blob_sha1": "85596ecb71df051c6d6184ed101ab93f551e51f8",
+      "records": 256,
+      "first_row": 12032
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0048.pb",
+      "bytes": 20520,
+      "sha256": "0c5261187c2fefc7ec882c80dec988875ba2074048b13551d0763a9c9109422c",
+      "git_blob_sha1": "bb153439fa7914ead99cc8f5bdbff9f6952a30a1",
+      "records": 256,
+      "first_row": 12288
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0049.pb",
+      "bytes": 20696,
+      "sha256": "761fe90e35a4c2669821ad6b4bef32a47067df87a0ea9fce7674527e518e2e69",
+      "git_blob_sha1": "8878bf38ade41a47ae1f57bfc5b9081fca339803",
+      "records": 256,
+      "first_row": 12544
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0050.pb",
+      "bytes": 19580,
+      "sha256": "20054a8c90dfcd41cadb37e7c0c14d1c208c3a5d24931a4fd8294dee5242fee4",
+      "git_blob_sha1": "409139f5ce95499f28fa8522be954acf99f08b29",
+      "records": 256,
+      "first_row": 12800
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0051.pb",
+      "bytes": 23390,
+      "sha256": "2af1f912b84e799b1f0fdcb7b01ae49b7d6e45895ee9aef0beddc5c3ecd7b04a",
+      "git_blob_sha1": "c65d9db42df81033db72b001c02d0f0af65c5f57",
+      "records": 256,
+      "first_row": 13056
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0052.pb",
+      "bytes": 30061,
+      "sha256": "c214633946d1e592af2d7fee644352daaefc27f9b613a159b100fcf6891d8f68",
+      "git_blob_sha1": "ae8b67772a8596007ec588074cac9f622adcfa8f",
+      "records": 256,
+      "first_row": 13312
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0053.pb",
+      "bytes": 21973,
+      "sha256": "d75e91fdd910530dbceaab0da38a5b4e0f97c9b7f2ef706cb0480322331408fe",
+      "git_blob_sha1": "3b2d4a1f292b06527e60565e149e121a8ca38f19",
+      "records": 256,
+      "first_row": 13568
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0054.pb",
+      "bytes": 22261,
+      "sha256": "27f313294cc51c4aba12749a9f2b714528ecdff62ce9d9837f26e7ffcb7735c6",
+      "git_blob_sha1": "0127ee8859f00b896327bc4b244557883ea964d9",
+      "records": 256,
+      "first_row": 13824
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0055.pb",
+      "bytes": 23105,
+      "sha256": "72c12affb81195130915ec47afdb97b174dfe7bd61f833fb7f92bf1c102b5781",
+      "git_blob_sha1": "339ca3b7fc4f30d09f4111d3c79dc239227556c9",
+      "records": 256,
+      "first_row": 14080
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0056.pb",
+      "bytes": 35059,
+      "sha256": "25b824cc12573ba077da818cf9c8ad3e3008724e3e9ee5038ed07d7cfee3e6c7",
+      "git_blob_sha1": "38bec08a021a07a7797f69be0d0a9d4e28728928",
+      "records": 256,
+      "first_row": 14336
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0057.pb",
+      "bytes": 27576,
+      "sha256": "0d06ce4ea439c0a534c0a4d75a284101244fcb9a2b710407789fca86a2981b4c",
+      "git_blob_sha1": "95f393d0083a8202a346567f6f201e3f08392e45",
+      "records": 256,
+      "first_row": 14592
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0058.pb",
+      "bytes": 25376,
+      "sha256": "d10fbc980fda9b8f1118845aabc673146fc896d4969344f459f4ced9fb7d6808",
+      "git_blob_sha1": "7c0ad6f29789e44df2e7129a1269a437834aad16",
+      "records": 256,
+      "first_row": 14848
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0059.pb",
+      "bytes": 23817,
+      "sha256": "c494164e167ba494642a21355e04b3ea21de5c39209b5365b7bd334a7ec3ba64",
+      "git_blob_sha1": "5da5c61c91c1fba57fb481ddb121f9d2516fd391",
+      "records": 256,
+      "first_row": 15104
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0060.pb",
+      "bytes": 25729,
+      "sha256": "f548ebff1532d5a1c88fa4e1750284d00dcd0c6ebd35b6bcf199d2110fb33a77",
+      "git_blob_sha1": "4bbed57e68e1ee5db065808bdc51a70f070baf59",
+      "records": 256,
+      "first_row": 15360
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0061.pb",
+      "bytes": 28338,
+      "sha256": "bbc0ef67dddd76fb65a3dbf9b5fa92a83e0581a752dab4598a1e112d9ce77ef8",
+      "git_blob_sha1": "58f0c16e4058cf31473468fe2748a4626f2a1287",
+      "records": 256,
+      "first_row": 15616
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0062.pb",
+      "bytes": 25718,
+      "sha256": "ef74eecdb3799ac621237f5890cac00b58718180d67766d122a34c8e519c8efc",
+      "git_blob_sha1": "5b40148ba50df27d2a4991e67d0771201829e6fe",
+      "records": 256,
+      "first_row": 15872
+    },
+    {
+      "file": "datasets/public-records/cdc-nndss-disease/0063.pb",
+      "bytes": 21535,
+      "sha256": "54eee6aabe6734f78062f5a5d29818b80d3718a1a409e76a5bed0c32da783e71",
+      "git_blob_sha1": "7f99eaffa0040bd3a29bba17c6ad27ce29f7d94a",
+      "records": 256,
+      "first_row": 16128
+    }
+  ]
+}

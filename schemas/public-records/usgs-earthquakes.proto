@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: MIT
+syntax = "proto3";
+package pbcorpus.usgs.v2;
+
+message Earthquake {
+  optional string time = 1;
+  optional double latitude = 2;
+  optional double longitude = 3;
+  optional double depth = 4;
+  optional double mag = 5;
+  optional string mag_type = 6;
+  optional string id = 7;
+  optional string place = 8;
+  optional string event_type = 9;
+}
+message Batch { repeated Earthquake records = 1; }

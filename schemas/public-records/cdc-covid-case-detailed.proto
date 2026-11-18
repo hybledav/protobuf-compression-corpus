@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+syntax = "proto3";
+package pbcorpus.cdc_covid_detailed.v2;
+
+message CaseRecord {
+  optional string cdc_case_earliest_dt = 1;
+  optional string cdc_report_dt = 2;
+  optional string pos_spec_dt = 3;
+  optional string onset_dt = 4;
+  optional string current_status = 5;
+  optional string sex = 6;
+  optional string age_group = 7;
+  optional string race_ethnicity_combined = 8;
+  optional string hosp_yn = 9;
+  optional string icu_yn = 10;
+  optional string death_yn = 11;
+  optional string medcond_yn = 12;
+}
+message Batch { repeated CaseRecord records = 1; }

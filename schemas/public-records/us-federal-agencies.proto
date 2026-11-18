@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+syntax = "proto3";
+package pbcorpus.us_federal_agencies.v2;
+
+message Record {
+  optional string id = 1;
+  optional string name = 2;
+  optional string aka = 3;
+  optional double budget_authority = 4;
+  optional double obligated_amount = 5;
+  optional double outlay_amount = 6;
+}
+message Batch { repeated Record records = 1; }

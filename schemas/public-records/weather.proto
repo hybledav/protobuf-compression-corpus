@@ -1,0 +1,13 @@
+// Weather observations converted from published records using this corpus schema.
+syntax = "proto3";
+package pbcorpus.weather.v1;
+message Observation {
+ string location = 1;
+ string date = 2;
+ double precipitation = 3;
+ double temp_max = 4;
+ double temp_min = 5;
+ double wind = 6;
+ string weather = 7;
+}
+message Batch { repeated Observation records = 1; }

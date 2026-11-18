@@ -1,0 +1,12 @@
+// Real industry unemployment observations transformed from Vega Datasets v3.3.1.
+syntax = "proto3";
+package pbcorpus.industry_unemployment.v1;
+message Observation {
+ string series = 1;
+ uint32 year = 2;
+ uint32 month = 3;
+ uint64 count = 4;
+ double rate = 5;
+ string date = 6;
+}
+message Batch { repeated Observation records = 1; }

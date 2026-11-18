@@ -1,0 +1,1651 @@
+{
+  "format_version": 2,
+  "id": "us-public-schools",
+  "kind": "real-source-converted",
+  "description": "Published us-public-schools records from the pinned PublicDataHub CC0 deposit. A documented column projection is encoded; missing numeric values remain absent.",
+  "schema": "schemas/public-records/us-public-schools.proto",
+  "message_type": "pbcorpus.us_public_schools.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://zenodo.org/api/records/22152382/files/schools.csv/content",
+      "final_url": "https://zenodo.org/api/records/22152382/files/schools.csv/content",
+      "retrieved_at": "2026-11-18T16:10:49Z",
+      "bytes": 14526574,
+      "sha256": "8e57ad66e407daf5572afc19666565d672ed3866f7fd37b42cf56ebdba528c12",
+      "doi": "10.5281/zenodo.22152382",
+      "version": "2026.08.29",
+      "upstream_md5": "69d9f9c1f6260c206e3e39202c790e44",
+      "stored_path": "provenance/source-snapshots/8e57ad66e407daf5572afc19666565d672ed3866f7fd37b42cf56ebdba528c12.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 3060594,
+      "stored_sha256": "f73b3c052b8f13dd29761a98357e3af554c928d430a7b66ca4a408b1c79f02a2"
+    }
+  ],
+  "rights": {
+    "id": "CC0-1.0",
+    "notice": "licenses/publicdatahub-data-notice.txt",
+    "license_text": "licenses/CC0-1.0.txt",
+    "evidence_urls": [
+      "https://zenodo.org/records/22152382"
+    ],
+    "attribution": "PublicDataHub, Quan Nguyen, PublicDataHub: United States federal reference data as bulk CSV (2026.08), version 2026.08.29, DOI 10.5281/zenodo.22152382. Original agencies are identified per file."
+  },
+  "conversion": {
+    "selection": "All source rows, in source order.",
+    "field_mapping": {
+      "id": "id",
+      "name": "name",
+      "city": "city",
+      "state_code": "state_code",
+      "enrollment": "enrollment",
+      "frpl_share": "frpl_share"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 512,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 102268,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/us-public-schools/0000.pb",
+      "bytes": 40846,
+      "sha256": "17cebdcc258557702baa26f66f5d2e8d3e5afc491018910fba51effd8b722d90",
+      "git_blob_sha1": "946ce6cea78701317ff8cf1d8b705b12ead967b5",
+      "records": 512,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0001.pb",
+      "bytes": 41435,
+      "sha256": "76dd78ef24055442fe45c21adee5dbd2b65e9f73876d9f0ec010e85cb7f54afa",
+      "git_blob_sha1": "e459f0dbb062387e6418a7223da81993decf4884",
+      "records": 512,
+      "first_row": 512
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0002.pb",
+      "bytes": 41405,
+      "sha256": "9bf714b7197f367746ff0434705b1fc1710320a06f0b87ba969a68d7e975feed",
+      "git_blob_sha1": "b4b91a2a6a66e06ba3e5fb1d97500997bb765ec1",
+      "records": 512,
+      "first_row": 1024
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0003.pb",
+      "bytes": 39271,
+      "sha256": "ca1d9b18186ee08a25d5ac1867274104edaf7a163755c4eb0b94961819213986",
+      "git_blob_sha1": "8827c99cbc052530b7a9ae678e4d15e92a4f3623",
+      "records": 512,
+      "first_row": 1536
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0004.pb",
+      "bytes": 40176,
+      "sha256": "c57824eadd01ab3988b55d4a84f13bcb0fd3539f1d3eb9cc3359e8598c625555",
+      "git_blob_sha1": "4392c60e3ee184afdf4bc45b42c4620758c32a17",
+      "records": 512,
+      "first_row": 2048
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0005.pb",
+      "bytes": 40244,
+      "sha256": "4e0eea980b1385384945cab03070ec963fb8b8c8fc56d9fb6d9f6edb8cf6c459",
+      "git_blob_sha1": "c8d68ec557c54dfb5b7bc5568ea75039e97da14d",
+      "records": 512,
+      "first_row": 2560
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0006.pb",
+      "bytes": 41122,
+      "sha256": "6d87ffa496047ac5553748d417d8367068685e67bf59a53fb35841dc309984b0",
+      "git_blob_sha1": "a2025a5ff8153a546a53439d472479816bc9efbc",
+      "records": 512,
+      "first_row": 3072
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0007.pb",
+      "bytes": 40426,
+      "sha256": "f9cd8b9122065c0936931ff98aab6a9832555c84edb71fdb1af5647bfca4484d",
+      "git_blob_sha1": "85bb7000ae87d38c8aa409781daae3c1b9cb7757",
+      "records": 512,
+      "first_row": 3584
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0008.pb",
+      "bytes": 39841,
+      "sha256": "7654b0d5f1a18ec14ecc8bd3f2c305ddc8d59278605a5e47e2510e46bfd9683a",
+      "git_blob_sha1": "fb8b12a85f104d74a49bda7135cde231260d7d56",
+      "records": 512,
+      "first_row": 4096
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0009.pb",
+      "bytes": 42206,
+      "sha256": "ad9af7bb6dc83f368ad0c82d6a42dd5c2717b872b8919c5cb7dac9ebad54ceea",
+      "git_blob_sha1": "f874d03cc846f3560ca1d539c9b1195fb6d3095d",
+      "records": 512,
+      "first_row": 4608
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0010.pb",
+      "bytes": 42196,
+      "sha256": "ded7e221c4847d4bed67c1d939fe1a72d7be517198a3fdc368d2382ef847032d",
+      "git_blob_sha1": "753ac86556176092d8a09a7eed17fd297a2e299d",
+      "records": 512,
+      "first_row": 5120
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0011.pb",
+      "bytes": 39291,
+      "sha256": "da665860ba6cdac4cef8c7e774fda3090cf1a51dc9eb1144ead10bd5a2a4ed7a",
+      "git_blob_sha1": "e916d127c750e991873776afe422c9f734a63157",
+      "records": 512,
+      "first_row": 5632
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0012.pb",
+      "bytes": 40781,
+      "sha256": "9c2fde61390ed92fc506afd2130dc6941a16a4cdf86f03a6a1fec072291e4683",
+      "git_blob_sha1": "a018651185d41ed83240329b728bc5f81b9f46b7",
+      "records": 512,
+      "first_row": 6144
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0013.pb",
+      "bytes": 42545,
+      "sha256": "7074160a1f5b459638335401c8b61e404856c1a2eed4135a2fb47324b4348ecc",
+      "git_blob_sha1": "7d5131aa8a7df2cee2bdbc22c1d0ce61854b7d5e",
+      "records": 512,
+      "first_row": 6656
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0014.pb",
+      "bytes": 41746,
+      "sha256": "25e5378501deea174a3726bd51d280db85fbc147fdc910db525bde3869b3a3ab",
+      "git_blob_sha1": "dce3df2bd8106fe0020d004925bcca98ab3021a2",
+      "records": 512,
+      "first_row": 7168
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0015.pb",
+      "bytes": 39919,
+      "sha256": "bfbc81564569df6bb5a6d146a637a686f5322351c48807a3cf0bcae133f72fd5",
+      "git_blob_sha1": "d6d67f5c0946cd2f48e03bebd693992acecef0e8",
+      "records": 512,
+      "first_row": 7680
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0016.pb",
+      "bytes": 39590,
+      "sha256": "adab15fd18b0895924fdb7f8e41361693be553c691163c1f77190ba9ea8e5257",
+      "git_blob_sha1": "e8d1192e1e93853bf6c8621eaec155f4eaa7f6fd",
+      "records": 512,
+      "first_row": 8192
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0017.pb",
+      "bytes": 39405,
+      "sha256": "9acfa4141829aeb0688b929e9cb0503ec66ecfe72ec3e9857a0dcad8b681a9e6",
+      "git_blob_sha1": "651f4ac158ddc777e03259d8141452a0534baf7c",
+      "records": 512,
+      "first_row": 8704
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0018.pb",
+      "bytes": 39694,
+      "sha256": "d937c06cf46fdc2a7d23e700d5e42f48ccb95615e5a0c6c18ad7c4b0ba0984d2",
+      "git_blob_sha1": "619e69988046486522b675a81ac4bad33d4858a3",
+      "records": 512,
+      "first_row": 9216
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0019.pb",
+      "bytes": 39330,
+      "sha256": "8cd008a04668694d86d4dc8c7e7982aed64496f0aca6746144d43a0c04265fb2",
+      "git_blob_sha1": "ccbaa1ae0d9e752e33eb3bf7e2bf340444394503",
+      "records": 512,
+      "first_row": 9728
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0020.pb",
+      "bytes": 39448,
+      "sha256": "6d7da2814167669ad569394c4bb791cedc6b7352b4946b454aeeeea01087d295",
+      "git_blob_sha1": "699971027a37a7870646ed5f59eb5097135e46be",
+      "records": 512,
+      "first_row": 10240
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0021.pb",
+      "bytes": 41342,
+      "sha256": "bd476bdbea38ad128fc07e259e3354e68af45ddbd132ad804db2e14a4c513458",
+      "git_blob_sha1": "0f086002a927dbcdb61c347129a5f80521ed4c98",
+      "records": 512,
+      "first_row": 10752
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0022.pb",
+      "bytes": 44252,
+      "sha256": "5f7ec7db737186a6137cab82ed5d8790ee0cbdfedc10cb6040d126ab166468f5",
+      "git_blob_sha1": "62e8ae306b4be73b9636c2b9d0b9d546fc65f3af",
+      "records": 512,
+      "first_row": 11264
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0023.pb",
+      "bytes": 39711,
+      "sha256": "090c98642e08a89727ac4976a6481b38da4cd087cff35b52bb3e2bab61bbceb3",
+      "git_blob_sha1": "f33502a7d77005fb7b00a5d2a0ecc832773689fa",
+      "records": 512,
+      "first_row": 11776
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0024.pb",
+      "bytes": 39379,
+      "sha256": "47b2a2679bee40de0d59b41111612b8e23b8775d777adc3aa4ebf7bd64295d35",
+      "git_blob_sha1": "9558f72284c6780e7c13652faf7b3cf9370d7746",
+      "records": 512,
+      "first_row": 12288
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0025.pb",
+      "bytes": 39763,
+      "sha256": "2486c4a90321755283701394067aad31192535f33501ab602a4ff60c35893efd",
+      "git_blob_sha1": "b3758aa39ada5e1282738dc0d5edb25d3cf5b3ef",
+      "records": 512,
+      "first_row": 12800
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0026.pb",
+      "bytes": 39897,
+      "sha256": "06698ba397f7f36670c92ee0fc3f9f323cc5ce0e1623f3bdd75f1eb3d0ca802a",
+      "git_blob_sha1": "1eac576530b77adc1cea6a5c67b833a2cb4e4287",
+      "records": 512,
+      "first_row": 13312
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0027.pb",
+      "bytes": 40246,
+      "sha256": "62ff9f2e5c87818ea7a5f33d84e7a0513b303e2cce931fe0ebb23516876bf714",
+      "git_blob_sha1": "6f9a60650d20335f6796b35483fd938c324d5ceb",
+      "records": 512,
+      "first_row": 13824
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0028.pb",
+      "bytes": 39659,
+      "sha256": "250f79a3b5537407c6c9562fa8080292aeac3e9a996d4b0cf4573161bc9b2b84",
+      "git_blob_sha1": "13bf70aa1c6569f7fcde7b488f77d40be0a8e210",
+      "records": 512,
+      "first_row": 14336
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0029.pb",
+      "bytes": 39066,
+      "sha256": "45c6be9c280a08f5d02c831a0d1ce70fce4418c0e420489f5dcca1f5f599aaaa",
+      "git_blob_sha1": "c82c088e03487990770680e0221e13670537d56a",
+      "records": 512,
+      "first_row": 14848
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0030.pb",
+      "bytes": 39360,
+      "sha256": "27d502143d8cd0536885f4715d482013648e1a19c420269e74c6b3cf260a824a",
+      "git_blob_sha1": "3449405413ad2cb5225fec905d8f0f81de43f637",
+      "records": 512,
+      "first_row": 15360
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0031.pb",
+      "bytes": 41439,
+      "sha256": "06ad7841732e267b630dc348d49adb226b8e3daddccd36a02ecf04551396cc23",
+      "git_blob_sha1": "47d4897042223a94edf17e7eee5a7054aa1140b5",
+      "records": 512,
+      "first_row": 15872
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0032.pb",
+      "bytes": 41902,
+      "sha256": "1f1e2a14cc3f8759bc20a1c70a1c87853552a148bd31f4357c5dc12e52cca8dd",
+      "git_blob_sha1": "da04498bf8fd7a03df98e2c39f813cc22a0e51b4",
+      "records": 512,
+      "first_row": 16384
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0033.pb",
+      "bytes": 42097,
+      "sha256": "0ce83e77cbf0d59f6ad219bad2f8ebcef48c02945e901833b8b9b362920a6473",
+      "git_blob_sha1": "b0853a4207f88b88a185c922cba0e2251358af3d",
+      "records": 512,
+      "first_row": 16896
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0034.pb",
+      "bytes": 41166,
+      "sha256": "bd78deb239de27ccc5adbda63f6bce708fcbed62e265a80d7cff125fe024800b",
+      "git_blob_sha1": "8db250f74790dbb35cb134544b84ab7db5e41e6c",
+      "records": 512,
+      "first_row": 17408
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0035.pb",
+      "bytes": 41478,
+      "sha256": "b581cb5889a6b00b4086f8f9ebc9e26a26776f8987843979070b6d563547abfc",
+      "git_blob_sha1": "e744c6af8eb6ab8adde40b20484f58fcbfb61319",
+      "records": 512,
+      "first_row": 17920
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0036.pb",
+      "bytes": 41642,
+      "sha256": "f9819600f264635881ca68fb5b9e52521a65362959b773892cd5c5a2e1516423",
+      "git_blob_sha1": "4584fae3287615703ebb2a3ea0aba2b21b040a77",
+      "records": 512,
+      "first_row": 18432
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0037.pb",
+      "bytes": 37832,
+      "sha256": "61e63dcdaeaf7a2c7aba149e58c95ad9cafb79c486a7a8fcfd20b16f9ba441fd",
+      "git_blob_sha1": "83c0435531c0d0ab62f0908f670149a20504fda6",
+      "records": 512,
+      "first_row": 18944
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0038.pb",
+      "bytes": 42683,
+      "sha256": "dd33b6598f5f7e4654a26b7d9c238e295b4ffd1c37fe0868fe21328fc4ff9c79",
+      "git_blob_sha1": "a65c321809f002ed1c861e99a2262ceb2ccad0ef",
+      "records": 512,
+      "first_row": 19456
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0039.pb",
+      "bytes": 43847,
+      "sha256": "002d5e60732bc1e26179acb35ce5d03ca03acc96c6deec84a790bc13787317c7",
+      "git_blob_sha1": "678cca64e929d4383321d6a452a671be964c545a",
+      "records": 512,
+      "first_row": 19968
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0040.pb",
+      "bytes": 43669,
+      "sha256": "bfecce252e0ca981ab2c5e60db828161df7ff7b6aa0b006c7d2c0b55ccbfaec2",
+      "git_blob_sha1": "1a15adbb7997dd7d574f23bcb9827b353e577ecc",
+      "records": 512,
+      "first_row": 20480
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0041.pb",
+      "bytes": 42904,
+      "sha256": "a7dbe1e196cd42c15e112f5fab52fa8b83e0961b6dd5de7e864bc329a4500470",
+      "git_blob_sha1": "a8d52d6aa74e7543c4e7b0c4fb2e02b32d7e8e53",
+      "records": 512,
+      "first_row": 20992
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0042.pb",
+      "bytes": 41785,
+      "sha256": "9d7b10e08a3d3cb0a9a298f7e4079854b1e972f6f71f7ba0e3db4398c290cc15",
+      "git_blob_sha1": "66dabd139bb30a2a492d893d57605c3a1d56f982",
+      "records": 512,
+      "first_row": 21504
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0043.pb",
+      "bytes": 40766,
+      "sha256": "fab0a79c7e5a863a16c6a745bd6cab4dbbe971ff345f706abf465c1dc4e5439b",
+      "git_blob_sha1": "ab740ee43fcfdcc9c0ccbcd808aa04aa1ee089c8",
+      "records": 512,
+      "first_row": 22016
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0044.pb",
+      "bytes": 43505,
+      "sha256": "b3b165a9df81dc99f6fb3916ecd77473b4f4d55f0c807824c22c81577fa76955",
+      "git_blob_sha1": "8c9eb3e8bf1631e2c434b1af0c03451ea71c144a",
+      "records": 512,
+      "first_row": 22528
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0045.pb",
+      "bytes": 42852,
+      "sha256": "8d4d0a725deb11c7feabe1c6a706a96945a36ced290688d4ca54f7b128bf616c",
+      "git_blob_sha1": "8c290fd5706db450443b6c64743e7cb9142b8cea",
+      "records": 512,
+      "first_row": 23040
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0046.pb",
+      "bytes": 43411,
+      "sha256": "6e36098ee12c9a644dc3f0919e44871474e08af1fe83d6281cfaeab973d378a4",
+      "git_blob_sha1": "7560175535b0047a1cecadf71782b7750ae80b52",
+      "records": 512,
+      "first_row": 23552
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0047.pb",
+      "bytes": 42215,
+      "sha256": "9557b3b7d7ecb550433015af8a704882da29792e9cb169f74455a33abb0c4c30",
+      "git_blob_sha1": "2d0a092fecda1d3db03b387987bb97e561f369d5",
+      "records": 512,
+      "first_row": 24064
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0048.pb",
+      "bytes": 42160,
+      "sha256": "00da7565653f5aadd33efc88b763e7f35e9c3e1e65d0cde1d338fe5974887776",
+      "git_blob_sha1": "cb5b5cfeed8a9aab362a8b6ff34674250d4d2e24",
+      "records": 512,
+      "first_row": 24576
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0049.pb",
+      "bytes": 42293,
+      "sha256": "712f646e852c0f9cdcca4ab5047d0161978eb260bc49b6bb587864273d6a321e",
+      "git_blob_sha1": "a90de51f2c8bdf74393fc7a8c403fbdb8a6a5619",
+      "records": 512,
+      "first_row": 25088
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0050.pb",
+      "bytes": 42207,
+      "sha256": "25ed8662f42e63882cab6f6708e8fc0f4b76d506354691f7127168861d4a4f37",
+      "git_blob_sha1": "93be9a4e481540679e89b2e04cefb86d7006c902",
+      "records": 512,
+      "first_row": 25600
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0051.pb",
+      "bytes": 42028,
+      "sha256": "15407ced5e84c2e3919d20c0c434eaf2da8ae19452f573a1c94ce7e973c5406e",
+      "git_blob_sha1": "84c3f467b86ee101aa1f13902932b2b66c193607",
+      "records": 512,
+      "first_row": 26112
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0052.pb",
+      "bytes": 40428,
+      "sha256": "3de084f9ee1190dd3c3c3db058a72b03060fa5f158394720607ed7aa761e70f9",
+      "git_blob_sha1": "fa696a9054f08bd201116993faa7c863e69acea0",
+      "records": 512,
+      "first_row": 26624
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0053.pb",
+      "bytes": 38639,
+      "sha256": "5d85afc603773c7eef6c08cde51957fafd2dad8f562fbd5e911eea8f94647380",
+      "git_blob_sha1": "107347b83c136388459937515eab512137b4fedf",
+      "records": 512,
+      "first_row": 27136
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0054.pb",
+      "bytes": 37748,
+      "sha256": "37cf81d21f801f275a93b9316c7295de61f45d38ee3e57e02386c1671b44337d",
+      "git_blob_sha1": "cf20bdaea1929ff8f18cf0a3250c11c675664926",
+      "records": 512,
+      "first_row": 27648
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0055.pb",
+      "bytes": 40026,
+      "sha256": "a12e9a41d68589b46992a30a39596e6c0256486cc0a6342a187646bdc49e9703",
+      "git_blob_sha1": "0e0bab734707fec25836d98dc139a725501eacb3",
+      "records": 512,
+      "first_row": 28160
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0056.pb",
+      "bytes": 40532,
+      "sha256": "9ed72f183b704121e598d2595db6d27c37a06ad54db549ca39c2eee9f24ab798",
+      "git_blob_sha1": "2ac4e132fca200328b8871eaa9b1095b859f07c3",
+      "records": 512,
+      "first_row": 28672
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0057.pb",
+      "bytes": 40187,
+      "sha256": "fc8d69f77feb598ff57f8a57a2b00b63dcce8f6c691f48cbea8c6ed8084deb65",
+      "git_blob_sha1": "7b21ff1d5cee3338c08f2d60e4c86d451f26ca02",
+      "records": 512,
+      "first_row": 29184
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0058.pb",
+      "bytes": 39648,
+      "sha256": "311cebfabd9cde22639636afcc809a5835aa9d29e5aca0c1eec905ede58d51f1",
+      "git_blob_sha1": "a382c5715ab0ee12503c9d409070f9d732aa69f6",
+      "records": 512,
+      "first_row": 29696
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0059.pb",
+      "bytes": 39904,
+      "sha256": "1b9ddf4591688beb5ee12aae83a9ab776c018422d051748baf37c477c4761cbc",
+      "git_blob_sha1": "b91e9a44ff6d2d207fd7ceddc3abd72a89194509",
+      "records": 512,
+      "first_row": 30208
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0060.pb",
+      "bytes": 40423,
+      "sha256": "691e1d4afef6890592b00f19a7bdd683b84acdd73c7f06a6c3c77f52a597c64a",
+      "git_blob_sha1": "4f9d28d51a4d402b8d5f38ec013847cf240a5f27",
+      "records": 512,
+      "first_row": 30720
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0061.pb",
+      "bytes": 40567,
+      "sha256": "bd98bad66ef96f09094b0e6a2f771d30d61621548e0eb20715346838cd7f8a9b",
+      "git_blob_sha1": "cd939cea7f1585a272059c838a68b17716488c83",
+      "records": 512,
+      "first_row": 31232
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0062.pb",
+      "bytes": 42555,
+      "sha256": "1e36a6f54a03aeeb46f4d2f827f338c80aadb96e10e2cd5f7f4e3c510fadfc5d",
+      "git_blob_sha1": "b3b9cb3c1d14c5563d4a2d35c9e7ab8a141ce8b2",
+      "records": 512,
+      "first_row": 31744
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0063.pb",
+      "bytes": 42551,
+      "sha256": "f23f5b1842f159f8a49f5122017b51f7978b24051fc6dad51d259c3b5aa4f1bb",
+      "git_blob_sha1": "2130aa8c0af85b9cdee7636d8f85bc7c9d6307b9",
+      "records": 512,
+      "first_row": 32256
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0064.pb",
+      "bytes": 42885,
+      "sha256": "e64c1b50ffb49c8acfcdfe61dd8159b08f45c26ce0b253db4f799c8be73cc25a",
+      "git_blob_sha1": "b1cf24b8da1926b01f424f193c4a900b333a6790",
+      "records": 512,
+      "first_row": 32768
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0065.pb",
+      "bytes": 42491,
+      "sha256": "97e486705d968df4ecdee6200a6247e9571e19112605d8807cb9c492b6368ac3",
+      "git_blob_sha1": "f483b06034ea4610cc978cc91a1bb5247bd592ab",
+      "records": 512,
+      "first_row": 33280
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0066.pb",
+      "bytes": 42082,
+      "sha256": "84e98f72c97bec62cd2565a7b0ffcb78d441a67866482b5f58430d2780c0d31f",
+      "git_blob_sha1": "d5c46baca47fd072e4f2d5601258fa5e7fef1b70",
+      "records": 512,
+      "first_row": 33792
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0067.pb",
+      "bytes": 42151,
+      "sha256": "7be35aa27cf1f84ad5071933f768cc7dea5ee0d0612b3e5a3f67bf6569b16cf8",
+      "git_blob_sha1": "2d70a24ea662d20fc852e5252792f63e82f97e30",
+      "records": 512,
+      "first_row": 34304
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0068.pb",
+      "bytes": 40396,
+      "sha256": "52e2cab8fe74ea47af5fff823ee8437fd6f3c8733b52a20355452938f6fe12b0",
+      "git_blob_sha1": "a83ff07385b235c741231ca491c2fd8823258213",
+      "records": 512,
+      "first_row": 34816
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0069.pb",
+      "bytes": 38571,
+      "sha256": "1854c67d8af6a068bb7f5c2824d3b5a7d1de98e8b6aeb2ae3b6b55575340481c",
+      "git_blob_sha1": "803f27cc7827d05fa9748d51f4e10a34d1ac91ba",
+      "records": 512,
+      "first_row": 35328
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0070.pb",
+      "bytes": 38449,
+      "sha256": "88dc3b318384db0770e500afe12abc2eab7a619b85bc33013157a6a4c093e4a5",
+      "git_blob_sha1": "d7de1caefac422b01b16e5dd7037e777e463c41b",
+      "records": 512,
+      "first_row": 35840
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0071.pb",
+      "bytes": 41744,
+      "sha256": "4bb64e3076402d8f669a60d686182afecfa3e00bbe22814a5e76bcb11664b99a",
+      "git_blob_sha1": "ecd1594483ee8432d3faade00164c483afbeb642",
+      "records": 512,
+      "first_row": 36352
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0072.pb",
+      "bytes": 41511,
+      "sha256": "72ff1ae0daef4e9a7976a78100e244d5cef13155112a3bf70619f3cec8bad00f",
+      "git_blob_sha1": "77af876d60828b2a22e86727018b10676bc7cf0d",
+      "records": 512,
+      "first_row": 36864
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0073.pb",
+      "bytes": 41913,
+      "sha256": "b568cf6d0dda7e0449b937d2a70a5acba8e1765b8c9018a2d7e0874cd084f992",
+      "git_blob_sha1": "4658d470c1e245338ad8599d3b89ca01d3cf7cf9",
+      "records": 512,
+      "first_row": 37376
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0074.pb",
+      "bytes": 43058,
+      "sha256": "8039f9187698ef69f87d7341b720823fd782fbe417f50c81b0e51e287e1717f1",
+      "git_blob_sha1": "255f7f18d06eb354c6a6fcb7baf57a30e39a1799",
+      "records": 512,
+      "first_row": 37888
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0075.pb",
+      "bytes": 42921,
+      "sha256": "8ac559268a3749fab75ccc8c118440e98f56938b021d0f72edb46acac822d75d",
+      "git_blob_sha1": "5731a2df709fb30a34d306b41421c4c6870783ae",
+      "records": 512,
+      "first_row": 38400
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0076.pb",
+      "bytes": 41739,
+      "sha256": "2daab2f53fe6a492380fb156ebd7979f3f0757d048b493a423b1c556cc474f9a",
+      "git_blob_sha1": "08b9413b3493757cc95587bb4252f299f8c64cc6",
+      "records": 512,
+      "first_row": 38912
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0077.pb",
+      "bytes": 40684,
+      "sha256": "8f02966e96769f8fe749b616ccb397fde334b6d8644f9a953a381c44757fcc90",
+      "git_blob_sha1": "0c1c982f0ac6b3e93d172a603ce3a4453ccd46ff",
+      "records": 512,
+      "first_row": 39424
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0078.pb",
+      "bytes": 40898,
+      "sha256": "740edf168ee6e6349c4d1b77792d123307bd878b755e6cb7de493bd230e28038",
+      "git_blob_sha1": "816c370f6317fef1b0bb6835cd63d00c41de5eef",
+      "records": 512,
+      "first_row": 39936
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0079.pb",
+      "bytes": 40451,
+      "sha256": "be2ce2036d7bfc1323d1bf5b5e53887f4cbb2541d9aa8a555244b231f62011e5",
+      "git_blob_sha1": "69a13541cbabb88dbb461293674aecdf522f2d3a",
+      "records": 512,
+      "first_row": 40448
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0080.pb",
+      "bytes": 41396,
+      "sha256": "ffcd2c1674bb48aadeefdc2d08e085a63302cd9044de6d65d54072274c314793",
+      "git_blob_sha1": "abf17bbd50b7dc583e948385ba1db45d85067f6c",
+      "records": 512,
+      "first_row": 40960
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0081.pb",
+      "bytes": 35100,
+      "sha256": "f2d9794d92f5f163144a32692478168c44283ebda18bea4f32e8f1307c19da52",
+      "git_blob_sha1": "447c393215aab42ffedc49192b9688215450a5d9",
+      "records": 512,
+      "first_row": 41472
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0082.pb",
+      "bytes": 33897,
+      "sha256": "cb0fb8fdf663b5e56d848e903f76caa83327f75059b39dbc19259b1cad0661f2",
+      "git_blob_sha1": "499594bd8b21c8627f9f5a66fb2408f39c364e28",
+      "records": 512,
+      "first_row": 41984
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0083.pb",
+      "bytes": 34756,
+      "sha256": "c209acbe9647de54ded390ef3848d2ca015bde2feda59f43d4b984a02e3d5ac2",
+      "git_blob_sha1": "8fe6f7dd2bf4efb99622f71a96c3493c7de1b1f4",
+      "records": 512,
+      "first_row": 42496
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0084.pb",
+      "bytes": 38971,
+      "sha256": "93b075123bcd1cdfb380f60f8463d7c607858d2a7a4afb1dc51e012b70560eed",
+      "git_blob_sha1": "7f97782d0acf9906d32eed15471ba2033a2fd0a1",
+      "records": 512,
+      "first_row": 43008
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0085.pb",
+      "bytes": 42318,
+      "sha256": "3d8afb00eb919bcdad15554249cae2e30dd82d548a595804a8e58d59befdba92",
+      "git_blob_sha1": "a2f2020c268fa222695a5cf10db36204b16239f5",
+      "records": 512,
+      "first_row": 43520
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0086.pb",
+      "bytes": 41619,
+      "sha256": "4879c522f383f44bcda30e0d6344b86911687f5b570a320e0b5f562534013435",
+      "git_blob_sha1": "f158c64a8409e41259803810ce4b47d083a3bed7",
+      "records": 512,
+      "first_row": 44032
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0087.pb",
+      "bytes": 41636,
+      "sha256": "165a38c313fdf2b1ad14b9818725f75a6e0524651dfad3503b7182e8e1079367",
+      "git_blob_sha1": "81f3005e727b2144a33a713290db2d8d11607a2b",
+      "records": 512,
+      "first_row": 44544
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0088.pb",
+      "bytes": 41335,
+      "sha256": "7cf402ff0c3db48fac5b0a3d8410335383352d56e187d0a0fae76d61bd78ebe0",
+      "git_blob_sha1": "2714bc0b6a37c313382b6328492763e2f6812446",
+      "records": 512,
+      "first_row": 45056
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0089.pb",
+      "bytes": 41361,
+      "sha256": "e24ec8bf50f5276b938225eaad5df44fca27aa36e32e5bd83849994366b807c6",
+      "git_blob_sha1": "ad48d58345876df329d9d7c198e0403683ea7e08",
+      "records": 512,
+      "first_row": 45568
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0090.pb",
+      "bytes": 42539,
+      "sha256": "08820eb7d742318d97df613e41125ae16a10541ace9cb3647b1f3b162e7a92aa",
+      "git_blob_sha1": "2ad7383a284709d6a71fd6448636803f6ee6f411",
+      "records": 512,
+      "first_row": 46080
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0091.pb",
+      "bytes": 39852,
+      "sha256": "e444eeb04bf3dcbd5eaee9d5ef52b7d0650616758d26cb043c129bccd1561c0f",
+      "git_blob_sha1": "3229d9c6e79f4792df4e1718d8d234504472aaeb",
+      "records": 512,
+      "first_row": 46592
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0092.pb",
+      "bytes": 40818,
+      "sha256": "9fefe00679c5665ba61fe243d98a9f93387ad3f4a0f647e2c2f0168b03ef9257",
+      "git_blob_sha1": "ffa32e76464bbf3dc9145bb199f190dede12a41f",
+      "records": 512,
+      "first_row": 47104
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0093.pb",
+      "bytes": 39424,
+      "sha256": "736c3d78b3588a2609ea04131d26d7480013eec68d400b1127a4181b33272b93",
+      "git_blob_sha1": "36783ec40a54a5d2c5d0f0da1e9c557236b505b8",
+      "records": 512,
+      "first_row": 47616
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0094.pb",
+      "bytes": 39604,
+      "sha256": "1d2206df5e421ed93baf31706beaf1efaa74549ec68cab47b47fb01d0c04ad11",
+      "git_blob_sha1": "1c7f771094ccc5a116c3575a142d855f834bf526",
+      "records": 512,
+      "first_row": 48128
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0095.pb",
+      "bytes": 40520,
+      "sha256": "0758d75b7deb7bd222db73573a0a5d52fdc8fde6ab4a45db66664f96a1b3bb55",
+      "git_blob_sha1": "3abe887d3ced39c08efad03cbe3d02eb955e7ad9",
+      "records": 512,
+      "first_row": 48640
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0096.pb",
+      "bytes": 40275,
+      "sha256": "69db57797a4cf3574028ad6d4f727d37c93a3b56a6f383dcfba35b1984ad94dd",
+      "git_blob_sha1": "108a778636b990988a635cb6272af20eb28bd8a4",
+      "records": 512,
+      "first_row": 49152
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0097.pb",
+      "bytes": 40804,
+      "sha256": "85ee87e3d3f93f4f8f3497f5f080e3fe71ef4f47286cdb112b8a77fb5d07729e",
+      "git_blob_sha1": "5009b9c6042a3878608e7b4618beb09b83d3961e",
+      "records": 512,
+      "first_row": 49664
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0098.pb",
+      "bytes": 39987,
+      "sha256": "f104daf0680e6b940457708630d2dce9b8655a0c12a2399b54114088e63251bd",
+      "git_blob_sha1": "f35d95262e3391d71163bc50bea3072a0cdf4fa7",
+      "records": 512,
+      "first_row": 50176
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0099.pb",
+      "bytes": 37973,
+      "sha256": "c84f6696abf86a560635148f3fab97da28adfb35c5c4b37dafae64fbcb814bda",
+      "git_blob_sha1": "e8154c7acc4f3fb90d4b819015afcd6cadf16608",
+      "records": 512,
+      "first_row": 50688
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0100.pb",
+      "bytes": 37829,
+      "sha256": "f8ebbb0bff9d25b2c1a86af20507637c5e661a93e912c5db47966883a0921358",
+      "git_blob_sha1": "4197eb5d9d98973b11838017c718469ea8535501",
+      "records": 512,
+      "first_row": 51200
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0101.pb",
+      "bytes": 37539,
+      "sha256": "1739afb16337bdf6fe7fe614f07e1792b0d6d11678edf1b6659adc62139ecfca",
+      "git_blob_sha1": "a8420e0b780427efc9587754a59cb1b3ae194b55",
+      "records": 512,
+      "first_row": 51712
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0102.pb",
+      "bytes": 37511,
+      "sha256": "c3e43cece820d2a463bad2a85e935e6dd367eeb117174e209881eda334dcdc99",
+      "git_blob_sha1": "ad05ebceed4ee652e952aeffe1d6af497bf9dcce",
+      "records": 512,
+      "first_row": 52224
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0103.pb",
+      "bytes": 36295,
+      "sha256": "d0c1a4663003ed2319edcd516cb6c3602081f512f49d35cbf7c9131438bc658a",
+      "git_blob_sha1": "d284d98d55918e08204156b4ca010e4360e337ad",
+      "records": 512,
+      "first_row": 52736
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0104.pb",
+      "bytes": 32315,
+      "sha256": "2ee1cd93dd398ef61b4165fa74f47325263a66ec707049788b785bda7b65fc19",
+      "git_blob_sha1": "d382bd8373bdb5022bd75615973a565c9a9a7043",
+      "records": 512,
+      "first_row": 53248
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0105.pb",
+      "bytes": 38296,
+      "sha256": "19ce33b4345841051a8f984e92459c94a7c5779609435d7a65d180a12dd5b044",
+      "git_blob_sha1": "f70f0cf006dacc562f37b7d5cc89a05540229393",
+      "records": 512,
+      "first_row": 53760
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0106.pb",
+      "bytes": 39296,
+      "sha256": "1a6b84176eec8f768d139840acd93aead9cfcd0615ed50dc17381a0337dc694f",
+      "git_blob_sha1": "3e8dfec391d83bbf13274ca8156218d2a688c164",
+      "records": 512,
+      "first_row": 54272
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0107.pb",
+      "bytes": 39839,
+      "sha256": "6e52fcff35157edb4215aed7245236a961f665c499fa3171da51c5de3038b8db",
+      "git_blob_sha1": "62501412875480c9a4655967713215b896b4049c",
+      "records": 512,
+      "first_row": 54784
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0108.pb",
+      "bytes": 40105,
+      "sha256": "f48d350ff337c00adf66f259ffbb35c83ad2e100fd63e91864d67267829ae795",
+      "git_blob_sha1": "f86f39382de1c6ebf8904a8b76380366259fa19f",
+      "records": 512,
+      "first_row": 55296
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0109.pb",
+      "bytes": 41808,
+      "sha256": "c76661d986be946ae560b3354b702670c34304494ac01f9efa7af09f1e491fdd",
+      "git_blob_sha1": "e95b48215736f2c9f9f6c78d1a9d4d7fa16e943f",
+      "records": 512,
+      "first_row": 55808
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0110.pb",
+      "bytes": 42448,
+      "sha256": "61aa90b69dce74ebc1dbe56f17745218b73a89837032ea79de5cc79fc74ba65a",
+      "git_blob_sha1": "5c2a5f35956237d1882aa9125e811ad90dc40b96",
+      "records": 512,
+      "first_row": 56320
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0111.pb",
+      "bytes": 43077,
+      "sha256": "97678c61d2170fa83412cd7fe8c1ac6b879a8d42cbb8caa533a43415e6d0f006",
+      "git_blob_sha1": "5e45a8d3afb46f304acb1f72e1e3d52c68359560",
+      "records": 512,
+      "first_row": 56832
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0112.pb",
+      "bytes": 42654,
+      "sha256": "8cddf8ea748b3badc4dbbff8668b4128a82126c3af40d2185840e1479aa38bda",
+      "git_blob_sha1": "f73a7eb7fe8be880f60c5853c66a7800cd7f7739",
+      "records": 512,
+      "first_row": 57344
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0113.pb",
+      "bytes": 42669,
+      "sha256": "7f4209fd9ed9a323d4b7dc590c0b5e10f0227754f5c89a2ce3210f7ac3129dc2",
+      "git_blob_sha1": "f4078ce33937ea1c10b06155e4eb5924468874a8",
+      "records": 512,
+      "first_row": 57856
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0114.pb",
+      "bytes": 43029,
+      "sha256": "775c8ff73dcea88f7303ebc59e0c49225f2c4459e18b739529225a5fd689f1ef",
+      "git_blob_sha1": "cb8fd12e176a323c83726aeca7c481b85545c26b",
+      "records": 512,
+      "first_row": 58368
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0115.pb",
+      "bytes": 39696,
+      "sha256": "036e7b2866ca376f3aa08050da604bfe944bd9f1c9c33ce95cca760a6e0ef5cd",
+      "git_blob_sha1": "425c36711e927f81c57ba33fe71e271c40092e64",
+      "records": 512,
+      "first_row": 58880
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0116.pb",
+      "bytes": 39346,
+      "sha256": "d60e5302078567d1c36c0556c6d2773158b750ce5c6d318d145788c9892ffdbe",
+      "git_blob_sha1": "59b3487fde682e07acfa6ac6ef71e4852eaaa500",
+      "records": 512,
+      "first_row": 59392
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0117.pb",
+      "bytes": 42430,
+      "sha256": "789881b40ac2a31cf3abfe53ad72b53e621ee073b1e6bd3caf2f1d44815be7e3",
+      "git_blob_sha1": "49e95916c46ead045ecee33366d1e6c2ec64d718",
+      "records": 512,
+      "first_row": 59904
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0118.pb",
+      "bytes": 42712,
+      "sha256": "f4c84963934fd57f90a3d7d3b9360f8e716e8b63dfcd9787b40f493e38607776",
+      "git_blob_sha1": "0e32d6c4541acef3b51556783d3825989ebb629a",
+      "records": 512,
+      "first_row": 60416
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0119.pb",
+      "bytes": 42598,
+      "sha256": "6ea38119236cf1864c089338017f928cc35b282f6adc2ca70df89b3b706209c9",
+      "git_blob_sha1": "2fcabc4dac938e803b00f7d9221c4d987befb3ce",
+      "records": 512,
+      "first_row": 60928
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0120.pb",
+      "bytes": 44263,
+      "sha256": "5fd7c3e4e050bdaabd02b4b918bce4e203142533c8aa671b9a6c6956ec42afe0",
+      "git_blob_sha1": "a39b8951a2769c1ef935761a900a9ffa850fa688",
+      "records": 512,
+      "first_row": 61440
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0121.pb",
+      "bytes": 42316,
+      "sha256": "56752e4ed8fbf77ffa9366d1ff3985c9c276d3943c69d4bfb1d755337b37cdc4",
+      "git_blob_sha1": "80d287fadc2e067f3804958d6a80672802cdcae9",
+      "records": 512,
+      "first_row": 61952
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0122.pb",
+      "bytes": 42181,
+      "sha256": "fc5ecda98170b512b7a2a41d68784fe55e58719eb7e69fa95f589a8962fdc3de",
+      "git_blob_sha1": "2055025d14e5f008b3bceb9f639aac533c9f546d",
+      "records": 512,
+      "first_row": 62464
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0123.pb",
+      "bytes": 42511,
+      "sha256": "48fde9906b94bc05c59012607c3016554bca073ffd000337d17a341a3fbce94d",
+      "git_blob_sha1": "4e03f0005dbff84e5d09c0f36ab8bd518e9df774",
+      "records": 512,
+      "first_row": 62976
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0124.pb",
+      "bytes": 42168,
+      "sha256": "3c8f2786e0f77f2d1a3d60b4bd041563fad7e81d04f4e4d749037939a8960758",
+      "git_blob_sha1": "0973f153f61728bffa4f3049c8c74057325e561c",
+      "records": 512,
+      "first_row": 63488
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0125.pb",
+      "bytes": 42671,
+      "sha256": "41caf538e777106f9c2a2e6e4af4f15897d32bcb0c80806ddb66f71885b50132",
+      "git_blob_sha1": "3969bfeed9cf4c38e8d36fccab2a7c807629fbd1",
+      "records": 512,
+      "first_row": 64000
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0126.pb",
+      "bytes": 39635,
+      "sha256": "2e142f21c3987a2545c47adbdfd46a90961bebff60f1fe699b61b83f3dbb3702",
+      "git_blob_sha1": "59a65db32e7000b17dab47f7a6a63f2b32e72656",
+      "records": 512,
+      "first_row": 64512
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0127.pb",
+      "bytes": 39147,
+      "sha256": "657ff458463494a9b65cdf3c66317742b7fefeeccfbf957a1cd959e337306431",
+      "git_blob_sha1": "fe7c531be3cf7f78ce41a9a65d40171a9f072b38",
+      "records": 512,
+      "first_row": 65024
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0128.pb",
+      "bytes": 40014,
+      "sha256": "9a12489713a2462d9aa512655636217a0d656437686090f91ca191cc08205b13",
+      "git_blob_sha1": "d4a3a2d46f4ac70312b1f7f5c8a1e939e9389adb",
+      "records": 512,
+      "first_row": 65536
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0129.pb",
+      "bytes": 40107,
+      "sha256": "198cfb7cd223d30805abed0fc68c28e85d1aa356a5e6ae7d5b7d55d5f3ee6d0d",
+      "git_blob_sha1": "74488a0ae08b5001e49b358fe8d3068af6572c2a",
+      "records": 512,
+      "first_row": 66048
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0130.pb",
+      "bytes": 39679,
+      "sha256": "769e001fdd1e3caa35aa919033ad73ab2a3606fc59bd9a026e97b14d0c40da18",
+      "git_blob_sha1": "f256093e8360e111182fa0c715b40b742f1a940f",
+      "records": 512,
+      "first_row": 66560
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0131.pb",
+      "bytes": 40095,
+      "sha256": "8eb9b6ce301aa6ef3c14aae7cf7a421233aef80400c599ae9281b5c2ae91729e",
+      "git_blob_sha1": "574ea9b859aeb48d829a8c34891def6740394019",
+      "records": 512,
+      "first_row": 67072
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0132.pb",
+      "bytes": 40699,
+      "sha256": "5b91251ae9c072706ecf63001ad0ab261132184f6e21eb68512d75dd56cf20ae",
+      "git_blob_sha1": "3bc25c5110d10830951c8f2ae6331eec6120cade",
+      "records": 512,
+      "first_row": 67584
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0133.pb",
+      "bytes": 39114,
+      "sha256": "0af89e793d2af5016a39d3cf8d6ae2ea6066a61469cf0eb29e85ef66abb784a2",
+      "git_blob_sha1": "0acdabc2e24508cce24551adadfeefa6949eaf00",
+      "records": 512,
+      "first_row": 68096
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0134.pb",
+      "bytes": 39390,
+      "sha256": "c69ac0e41835ce9a4134ce03aa0cdd5db3cc1a62137f06804931344680e4b2c4",
+      "git_blob_sha1": "e58be28d09c67978e7a279989b312c9bfcda9443",
+      "records": 512,
+      "first_row": 68608
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0135.pb",
+      "bytes": 40793,
+      "sha256": "2db42c625a28e56dc0d308100228db334fe781d5eae4d73002d05640c95db8ff",
+      "git_blob_sha1": "54cb204892ca62e60af15f782ce362078972bee1",
+      "records": 512,
+      "first_row": 69120
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0136.pb",
+      "bytes": 41390,
+      "sha256": "6a634bf4a2fb77083837e2e82fff4822e61e5b880772cc76055dbdccd61b08c0",
+      "git_blob_sha1": "35b78b07f0a6aabb04d64e9a8ea49ce9b93be1d0",
+      "records": 512,
+      "first_row": 69632
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0137.pb",
+      "bytes": 41459,
+      "sha256": "1aa6288dda6ee91ba7e420da26318caa39b0e3b97e691692ba846c8467796d02",
+      "git_blob_sha1": "8fb7e33d0374517b63447a7d11b1e033dd9e4326",
+      "records": 512,
+      "first_row": 70144
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0138.pb",
+      "bytes": 40624,
+      "sha256": "bc7f40e880065200f59732904f3eb45b3ce6e334b49b7b2c8ffbd024021fddd8",
+      "git_blob_sha1": "ba7775e58e72c2da0bf54f034685803d708b3109",
+      "records": 512,
+      "first_row": 70656
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0139.pb",
+      "bytes": 40220,
+      "sha256": "f5c78ed7eb5b8004e9c39e7e55bdd375d5d573a86befd0ec153bef10ad4bac65",
+      "git_blob_sha1": "9c8352d25517ff93cf45583355a34b993d840822",
+      "records": 512,
+      "first_row": 71168
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0140.pb",
+      "bytes": 35103,
+      "sha256": "f239c43d7417c612400f847b6560df200db28491b98c00117948c7047c032a5a",
+      "git_blob_sha1": "8be84d778784f2a648edf67242a3510df6e413a1",
+      "records": 512,
+      "first_row": 71680
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0141.pb",
+      "bytes": 34728,
+      "sha256": "9cfdec1292cf0aea2710416e73d1fb4bcd890fda901af556f8f0f78cfd14fe11",
+      "git_blob_sha1": "2617836c1c9e70d0e1ccbbecd0480af39a158639",
+      "records": 512,
+      "first_row": 72192
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0142.pb",
+      "bytes": 35441,
+      "sha256": "5b7cec8082d33e1709038b38079edf802d2904c9bb97c19ad1c0f114664ea49d",
+      "git_blob_sha1": "2069b5268ed131c67aefdaf3b0a96146ee3e480d",
+      "records": 512,
+      "first_row": 72704
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0143.pb",
+      "bytes": 38515,
+      "sha256": "e8e9cdeee40b9ab252367047fbbd233026a04200d24bfdc2b5cef319180011f8",
+      "git_blob_sha1": "5fc1cf7aeb39fec90e46d49233e02990bcf97e22",
+      "records": 512,
+      "first_row": 73216
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0144.pb",
+      "bytes": 40925,
+      "sha256": "369b2ef1e828ac47312e0dabe3009ff27fcb1f8d65d37ef5b441933797a16c52",
+      "git_blob_sha1": "f8bc7062fbbac7af4173d416f962e6fc938e39a6",
+      "records": 512,
+      "first_row": 73728
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0145.pb",
+      "bytes": 40544,
+      "sha256": "3be167ed6fbe93fb67d2e66f9ab0d61b03d08a3c965a3330a5005c32af401200",
+      "git_blob_sha1": "25dbb321a5c124bf6445a683e0368e238de5a21d",
+      "records": 512,
+      "first_row": 74240
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0146.pb",
+      "bytes": 38633,
+      "sha256": "2180de5a8f3e63fbdfc957ccb2a28fb36352956ab1a2dec86a634f0609671685",
+      "git_blob_sha1": "17de2c0b6e708c570ae2adfb647f0513095b49c6",
+      "records": 512,
+      "first_row": 74752
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0147.pb",
+      "bytes": 38148,
+      "sha256": "a1dc8862f866d3db0b67bc88488dbdbfccf555f5c54579982f7c9be4cafcf236",
+      "git_blob_sha1": "5f5c84405a339edf6dfb4cf4d5324a44545f6545",
+      "records": 512,
+      "first_row": 75264
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0148.pb",
+      "bytes": 38157,
+      "sha256": "39078f0e1d9eab83e5549d5c6b524dbbbef9bf4ed0ea74c622c996d553e7a4e1",
+      "git_blob_sha1": "eb3b6d614ceffd550513a62f00290e0249f31058",
+      "records": 512,
+      "first_row": 75776
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0149.pb",
+      "bytes": 39294,
+      "sha256": "2007328b103fae7ccfd380a087f1254f255354aa625d1f52bdd88dfd694de7a4",
+      "git_blob_sha1": "4cb1f1494a773cf4535345d706bf93e6a007dd33",
+      "records": 512,
+      "first_row": 76288
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0150.pb",
+      "bytes": 38758,
+      "sha256": "8612459f4d21455c801ecb9050bc68b3370cae1298310e371d5c3a3859e6009f",
+      "git_blob_sha1": "5372c41e96095868b18047f31e0537517682a498",
+      "records": 512,
+      "first_row": 76800
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0151.pb",
+      "bytes": 39511,
+      "sha256": "eafbcbf6c90c5fd6580a0f3fe8586dcce3daa61901348c2c1cba7794fc235c34",
+      "git_blob_sha1": "e7f6343700c1e415e178d55d2c9910f9bae707d2",
+      "records": 512,
+      "first_row": 77312
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0152.pb",
+      "bytes": 40426,
+      "sha256": "c9a27b15643ed4a6ccf060b1d281bfe72193b48661a902394c4a71e8959e39c9",
+      "git_blob_sha1": "7a62a0c0305e155f278ecefd87a7bd44a399ef2c",
+      "records": 512,
+      "first_row": 77824
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0153.pb",
+      "bytes": 39531,
+      "sha256": "3b79a246cc9a717833bd086eff2cb1861ddbefb79757b8010a61db5cfbcfc9f3",
+      "git_blob_sha1": "2924c4238ef78d34baadd1c72d029055ed0309c5",
+      "records": 512,
+      "first_row": 78336
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0154.pb",
+      "bytes": 40122,
+      "sha256": "88ee38400bdc812708e51d35ba864a5f78feacd68f7a6b706a612c4dce738dea",
+      "git_blob_sha1": "46b514fc637a585b86f4be2b45bb56f00f03f014",
+      "records": 512,
+      "first_row": 78848
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0155.pb",
+      "bytes": 41859,
+      "sha256": "e7cf28a48f881e388851b0e812dec80aa8f6db1e72ed66faeae036e40db5e0e1",
+      "git_blob_sha1": "1a68d4a32843ebb3c3aeb60a26b57c76c9b602c3",
+      "records": 512,
+      "first_row": 79360
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0156.pb",
+      "bytes": 37901,
+      "sha256": "0c242f5b32f86ffbfac4cfd460739b3c963d860ba31cac27c0075cd73cd283b5",
+      "git_blob_sha1": "d4b72ad63f4fc6a91c2e37b2ba10b36c3234f203",
+      "records": 512,
+      "first_row": 79872
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0157.pb",
+      "bytes": 36544,
+      "sha256": "5d11b2df4a429d94c267dedcbc691a48a158892ea294cab3d0facc745e066776",
+      "git_blob_sha1": "d81180d450ac8aed4e28403a696aafc5ef028ecb",
+      "records": 512,
+      "first_row": 80384
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0158.pb",
+      "bytes": 36182,
+      "sha256": "53cade9e1b81ba0c40b7d2a9850ec2fddda146f19f07ee41809c6a5be3749be3",
+      "git_blob_sha1": "1ba69625de1808035327b3ca671ac90ffc4ce3d0",
+      "records": 512,
+      "first_row": 80896
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0159.pb",
+      "bytes": 36617,
+      "sha256": "02d81ea8a155e567e16e83f14b1d335520df0a4a149019e0c170ca2240e6c90d",
+      "git_blob_sha1": "ad1950f5bf9beba21a9f8352153893e827a418e4",
+      "records": 512,
+      "first_row": 81408
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0160.pb",
+      "bytes": 40931,
+      "sha256": "bcae4601bf2c18c152943e08e73c418579c74d0e3f20f2d355b7a9639e382ac8",
+      "git_blob_sha1": "18b5418898a6495f3df547ecb5f22b58ee96422d",
+      "records": 512,
+      "first_row": 81920
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0161.pb",
+      "bytes": 41753,
+      "sha256": "15154a503997df85007a53caaedfbce045ccb2821f14456fd3011cf2a1af7503",
+      "git_blob_sha1": "1ae5e4922585f81d54e9354d6635df6c212a775f",
+      "records": 512,
+      "first_row": 82432
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0162.pb",
+      "bytes": 35374,
+      "sha256": "cddd7dbee60dac7ed15dda83fc397e908e204021783eb508255f7dbde65de9d9",
+      "git_blob_sha1": "45411c2fe190dde8f240fdc534595451fe3deb01",
+      "records": 512,
+      "first_row": 82944
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0163.pb",
+      "bytes": 35140,
+      "sha256": "2cb00397efabd5f4addec151195afb7dff1d416bd2c6120501a3132319d4edf1",
+      "git_blob_sha1": "0bd31358c76c06fe3647c6e1f344af5a3cc12821",
+      "records": 512,
+      "first_row": 83456
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0164.pb",
+      "bytes": 36054,
+      "sha256": "0865cd810b56bdb4414a55fadf4cd0165d9def7c397dbd360db5fe564bcf2742",
+      "git_blob_sha1": "f05b2c07372488f572f6faa758da1ad24134c954",
+      "records": 512,
+      "first_row": 83968
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0165.pb",
+      "bytes": 36089,
+      "sha256": "54f3a2c6a0c9c41a6542752241ef92f362b79b7228e1f4f7561af15b324fecc5",
+      "git_blob_sha1": "7d00791c18b5964a9fd08782aebf8a242fa5c2a9",
+      "records": 512,
+      "first_row": 84480
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0166.pb",
+      "bytes": 37432,
+      "sha256": "df9982d8ce6a8c7a28c085986d00a795354ce9cbb88a4513ca3e2f5645c4f0f0",
+      "git_blob_sha1": "a377d1e525d506b296c2d690fc471d8401d205d2",
+      "records": 512,
+      "first_row": 84992
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0167.pb",
+      "bytes": 35958,
+      "sha256": "f3a38f7658b2401b8989100a195e1f99d17b3c09a435454327592aed0efd85d0",
+      "git_blob_sha1": "e1dffb508bb0a1c396dde82c652b78f904c362ab",
+      "records": 512,
+      "first_row": 85504
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0168.pb",
+      "bytes": 36060,
+      "sha256": "3c045c1f15fb22ec6d8526689daf69b91c61a607106af3707120b5a99ac75f1d",
+      "git_blob_sha1": "8805fba1ef5fc2c0a378d23100392a6eab12ea67",
+      "records": 512,
+      "first_row": 86016
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0169.pb",
+      "bytes": 36076,
+      "sha256": "8b00ecaba93f9f68b91ea02949c6ff8bcbdb2223513945361bdb0bfc0d6fedbf",
+      "git_blob_sha1": "1f70c9aeceba578988c3453f9be0fdce01a19fdd",
+      "records": 512,
+      "first_row": 86528
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0170.pb",
+      "bytes": 35672,
+      "sha256": "00231656e82abf5b254bdcc872adf5ae43460b96e44fe6d6d00607d164374b6a",
+      "git_blob_sha1": "aaafd1b53b43dfa1d7bd33e625f7322e3f602ad2",
+      "records": 512,
+      "first_row": 87040
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0171.pb",
+      "bytes": 35458,
+      "sha256": "53a4a4ac4bb67a68ccc9a6ed3f385cfc44fb1b78ea126c35f616b140ab6f2fa9",
+      "git_blob_sha1": "f058c3f8f9883c5746c1604354f79c6b36d6a84e",
+      "records": 512,
+      "first_row": 87552
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0172.pb",
+      "bytes": 35974,
+      "sha256": "58f56e0670dfd6bed80cc5cf4b5ff9ffc9e0763b091c8c3bf54b96a11de3d6fd",
+      "git_blob_sha1": "51881c91cc561b216eb14f9de72aec6edaa402c1",
+      "records": 512,
+      "first_row": 88064
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0173.pb",
+      "bytes": 35970,
+      "sha256": "aab557c888570f58a23ddb64ee1d3a6a364c0efe067053c65a38052f5f2e7c19",
+      "git_blob_sha1": "45b7c3f3a7cf350d368e917f7701a76ee11353cb",
+      "records": 512,
+      "first_row": 88576
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0174.pb",
+      "bytes": 35578,
+      "sha256": "d4038caf6ec0fa7b088aabc07e1cbbe0bd9f7d4f6b3636732b87ae5d82a01b63",
+      "git_blob_sha1": "d1d9005589812b0ac734f7310593a75db40e97e7",
+      "records": 512,
+      "first_row": 89088
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0175.pb",
+      "bytes": 35572,
+      "sha256": "d5bb1ea1eee188cf46c25e50ca8c1f470fd754b804b8f9cb44bce5fda847ae51",
+      "git_blob_sha1": "8e86f55476895591635efba97f593c6285c1c785",
+      "records": 512,
+      "first_row": 89600
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0176.pb",
+      "bytes": 36745,
+      "sha256": "77634f1727df134266be01083bee0d968a735c5621607b05bce16d3cf85af22f",
+      "git_blob_sha1": "43a556afd6fffc7e24f548dddc9850972ce80918",
+      "records": 512,
+      "first_row": 90112
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0177.pb",
+      "bytes": 36300,
+      "sha256": "3fbdfa1c206fb61a0e5ea907043b0edb70bf5642c208001ac8724f9d38319a3c",
+      "git_blob_sha1": "0db104e0b0e46f6c5a2a358613e2beafe2b1cbba",
+      "records": 512,
+      "first_row": 90624
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0178.pb",
+      "bytes": 35894,
+      "sha256": "7ea8126bfbea060ca19b73bf53cf68322691edb28fc0cf8694d2b6062145e543",
+      "git_blob_sha1": "201fb8dd0a4f47d9e79c973b0541ebb2f8f18762",
+      "records": 512,
+      "first_row": 91136
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0179.pb",
+      "bytes": 38471,
+      "sha256": "45c8864a2252cc087c7e0a60442a7e05f149eedeb3db51a3cb62c0a1e1d3a71f",
+      "git_blob_sha1": "0f3f931f9d1e5ccf85f52270665070534d746baa",
+      "records": 512,
+      "first_row": 91648
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0180.pb",
+      "bytes": 37879,
+      "sha256": "ad04fef33539a8d8d7baceb293e32971618c996b12e13a70c0e92137fa859666",
+      "git_blob_sha1": "62bebe6027f74661c6478721c72c130394f77533",
+      "records": 512,
+      "first_row": 92160
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0181.pb",
+      "bytes": 40505,
+      "sha256": "1c343147a613457595ea6119671aa2c1c4d5e496047a5d8a836a77d7e5518275",
+      "git_blob_sha1": "96bb46d2abeceaceee18c8106b93435a5144d6d6",
+      "records": 512,
+      "first_row": 92672
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0182.pb",
+      "bytes": 39871,
+      "sha256": "18ed822e86a5b5238daf618f91016e95c87faf7727298574b96a8ccfce570eff",
+      "git_blob_sha1": "32e0c5fe07c72d4f704fa00cf9bc1cd30ccbdb2b",
+      "records": 512,
+      "first_row": 93184
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0183.pb",
+      "bytes": 39519,
+      "sha256": "8fdac31aada9bf2321d8f082a91677f44000203a609a1f4f38585192ae70e706",
+      "git_blob_sha1": "b9037a40d0673f4c832f4c3906b7db929e888009",
+      "records": 512,
+      "first_row": 93696
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0184.pb",
+      "bytes": 39448,
+      "sha256": "2e6db364c7bf129239e6595df05338bfb0ec76fe43bf390bb70dbc6e2e8f4ce7",
+      "git_blob_sha1": "d6c075bd10f739ea33957fd0746204fe8f4de88c",
+      "records": 512,
+      "first_row": 94208
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0185.pb",
+      "bytes": 39682,
+      "sha256": "aa96c77c11c57c71d5416a18059a402dcc5691e8103ec8e8e69fa0aec580036d",
+      "git_blob_sha1": "f7ed1a22686ca753e575b0d1286658f1cf00cdc0",
+      "records": 512,
+      "first_row": 94720
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0186.pb",
+      "bytes": 40874,
+      "sha256": "68b76db2fba037bbff988be0070ec88c28389e160f7bb91363089ff8888ad782",
+      "git_blob_sha1": "924557699017739a83936a39be11c0381b0ce314",
+      "records": 512,
+      "first_row": 95232
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0187.pb",
+      "bytes": 40458,
+      "sha256": "8449016af63d780a58217a3e8688d61cf2f0d416d02ae5247d212c048078a779",
+      "git_blob_sha1": "1c32888b53c03d9fe6f08e3d52644a11f5354875",
+      "records": 512,
+      "first_row": 95744
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0188.pb",
+      "bytes": 40341,
+      "sha256": "e4ba9036176b81dc37daccb18e2ce62ccca0301c14535b827a7a4b41028efbfd",
+      "git_blob_sha1": "f7f0cf608a2582184d1b3312cd92486df4a8f6bb",
+      "records": 512,
+      "first_row": 96256
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0189.pb",
+      "bytes": 40605,
+      "sha256": "c33968bde68f60914135d1ea3e64a25ce714f514aa5e5819d2e76a4cccd3eec2",
+      "git_blob_sha1": "6b6a41d427f337f70b0d6b934f1091f7f2f06b86",
+      "records": 512,
+      "first_row": 96768
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0190.pb",
+      "bytes": 40071,
+      "sha256": "c662a7e64e5d4d1ffcf16b4b5941fe5fe89597ba32ce2726f1410a12b0795003",
+      "git_blob_sha1": "0bbfa751d640c8f7252cec2bf335ee6c04997d40",
+      "records": 512,
+      "first_row": 97280
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0191.pb",
+      "bytes": 37427,
+      "sha256": "5ecee2c9dbda3df939b366233d99e1bab38b82d2eaef4bf95e33f4bd27dfefaa",
+      "git_blob_sha1": "730ef81755238af0857e7b1346b8651103980b30",
+      "records": 512,
+      "first_row": 97792
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0192.pb",
+      "bytes": 38139,
+      "sha256": "ade920b032bda0822cf2a3f5ad8141e735d5c6061847e69a75bd76bb24cc65bb",
+      "git_blob_sha1": "9067b9e8cae99f698de2a145939fa881d15332e5",
+      "records": 512,
+      "first_row": 98304
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0193.pb",
+      "bytes": 38805,
+      "sha256": "826e0a8171c8d6d0ec111aec6667a438299d2711dbb0bb224a41d9e3564f8eba",
+      "git_blob_sha1": "cd7b93a58b716b26e605a93779bc14784e1ccb4e",
+      "records": 512,
+      "first_row": 98816
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0194.pb",
+      "bytes": 39279,
+      "sha256": "accf701d336f5ef87e69d47d917764da4b033d78aebfcdf2c21330d220b2e6fb",
+      "git_blob_sha1": "ecdba0cae8d3081cb69322be8c4aa0f2ac65e925",
+      "records": 512,
+      "first_row": 99328
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0195.pb",
+      "bytes": 38841,
+      "sha256": "e5b14890e261ec7ec5c9e473c1588c6759047446a173127a7ab17bc3a5f9e9ca",
+      "git_blob_sha1": "d0512f8e951811888d181c0d7616547c8a710ce4",
+      "records": 512,
+      "first_row": 99840
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0196.pb",
+      "bytes": 39084,
+      "sha256": "258c8c1487802de330d641826b185e9243fda9168989f075b97cba435bd25352",
+      "git_blob_sha1": "964cff43e0d1a1ff52cb82a542575f5b2157b1d0",
+      "records": 512,
+      "first_row": 100352
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0197.pb",
+      "bytes": 39181,
+      "sha256": "b347f7466e8663cbabdb72749ae0a7f8be53ade85be291e2b8f78255289f7b4e",
+      "git_blob_sha1": "c150ecb790f5a651387dd9fbff0b2a2e6cf9d040",
+      "records": 512,
+      "first_row": 100864
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0198.pb",
+      "bytes": 39771,
+      "sha256": "661704b4fb3d4d2d2e0b27138b924b539d94b41a42d82666e65a0b8dbb503e06",
+      "git_blob_sha1": "afdbd89f4fd6967b16f979c3fdb7dcd15cd30c46",
+      "records": 512,
+      "first_row": 101376
+    },
+    {
+      "file": "datasets/public-records/us-public-schools/0199.pb",
+      "bytes": 29891,
+      "sha256": "1a75d75cfff9a147b9215bd85906b700f21499a76b708e1b3275ac45cd523083",
+      "git_blob_sha1": "30c7a9a73cb152c1263f62f5a1f25d2f19174472",
+      "records": 380,
+      "first_row": 101888
+    }
+  ]
+}

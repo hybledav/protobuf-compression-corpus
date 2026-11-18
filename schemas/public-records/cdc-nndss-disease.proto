@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: MIT
+syntax = "proto3";
+package pbcorpus.cdc_nndss.v2;
+
+message WeeklyRecord {
+  optional string states = 1;
+  optional string year = 2;
+  optional uint32 week = 3;
+  optional string label = 4;
+  optional uint64 m1 = 5;
+  optional string m1_flag = 6;
+  optional uint64 m2 = 7;
+  optional string m2_flag = 8;
+  optional uint64 m3 = 9;
+  optional string m3_flag = 10;
+  optional uint64 m4 = 11;
+  optional string m4_flag = 12;
+  optional string location1 = 13;
+  optional string location2 = 14;
+  optional string sort_order = 15;
+}
+message Batch { repeated WeeklyRecord records = 1; }

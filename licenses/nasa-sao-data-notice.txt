@@ -1,0 +1,4 @@
+Source: NASA HEASARC, Smithsonian Astrophysical Observatory Star Catalog.
+Attribution: SAO Staff (1966); ADC/CDS I/131A; HEASARC representation created March 2001.
+https://heasarc.gsfc.nasa.gov/W3Browse/all/sao.html
+NASA explicitly records https://www.usa.gov/government-works as this dataset's license at https://data.nasa.gov/dataset/smithsonian-astrophysical-observatory-star-catalog . This corpus uses that NASA distribution, not the Silesia distribution. HEASARC removes 53 catalog duplicates; 258,944 entries are included. TAP column values and units are retained. No NASA or Smithsonian endorsement is implied. The U.S. public-domain status is not a grant of trademarks or other unrelated rights.

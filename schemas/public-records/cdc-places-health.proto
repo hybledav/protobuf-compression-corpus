@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: MIT
+syntax = "proto3";
+package pbcorpus.cdc_places.v2;
+
+message HealthRecord {
+  optional string stateabbr = 1;
+  optional string locationname = 2;
+  optional string placefips = 3;
+  optional uint64 totalpopulation = 4;
+  optional uint64 totalpop18plus = 5;
+  optional double access2_adjprev = 6;
+  optional double arthritis_adjprev = 7;
+  optional double binge_adjprev = 8;
+  optional double bphigh_adjprev = 9;
+  optional double cancer_adjprev = 10;
+  optional double casthma_adjprev = 11;
+  optional double chd_adjprev = 12;
+  optional double checkup_adjprev = 13;
+  optional double copd_adjprev = 14;
+  optional double csmoking_adjprev = 15;
+  optional double depression_adjprev = 16;
+  optional double diabetes_adjprev = 17;
+  optional double highchol_adjprev = 18;
+  optional double obesity_adjprev = 19;
+  optional double stroke_adjprev = 20;
+  optional double sleep_adjprev = 21;
+  optional double phlth_adjprev = 22;
+  optional double mhlth_adjprev = 23;
+  optional double disability_adjprev = 24;
+  optional double cognition_adjprev = 25;
+}
+message Batch { repeated HealthRecord records = 1; }

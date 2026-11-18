@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+syntax = "proto3";
+package pbcorpus.us_county_stats.v2;
+
+message Record {
+  optional string geoid = 1;
+  optional string metric_key = 2;
+  optional string period = 3;
+  optional double value = 4;
+  optional double margin_of_error = 5;
+}
+message Batch { repeated Record records = 1; }

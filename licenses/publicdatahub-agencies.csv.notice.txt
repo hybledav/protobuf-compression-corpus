@@ -1,0 +1,5 @@
+# U.S. federal agencies, with budget and outlays.
+# Source: USAspending.gov, U.S. Department of the Treasury
+# https://www.usaspending.gov/
+# Licence: U.S. Public Domain (17 U.S.C. §105)
+# Assembled by PublicDataHub · https://publicdatahub.org · generated 2026-08-27

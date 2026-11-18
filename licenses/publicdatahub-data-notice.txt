@@ -1,0 +1,4 @@
+PublicDataHub, Quan Nguyen, version 2026.08.29
+DOI: https://doi.org/10.5281/zenodo.22152382
+Source: https://zenodo.org/records/22152382
+The deposit explicitly applies CC0 1.0 to the compilation, with U.S. federal government source facts identified in each CSV notice. Full CC0 text is in CC0-1.0.txt. The protobuf datasets are column projections; optional numeric fields preserve the distinction between blank and zero. No agency or depositor endorsement is implied.

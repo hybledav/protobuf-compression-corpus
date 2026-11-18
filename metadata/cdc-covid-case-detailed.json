@@ -1,0 +1,567 @@
+{
+  "format_version": 2,
+  "id": "cdc-covid-case-detailed",
+  "kind": "real-source-converted",
+  "description": "CDC public-use, deidentified COVID-19 cases, all 12 published fields. This is the public dataset; no restricted-access data are used.",
+  "schema": "schemas/public-records/cdc-covid-case-detailed.proto",
+  "message_type": "pbcorpus.cdc_covid_detailed.v2.Batch",
+  "source_snapshots": [
+    {
+      "url": "https://data.cdc.gov/resource/vbim-akqf.json?%24limit=16384&%24order=%3Aid",
+      "final_url": "https://data.cdc.gov/resource/vbim-akqf.json?%24limit=16384&%24order=%3Aid",
+      "retrieved_at": "2026-11-18T16:10:47Z",
+      "bytes": 5486011,
+      "sha256": "4948e2bfde3c4333e0bd93c70791ad66734a9095a6e1de016bc04550aad7db94",
+      "stored_path": "provenance/source-snapshots/4948e2bfde3c4333e0bd93c70791ad66734a9095a6e1de016bc04550aad7db94.gz",
+      "stored_encoding": "gzip",
+      "stored_bytes": 176408,
+      "stored_sha256": "f996e2685741cec932d30f123798e0b246c51e5cf07137ab87e8d7b040d80a23"
+    }
+  ],
+  "rights": {
+    "id": "LicenseRef-US-Government-Public-Domain",
+    "notice": "licenses/cdc-data-notice.txt",
+    "evidence_urls": [
+      "https://www.cdc.gov/other/agencymaterials.html",
+      "https://data.cdc.gov/api/views/vbim-akqf.json"
+    ],
+    "attribution": "Source: Centers for Disease Control and Prevention. The material is available from CDC without charge. No endorsement by CDC, ATSDR, HHS, or the U.S. Government is implied.",
+    "observed_license": "USGOV_WORKS"
+  },
+  "conversion": {
+    "selection": "First 16,384 rows ordered by Socrata :id, as returned by the recorded query. Selection is a benchmark sample, not a statistical estimate.",
+    "field_mapping": {
+      "cdc_case_earliest_dt": "cdc_case_earliest_dt",
+      "cdc_report_dt": "cdc_report_dt",
+      "pos_spec_dt": "pos_spec_dt",
+      "onset_dt": "onset_dt",
+      "current_status": "current_status",
+      "sex": "sex",
+      "age_group": "age_group",
+      "race_ethnicity_combined": "race_ethnicity_combined",
+      "hosp_yn": "hosp_yn",
+      "icu_yn": "icu_yn",
+      "death_yn": "death_yn",
+      "medcond_yn": "medcond_yn"
+    },
+    "serialization": "Protocol Buffers compiler 3.25.3 descriptors, Python protobuf 6.33.1; deterministic=True. Fields are assigned in schema order and batches contain consecutive source rows.",
+    "batch_records": 256,
+    "missing_values": "Missing/blank numeric and string fields are absent; explicit nonblank zero values retain optional-field presence. No random or generated values are added."
+  },
+  "record_count": 16384,
+  "original_order": true,
+  "files": [
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0000.pb",
+      "bytes": 45529,
+      "sha256": "ccd515a5094219d5d4f6e246b58eeecffd20d0ceb036cd631e566b9afb453a13",
+      "git_blob_sha1": "ba5f2f1b63519d94830307945c98a26e12c1a0d1",
+      "records": 256,
+      "first_row": 0
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0001.pb",
+      "bytes": 45349,
+      "sha256": "e44fbec9c39597a97a938c430f0308d5335ebc77c839a350a0727a6ba4a72303",
+      "git_blob_sha1": "71bf26dde2a3b85ee5027ab0ee6e173efef1fb28",
+      "records": 256,
+      "first_row": 256
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0002.pb",
+      "bytes": 45446,
+      "sha256": "738f9309e591ede5d82ebfb4ce644ef1c140aaddc83b707d4d089e65cbdd5ffc",
+      "git_blob_sha1": "9b7c98364830070f72281497312012c3362024ae",
+      "records": 256,
+      "first_row": 512
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0003.pb",
+      "bytes": 44725,
+      "sha256": "54dc8010cc32e4de2c66121027729a769b7da72dedf414412721b48213ed3b96",
+      "git_blob_sha1": "015cfa81f748df661a6a931005ee578bece3126e",
+      "records": 256,
+      "first_row": 768
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0004.pb",
+      "bytes": 44900,
+      "sha256": "042f500755491df8b9e99cb3e4548bce4a95246011a4d947adac0102979b1768",
+      "git_blob_sha1": "064bcdc2cf17b17dccba60e8ae00dfe0f75bbd45",
+      "records": 256,
+      "first_row": 1024
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0005.pb",
+      "bytes": 47119,
+      "sha256": "da432401410e0a76ca71ee69f0f06de2e6d5d8da67a0e3cd16fd6fde8d606548",
+      "git_blob_sha1": "72582630b1e582c4704bdfc9ef585b87b817664c",
+      "records": 256,
+      "first_row": 1280
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0006.pb",
+      "bytes": 47784,
+      "sha256": "cd816257d03d4e72a9462f874dbc72176148138a9b7d8202a06d72603785ee41",
+      "git_blob_sha1": "796f8273dc70ec4663b1538d15285351136ca7c6",
+      "records": 256,
+      "first_row": 1536
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0007.pb",
+      "bytes": 47740,
+      "sha256": "567ec1ce6fec508bb4b9802852da66f4a314a65b7eb36fece17050ba028c3e36",
+      "git_blob_sha1": "b171d18cdc4a6af640d80f0d149c9bfebffa7459",
+      "records": 256,
+      "first_row": 1792
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0008.pb",
+      "bytes": 43824,
+      "sha256": "6314db932db6abc4bbe3df188cd7eef29a8777fba240b0251f7cb4a1aaad3639",
+      "git_blob_sha1": "5846f3836c94c255e8ba59cc8cdebdb0756d498d",
+      "records": 256,
+      "first_row": 2048
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0009.pb",
+      "bytes": 43477,
+      "sha256": "0668a7e84dfec4fbd434ea3243b1a39e0aac1006c03c6ce8c572196199729345",
+      "git_blob_sha1": "7cd8db547fd7aa4d81670785ea0654a2b121b21e",
+      "records": 256,
+      "first_row": 2304
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0010.pb",
+      "bytes": 45178,
+      "sha256": "7b7dd15b5efb791205458a0ffd770b1a787e19896ad57a6433720b5f7a1c1969",
+      "git_blob_sha1": "e2fc9e980967839412ab6c77b4c9ce7158d95484",
+      "records": 256,
+      "first_row": 2560
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0011.pb",
+      "bytes": 45692,
+      "sha256": "6b437e7df78dbb7e0c1fd43ec1a1235c203ba5806c1f1ad6f233d77f9e1668f7",
+      "git_blob_sha1": "2324835eb359d9f803838cd3bc91433d812f6da4",
+      "records": 256,
+      "first_row": 2816
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0012.pb",
+      "bytes": 45106,
+      "sha256": "dd9ee07e689c86b1f1b947dc959066dcd85526b8f16494fee2db1ccb47714d9f",
+      "git_blob_sha1": "7660c000dccfa30baa0cb7306c7c039f87281415",
+      "records": 256,
+      "first_row": 3072
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0013.pb",
+      "bytes": 42498,
+      "sha256": "4f6216e073ae993ebbafa07fcf743063ccf38dea2fc6c30ee862ccc284f4aeda",
+      "git_blob_sha1": "ef944951857af039ae57faf9b7f3bc733bd83c6a",
+      "records": 256,
+      "first_row": 3328
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0014.pb",
+      "bytes": 43061,
+      "sha256": "e4ed34ea13cb6f02be42d315b347b1703ffc3338a20338d20b6d621c05adaa9f",
+      "git_blob_sha1": "38dafa16ed9086826e2b953b97f5b5c5586c6f4f",
+      "records": 256,
+      "first_row": 3584
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0015.pb",
+      "bytes": 41262,
+      "sha256": "2fc578f097fe1034e769caf63c61fdb47813f479a959923483bd9298df331823",
+      "git_blob_sha1": "f0f0233b24638af2190a0e3330ed357fe4571f0c",
+      "records": 256,
+      "first_row": 3840
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0016.pb",
+      "bytes": 41978,
+      "sha256": "fc73bc175098748b72fb7c144c0a3718b2008f686c286bfb9d24d2262ff470df",
+      "git_blob_sha1": "4f90241ad5406797dbde8d8c9a2e6553eab8a524",
+      "records": 256,
+      "first_row": 4096
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0017.pb",
+      "bytes": 41489,
+      "sha256": "8d5e51936f7e900a23a2919188bd816a6a1698b6c376f7b61ae544f610b4d8bf",
+      "git_blob_sha1": "93d526dcda8783f83676c6436dfb7c1a428acfce",
+      "records": 256,
+      "first_row": 4352
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0018.pb",
+      "bytes": 45477,
+      "sha256": "2d50d2df7074b9b0aaed6403b664041643139fa72d307cb31d54e63c618fd8f0",
+      "git_blob_sha1": "a1d23d7dc3a0d4fe334dea0a3232ce86064c4c45",
+      "records": 256,
+      "first_row": 4608
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0019.pb",
+      "bytes": 44370,
+      "sha256": "4e10b1a280a925a279491c5115eb30700d0341467a550ddf8cafe4841c6fb9c0",
+      "git_blob_sha1": "0726c80e765b2ef5d4c1e6a642f1b49ce71d5713",
+      "records": 256,
+      "first_row": 4864
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0020.pb",
+      "bytes": 44105,
+      "sha256": "274d782d38bfbc88b888384b6eb0e9f2475cc6652fad9684daa992fb79cebbff",
+      "git_blob_sha1": "2307e6395ff100a20555263552736f51a8a46bef",
+      "records": 256,
+      "first_row": 5120
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0021.pb",
+      "bytes": 43658,
+      "sha256": "489d72326a2aa12c15ea9d49be07ab228d40925a48debe72d4abe30193ffff20",
+      "git_blob_sha1": "b6940cbacd775b4560ab581ff6409d7fce769361",
+      "records": 256,
+      "first_row": 5376
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0022.pb",
+      "bytes": 43611,
+      "sha256": "ba23c0ac057546b8498f813e7f7056f212b2c3235f6338f4cb44baa1e8d44ae9",
+      "git_blob_sha1": "6c35609c08f313e104302a728b89bc04ed8b9893",
+      "records": 256,
+      "first_row": 5632
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0023.pb",
+      "bytes": 45745,
+      "sha256": "13efc70412840dea40f0c5ac8a84418f99ecd39dfffcd64e54dbddea57d2ae82",
+      "git_blob_sha1": "d33c1ef1a74ca6a437ccece04b8dfb8702541dd2",
+      "records": 256,
+      "first_row": 5888
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0024.pb",
+      "bytes": 45647,
+      "sha256": "8ea9b184a24464a1b7557b8d3582cf90aa8a011ded3f4090615a60c60e9b0681",
+      "git_blob_sha1": "b89191bc28635efc21f452a09ed394725027700c",
+      "records": 256,
+      "first_row": 6144
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0025.pb",
+      "bytes": 45772,
+      "sha256": "c286b2d46d597f6c6b5a6bfd2d2b729854861ac01ef1e64c7aed1a5dbf6969ab",
+      "git_blob_sha1": "d6df372a6ccdfe0cfeeaf6da4846dfadeb6c27dd",
+      "records": 256,
+      "first_row": 6400
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0026.pb",
+      "bytes": 45671,
+      "sha256": "ba3dd9d2f8e1887283d1aa852e19525386a101ecb1cb60515f346208d446aec0",
+      "git_blob_sha1": "d23fe9c5eec3a958f265f0df34a7c6517a429889",
+      "records": 256,
+      "first_row": 6656
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0027.pb",
+      "bytes": 43176,
+      "sha256": "5842ba2c217e740a14618aef168c905f946dca40f04b2e022136733157742b41",
+      "git_blob_sha1": "a0c841212f50758ea2676217dd9090b5d399a4ec",
+      "records": 256,
+      "first_row": 6912
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0028.pb",
+      "bytes": 42372,
+      "sha256": "e91b843b8811756b961d5d6c669ea89aa018409fa525fb87c7005743245b71cd",
+      "git_blob_sha1": "a27532170cdbf455acbbc9e598dcfd914971dfc5",
+      "records": 256,
+      "first_row": 7168
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0029.pb",
+      "bytes": 42638,
+      "sha256": "3da9d33f99b6d58e3f9b6abdfe62f6c97c674bcd2231f474e247ed0b2935f2e0",
+      "git_blob_sha1": "209ef96403d81f75cdc08663fdc315a44ef78806",
+      "records": 256,
+      "first_row": 7424
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0030.pb",
+      "bytes": 42606,
+      "sha256": "3561a7ce991771dca355a2f947ebfad2b7a2f6c0f17f0ec93ab9819d91bdfce2",
+      "git_blob_sha1": "7186e51149cea00f2336dc187b8e5f8271898bee",
+      "records": 256,
+      "first_row": 7680
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0031.pb",
+      "bytes": 42303,
+      "sha256": "e65373ecbf84fe9edc2ce2b1020aa5ca94ed98d1590298bffa6cfb0afabf417c",
+      "git_blob_sha1": "4fac6e92bca664e4fb6d5a0663fde54bb7d59c9d",
+      "records": 256,
+      "first_row": 7936
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0032.pb",
+      "bytes": 42179,
+      "sha256": "a6f41c9341896c5f0760db8a9c95297e4eb54384c7a501cd6d3ec252a58017aa",
+      "git_blob_sha1": "805732551d2d8142785175b23283866f22c93400",
+      "records": 256,
+      "first_row": 8192
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0033.pb",
+      "bytes": 41884,
+      "sha256": "ec0baf27e80473ee2d911ccdfa5e920cb7b86e6c18462dd5d76665e46811fb2e",
+      "git_blob_sha1": "dffe7c644f378d9be063192bc71a1673b9f7a444",
+      "records": 256,
+      "first_row": 8448
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0034.pb",
+      "bytes": 42525,
+      "sha256": "1d628acfa45bda2466e96bcdd73ad4018a912fd8ba08c478abdca568382291ee",
+      "git_blob_sha1": "6d7b2559e14de04b49854c08851f9a4560f6f743",
+      "records": 256,
+      "first_row": 8704
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0035.pb",
+      "bytes": 43659,
+      "sha256": "609489d23d76271f71b30c988387fd6c16c1a146fef6340e232fc2fd7b7a9d27",
+      "git_blob_sha1": "a611f0a3f02b8900a1321123a19a4e4f993b71a0",
+      "records": 256,
+      "first_row": 8960
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0036.pb",
+      "bytes": 45293,
+      "sha256": "9e9e45d5d1c6fc88c4f10db701ea46db08090ca096bfe09a6f49897b1a8bb469",
+      "git_blob_sha1": "b348a0c8b50b20bb1fe0810ceadd09c3070fc24e",
+      "records": 256,
+      "first_row": 9216
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0037.pb",
+      "bytes": 46406,
+      "sha256": "d0f54e1c346272b7450e07b96525cc075bcbcc6e7920e5aeb0a96faec4c38f9a",
+      "git_blob_sha1": "ff02c65d3e7ecf0f0e8ab67f97de1138003700e2",
+      "records": 256,
+      "first_row": 9472
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0038.pb",
+      "bytes": 44726,
+      "sha256": "0910f3d288ba6ea12e39dd9692073b2c72e80616fd190c20be52cab91c19e502",
+      "git_blob_sha1": "e91d7f9a360f9c6cd93aeb3a6d499d41a167ca54",
+      "records": 256,
+      "first_row": 9728
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0039.pb",
+      "bytes": 44719,
+      "sha256": "b6709060d0672285a2368b8d399551cfb2ebe52c57b5f3e0f3967a2ffb2f324b",
+      "git_blob_sha1": "ea71db20870b02b019a28949c0ac77d6b50141f7",
+      "records": 256,
+      "first_row": 9984
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0040.pb",
+      "bytes": 43904,
+      "sha256": "49b59600ec5a535921fb85af27f32c25d697b585d5205b1c00b592916681cb8c",
+      "git_blob_sha1": "ae13083bbf2fec2ed48015935a627eaa2623190e",
+      "records": 256,
+      "first_row": 10240
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0041.pb",
+      "bytes": 40986,
+      "sha256": "834560db78d016ec662089fec0ec42aae3a78cf32806dd842de4d3b36cf63c1f",
+      "git_blob_sha1": "ef39f69e14bafe4a86c4dbabd529c4eef94448ca",
+      "records": 256,
+      "first_row": 10496
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0042.pb",
+      "bytes": 41084,
+      "sha256": "e6d8f2177a4109d15a38ef9b701f8fe9c8c85ad1928f46db7509597bf094fe99",
+      "git_blob_sha1": "adee165b1619ec990edd80a3387ca1d11bd761f3",
+      "records": 256,
+      "first_row": 10752
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0043.pb",
+      "bytes": 41393,
+      "sha256": "b9f5e7c5ee97baf1cc312245ac37c75e43df972defc6c248d60239e96db27db4",
+      "git_blob_sha1": "bb0140e1cd0611fd582af76273ffc09c82e01bb8",
+      "records": 256,
+      "first_row": 11008
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0044.pb",
+      "bytes": 41355,
+      "sha256": "9aa2c51adc12fe6906b154d72318c5210539711d139ae3e14c10073239466bcf",
+      "git_blob_sha1": "5976e4ccd6d76d8b4bf0c089b8a1574a4bf0bda1",
+      "records": 256,
+      "first_row": 11264
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0045.pb",
+      "bytes": 41486,
+      "sha256": "aec179df83eab7ecc51fb5eea47109a6cbb3efc110146a4dc8980c3a86920a8e",
+      "git_blob_sha1": "00bc3876b9aa565eeb16cc08160312360b7e009e",
+      "records": 256,
+      "first_row": 11520
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0046.pb",
+      "bytes": 42862,
+      "sha256": "14cca2b9e9323332d673be91d7ea0d476e884c3bbe2a38be8162ecf4ec1c9bc5",
+      "git_blob_sha1": "4bd472e4f75888879c0e77830c370976f0387941",
+      "records": 256,
+      "first_row": 11776
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0047.pb",
+      "bytes": 43713,
+      "sha256": "09e112381c073bc244fee82ca2daf69a2cedfe2002b1cf31c6fbbb3606957eed",
+      "git_blob_sha1": "d85b7865e43096644bda996872a19d6086d6fc15",
+      "records": 256,
+      "first_row": 12032
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0048.pb",
+      "bytes": 42442,
+      "sha256": "7d7bfbc559b004953b34e930345144bb84fb0080bc3e66c80c8791f2f228d593",
+      "git_blob_sha1": "1253d3c878a027b0d4a1176758361b5ab066aefe",
+      "records": 256,
+      "first_row": 12288
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0049.pb",
+      "bytes": 42206,
+      "sha256": "c8fe790c4d10efc6cba1c97848e9b524fe65b51f1b53fc9ac911150902d5377d",
+      "git_blob_sha1": "fcda747d83d63971777646e705e0ca2315c71b48",
+      "records": 256,
+      "first_row": 12544
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0050.pb",
+      "bytes": 46043,
+      "sha256": "2058665766dda04cddbcb2130d47a35bd6a0368243912eada6be5232fa53a381",
+      "git_blob_sha1": "22047f20ef59af9a6df0fe91948866dfa0d7af6a",
+      "records": 256,
+      "first_row": 12800
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0051.pb",
+      "bytes": 47865,
+      "sha256": "3c061280b523d133d503605b85cd91f39bddc4d9d3ce8e4bac3e737d8e5f7fb3",
+      "git_blob_sha1": "be1c6f63e3f6f3fedcf27d2ddc2630d2673229a4",
+      "records": 256,
+      "first_row": 13056
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0052.pb",
+      "bytes": 46983,
+      "sha256": "ef3a8ccbd0f04152734fb09b4c3488fc0a824345758662615c05acb3ef8b3f9e",
+      "git_blob_sha1": "0980e13f50e03f233eb4d7b9fc619e7cdb5304a9",
+      "records": 256,
+      "first_row": 13312
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0053.pb",
+      "bytes": 45506,
+      "sha256": "3be74b7e6ca8422502c184217c4364dd4e5c588f6ea2f391ae4ad8eb9c63426a",
+      "git_blob_sha1": "9f676784ab4c0d98773ff321195419fcb9d364fc",
+      "records": 256,
+      "first_row": 13568
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0054.pb",
+      "bytes": 43279,
+      "sha256": "45e8bfeb4618f169a2babc25bc4bd0c951763a421185f21bbc8532697c4c5e4d",
+      "git_blob_sha1": "d104967d1de8b7c4289cd04925e79a1a7132ebb8",
+      "records": 256,
+      "first_row": 13824
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0055.pb",
+      "bytes": 41270,
+      "sha256": "52478d4cd28ee27bbf57c783ecd4680b9cd47b059bcef622fbda14bc94c83597",
+      "git_blob_sha1": "99db30ecd4cff9681401f81f8220ff0dc2dabae2",
+      "records": 256,
+      "first_row": 14080
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0056.pb",
+      "bytes": 44011,
+      "sha256": "0fd469ae72846873525a7c01a04894639368e1932cd5e6aa59e6156e6d2a602a",
+      "git_blob_sha1": "ca2870c5ae23949bf74a02d0047660c49715f705",
+      "records": 256,
+      "first_row": 14336
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0057.pb",
+      "bytes": 44781,
+      "sha256": "8afd7765693da7c117c62872f2526f9544bb82f5f2bbe6947b27cf941fc94305",
+      "git_blob_sha1": "1ab0ac2ce46a9ea5eb68ad1076d02ce768f749e4",
+      "records": 256,
+      "first_row": 14592
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0058.pb",
+      "bytes": 44991,
+      "sha256": "0a9fd4f518e03944bacdd5c66b3713e3e626f6f3fa5ef86880bafd038d212493",
+      "git_blob_sha1": "878f841c1c3258d78a14cec0b33bc6074c5a0ded",
+      "records": 256,
+      "first_row": 14848
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0059.pb",
+      "bytes": 42821,
+      "sha256": "9c63e0064c68c1345ccccfea36ef82e3863c4226102bac7c84a02bbbba998a80",
+      "git_blob_sha1": "b46c7dd59eea845ed895aa9a49fa7230256087ee",
+      "records": 256,
+      "first_row": 15104
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0060.pb",
+      "bytes": 34768,
+      "sha256": "90ad43d605e78eaf525bb475191eedfcfeadf694a247fc26d2c18fc0e3da60b1",
+      "git_blob_sha1": "f1dd39dcebd25c9d8c57550b679049f296eeeebf",
+      "records": 256,
+      "first_row": 15360
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0061.pb",
+      "bytes": 39304,
+      "sha256": "9bc9ce09f453913eb3a99335d24ee236130fdae2fb118995dcc8a156a5b31761",
+      "git_blob_sha1": "a47337b7a8f3ad8b810252b8a0683e7e21744f4c",
+      "records": 256,
+      "first_row": 15616
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0062.pb",
+      "bytes": 44347,
+      "sha256": "df90acb8170eb61604c8e575f0dec79c7a87a54221a5d671ec61d8a68a866165",
+      "git_blob_sha1": "0627e7d1968add396fcef78b1936b36037b8e62a",
+      "records": 256,
+      "first_row": 15872
+    },
+    {
+      "file": "datasets/public-records/cdc-covid-case-detailed/0063.pb",
+      "bytes": 44522,
+      "sha256": "33bfb2dff16f1e4e8ec4649412cb6334c09f3ca9e147d843fdd01223fa354e29",
+      "git_blob_sha1": "98ec9bd455f4b9e564c8b946dd8b9b0f83a8d941",
+      "records": 256,
+      "first_row": 16128
+    }
+  ]
+}
